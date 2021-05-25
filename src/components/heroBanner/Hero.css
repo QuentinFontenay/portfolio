@@ -1,0 +1,20 @@
+.hero {
+    display: flex;
+    background-color: rgb(223, 223, 223);
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-image > img {
+    max-width: 300px;
+}
+
+.hero-inner > h1 {
+    font-size: 3rem;
+}
