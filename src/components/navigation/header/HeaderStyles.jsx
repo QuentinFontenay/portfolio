@@ -84,6 +84,7 @@ export const ContactDropDown = styled.button`
     &:hover {
         color: #fff;
     }
+
     @media ${(props) => props.theme.breakpoints.sm} {
         padding: 0.4rem 0;
     }
@@ -102,6 +103,7 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
     &:hover {
         opacity: 1;
     }
+
     @media ${(props) => props.theme.breakpoints.sm} {
         margin: 2px 0 0 2px;
         width: 15px;

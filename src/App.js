@@ -1,11 +1,13 @@
 import './App.css';
 import Router from './router/Router';
-
+import Theme from './styles/theme';
 function App() {
   return (
-    <div className="App">
-      <Router/>
-    </div>
+    <Theme>
+      <div className="App">
+        <Router />
+      </div>
+    </Theme>
   );
 }
 
