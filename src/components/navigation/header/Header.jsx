@@ -4,7 +4,12 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 import { Container, Home, Navbar, SocialContainer, NavLink, SocialIcons, Span } from './HeaderStyles';
 
-const menuItems = [{ title: "Accueil", link: "/" }, { title: "Contact", link: "/contact" }, { title: "Travaux", link: "/work/projects" }]
+const menuItems = [
+    { title: "Accueil", link: "/" }, 
+    { title: "Contact", link: "/contact" }, 
+    { title: "Travaux", link: "/work/projects" },
+    { title: "Qui suis je ?", link: "about_me"}
+]
 const socialItems = [
     { balise: <AiFillGithub size="3rem" />, link: "https://github.com/QuentinFontenay" },
     { balise: <AiFillLinkedin size="3rem" />, link: "https://www.linkedin.com/in/quentin-fontenay-907091156/" },
