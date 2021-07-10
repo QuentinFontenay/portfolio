@@ -103,7 +103,7 @@ function FormContact() {
                                 sendEmail()
                             }}
                         >
-                            <FiSend /> Submit
+                            <FiSend /> Envoyer
                         </Button>
                     </ContactForm>
                 ) : (
