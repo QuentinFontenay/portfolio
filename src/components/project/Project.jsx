@@ -1,47 +1,32 @@
 import React from 'react';
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectStyles';
+import { ProjectPreview, Tags, ProjectContent, ProjectDetail, ProjectWrapper, GridContainer, Img } from './ProjectStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
+import { SiMaterialUi, SiMongodb, SiReact, SiRedux, SiSocketDotIo, SiTailwindcss } from 'react-icons/si';
 
 const Project = () => (
     <Section nopadding id="projects">
         <SectionDivider />
-
         <SectionTitle main>Projet en cours</SectionTitle>
-
-        <GridContainer>
-            { 
-                projects.map(({ id, image, title, description, tags, source, visit }) => (
-                    <BlogCard key={id}>
-                        <Img src={image} />
-
-                        <TitleContent>
-                            <HeaderThree title>{title}</HeaderThree>
-                            <Hr />
-                        </TitleContent>
-
-                        <CardInfo>{description}</CardInfo>
-
-                        <div>
-                            <TitleContent style={{marginTop: '2rem'}}>Technologies</TitleContent>
-                            <TagList>
-                                {
-                                    tags.map((tag, index) => (
-                                        <Tag key={index}>{tag}</Tag>
-                                    ))
-                                }
-                            </TagList>
-                        </div>
-
-                        <UtilityList>
-                            <ExternalLinks  href={visit}>Demo</ExternalLinks>
-                            <ExternalLinks  href={source}>Source</ExternalLinks>
-                        </UtilityList>
-                    </BlogCard>
-                ))
-            }
-        </GridContainer>
+        <ProjectWrapper>
+            <ProjectContent>
+                <ProjectDetail>
+                    <div className="project__detail-container">
+                        <h2>viluShop</h2>
+                        <p>Using React and CSS libraries such as TailwindCSS, Material UI to make an E-commerce web app. User can search, choose products into cart and pay via fake Paypal API.",</p>
+                    </div>
+                </ProjectDetail>
+                <ProjectPreview>
+                    <Img src="/images/image_projet.png"></Img>
+                    <Tags>
+                        <SiReact fontSize="4rem" color="#79d8f7" />
+                        <SiTailwindcss fontSize="4rem" color="#07b0ce" />
+                        <SiMaterialUi fontSize="4rem" color="#00aaf7" />
+                        <SiMongodb fontSize="4rem" color="#00a540" />
+                    </Tags>
+                </ProjectPreview>
+            </ProjectContent>
+        </ProjectWrapper>
     </Section>
 );
 
