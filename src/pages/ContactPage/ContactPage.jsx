@@ -6,9 +6,7 @@ import { Section } from '../../styles/GlobalComponents';
 const ContactPage = () => {
     return (
         <Layout>
-            <Section grid>
-                <FormContact />
-            </Section>
+            <FormContact />
         </Layout>
     );
 };
