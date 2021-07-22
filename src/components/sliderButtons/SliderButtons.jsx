@@ -6,7 +6,6 @@ import { ButtonsWrapper, LeftButton, RightButton } from './SliderButtonsStyles'
 const SliderButtons = ({ slideIndex, setSlideIndex, slideCount, large }) => {
 
     const handleClickRight = () => {
-        playSfx()
         if (slideCount - 1 === slideIndex) {
             setSlideIndex(0)
         } else {
@@ -14,7 +13,6 @@ const SliderButtons = ({ slideIndex, setSlideIndex, slideCount, large }) => {
         }
     }
     const handleClickLeft = () => {
-        playSfx()
         if (slideIndex === 0) {
             setSlideIndex(slideCount - 1)
         } else {

@@ -6,20 +6,11 @@ const BACKGROUND_PREV_LG = `background: url("data:image/svg+xml,%3Csvg width='13
 const BACKGROUND_PREV_SM = `background: url("data:image/svg+xml,%3Csvg width='9' height='14' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.85711 1.28571L2.14282 7L7.85711 12.7143' stroke='%238585AC' stroke-width='3'/%3E%3C/svg%3E%0A") no-repeat center #fff;`
 
 export const ButtonsWrapper = styled.div`
-  ${(props) => (props.large ? `
     position: relative;
-    left: 55%;
-    top: 39rem;
+    top: 40rem;
+    left: 30rem;
     z-index: 1;
-  ` : `
-    position: relative;
-    left: calc(50% - 2.5rem);
-    top: 19.25rem;
-    z-index: 1;
-  `)}
-  
-  ${(props) => (props.large ? `` : `margin-top: -1.25rem;`)}
-  
+
     button {
       width: ${(props) => (props.large ? '3.5rem' : '2.5rem')};
       height: ${(props) => (props.large ? '3.5rem' : '2.5rem')};
