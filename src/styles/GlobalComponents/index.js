@@ -50,7 +50,7 @@ export const SectionTitle = styled.h2`
 `
 
 export const SectionText = styled.p`
-  max-width: 800px;
+  /* max-width: 800px; */
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;

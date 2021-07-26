@@ -5,10 +5,10 @@ import { DiCssdeck } from 'react-icons/di';
 import { Container, Home, Navbar, SocialContainer, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 const menuItems = [
-    { title: "Accueil", link: "/" }, 
-    { title: "Contact", link: "/contact" }, 
-    { title: "Travaux", link: "/work/projects" },
-    { title: "Qui suis je ?", link: "about_me"}
+    { title: "Accueil", link: "/" },
+    { title: "Travaux", link: "projects" },
+    { title: "Qui suis je ?", link: "about_me" },
+    { title: "Contact", link: "/contact" }
 ]
 const socialItems = [
     { balise: <AiFillGithub size="3rem" />, link: "https://github.com/QuentinFontenay" },
@@ -35,7 +35,7 @@ const Header = () => (
             ))}
         </Navbar>
         <SocialContainer>
-        {socialItems.map(item => (
+            {socialItems.map(item => (
                 <SocialIcons href={item.link}>
                     {item.balise}
                 </SocialIcons>

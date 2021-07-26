@@ -9,7 +9,7 @@ const Footer = () => {
         <FooterWrapper>
             <LinkList>
                 <LinkColumn>
-                    <LinkTitle>Call</LinkTitle>
+                    <LinkTitle>Téléphone</LinkTitle>
 
                     <LinkItem href="tel:0383870350">(+84) 383-870-350</LinkItem>
                 </LinkColumn>
@@ -17,7 +17,7 @@ const Footer = () => {
                 <LinkColumn>
                     <LinkTitle>Email</LinkTitle>
 
-                    <LinkItem href="mailto:ngtrung309@gmail.com">ngtrung309@gmail.com</LinkItem>
+                    <LinkItem href="mailto:quentin.fontenay@hotmail.com">quentin.fontenay@hotmail.com</LinkItem>
                 </LinkColumn>
             </LinkList>
 
@@ -27,11 +27,11 @@ const Footer = () => {
                 </CompanyContainer>
 
                 <SocialContainer>
-                    <SocialIcons href="https://github.com/ttnguyen115">
+                    <SocialIcons href="https://github.com/QuentinFontenay">
                         <AiFillGithub size="3rem" />
                     </SocialIcons>
 
-                    <SocialIcons href="https://www.linkedin.com/in/trung-nguyen-183327179/">
+                    <SocialIcons href="https://www.linkedin.com/in/quentin-fontenay-907091156/">
                         <AiFillLinkedin size="3rem" />
                     </SocialIcons>
 

@@ -4,6 +4,7 @@ import {
     HomePage,
     ContactPage,
     AboutMePage,
+    ProjectPage,
 } from "../pages/index";
 
 const Router = () => (
@@ -11,6 +12,7 @@ const Router = () => (
         <Route exact path="/" component={HomePage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/about_me" component={AboutMePage} />
+        <Route path="/project" component={ProjectPage} />
     </BrowserRouter>
 );
 
