@@ -18,7 +18,7 @@ const socialItems = [
 const Header = () => (
     <Container>
         <Home>
-            <Link href="/">
+            <Link to="/">
                 <a style={{ display: 'flex', alignItems: 'center', color: 'white', marginBottom: '20px' }}>
                     <DiCssdeck size="3rem" /> <Span>Fontenay Quentin</Span>
                 </a>

@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, BoxTitle, BoxTitle1, BoxTitle2, ContactWrapper, LeftContent, ContactBox, ContactForm, Recieved } from './FormContactStyles';
+import { Box, BoxTitle, BoxTitle1, BoxTitle2, LeftContent, ContactBox, ContactForm, Recieved } from './FormContactStyles';
 import useForm from "./useForm"
 import { FaHandshake, FiSend } from "react-icons/all"
 import Button from '../../styles/GlobalComponents/Button';
