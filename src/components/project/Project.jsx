@@ -3,6 +3,7 @@ import React from 'react';
 import { ProjectPreview, Tags, ProjectContent, ProjectDetail, ProjectWrapper, Img } from './ProjectStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { SiMaterialUi, SiMongodb, SiReact, SiTailwindcss } from 'react-icons/si';
+import PropTypes from 'prop-types'
 
 const Project = () => (
     <Section nopadding id="projects">

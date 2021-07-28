@@ -5,6 +5,7 @@ import {
     ContactPage,
     AboutMePage,
     ProjectPage,
+    ProcessPage
 } from "../pages/index";
 
 const Router = () => (
@@ -12,7 +13,8 @@ const Router = () => (
         <Route exact path="/" component={HomePage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/about_me" component={AboutMePage} />
-        <Route path="/project" component={ProjectPage} />
+        <Route path="/projects" component={ProjectPage} />
+        <Route path="/process" component={ProcessPage} />
     </BrowserRouter>
 );
 

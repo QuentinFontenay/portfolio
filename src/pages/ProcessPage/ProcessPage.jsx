@@ -1,13 +1,11 @@
 import React from 'react';
 import { Layout } from '../../components/layout/LayoutContainer';
-import Project from '../../components/project/Project';
 
-const ProjectPage = () => {
+const ProcessPage = () => {
     return (
         <Layout>
-            <Project />
         </Layout>
     );
 };
 
-export default ProjectPage;
+export default ProcessPage;

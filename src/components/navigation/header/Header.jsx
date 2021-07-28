@@ -8,7 +8,8 @@ const menuItems = [
     { title: "Accueil", link: "/" },
     { title: "Travaux", link: "projects" },
     { title: "Qui suis je ?", link: "about_me" },
-    { title: "Contact", link: "/contact" }
+    { title: "Processus", link: "process" },
+    { title: "Contact", link: "contact" }
 ]
 const socialItems = [
     { balise: <AiFillGithub size="3rem" />, link: "https://github.com/QuentinFontenay" },

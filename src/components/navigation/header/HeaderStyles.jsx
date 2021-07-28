@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, -1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 2rem;
     padding: 1rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
     @media ${(props) => props.theme.breakpoints.sm} {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -94,7 +94,6 @@ export const ContactDropDown = styled.button`
 `;
 
 export const NavProductsIcon = styled(IoIosArrowDropdown)`
-    margin-left: 8px;
     display: flex;
     align-self: center;
     transition: 0.3s ease;
@@ -120,6 +119,5 @@ export const SocialIcons = styled.a`
         background-color: #212d45;
         transform: scale(1.2);
         cursor: pointer;
-        
     }
 `
