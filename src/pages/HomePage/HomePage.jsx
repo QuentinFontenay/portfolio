@@ -7,6 +7,9 @@ import Project from '../../components/project/Project';
 import Slider from '../../components/slider/Slider';
 import { Section } from '../../styles/GlobalComponents';
 import { TESTIMONIALS } from '../../constants/testimonials';
+import { projects } from '../../constants/projects';
+
+const TITLE_PART = "Projet en cours";
 
 const HomePage = () => {
     return (
@@ -16,7 +19,7 @@ const HomePage = () => {
                 <HeroImage />
             </Section>
             <MyService />
-            <Project />
+            <Project titlePart={TITLE_PART} projects={projects.slice(0, 1)} />
             <Slider testimonials={TESTIMONIALS.slice(2)} large />
         </Layout>
     );

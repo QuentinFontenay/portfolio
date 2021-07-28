@@ -5,30 +5,38 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 import { SiMaterialUi, SiMongodb, SiReact, SiTailwindcss } from 'react-icons/si';
 import PropTypes from 'prop-types'
 
-const Project = () => (
+const Project = (props) => (
     <Section nopadding id="projects">
         <SectionDivider />
-        <SectionTitle main>Projet en cours</SectionTitle>
-        <ProjectWrapper>
-            <ProjectContent>
-                <ProjectDetail>
-                    <div className="project__detail-container">
-                        <h2>viluShop</h2>
-                        <p>Using React and CSS libraries such as TailwindCSS, Material UI to make an E-commerce web app. User can search, choose products into cart and pay via fake Paypal API.",</p>
-                    </div>
-                </ProjectDetail>
-                <ProjectPreview>
-                    <Img src="/images/image_projet.png"></Img>
-                    <Tags>
-                        <SiReact fontSize="4rem" color="#79d8f7" />
-                        <SiTailwindcss fontSize="4rem" color="#07b0ce" />
-                        <SiMaterialUi fontSize="4rem" color="#00aaf7" />
-                        <SiMongodb fontSize="4rem" color="#00a540" />
-                    </Tags>
-                </ProjectPreview>
-            </ProjectContent>
-        </ProjectWrapper>
+        <SectionTitle main>{props.titlePart}</SectionTitle>
+        {
+            props.projects.map((index, project) => (
+                <ProjectWrapper>
+                    <ProjectContent key={index}>
+                        <ProjectDetail>
+                            <div className="project__detail-container">
+                                <h2>{project.title}</h2>
+                                <p>{project.description}</p>
+                            </div>
+                        </ProjectDetail>
+                        <ProjectPreview>
+                            <Img src={project.image}></Img>
+                            {/* <Tags>
+                            <SiReact fontSize="4rem" color="#79d8f7" />
+                            <SiTailwindcss fontSize="4rem" color="#07b0ce" />
+                            <SiMaterialUi fontSize="4rem" color="#00aaf7" />
+                            <SiMongodb fontSize="4rem" color="#00a540" />
+                        </Tags> */}
+                        </ProjectPreview>
+                    </ProjectContent>
+                </ProjectWrapper>
+            ))
+        }
     </Section>
 );
+
+Project.propTypes = {
+    titlePart: PropTypes.string,
+}
 
 export default Project;

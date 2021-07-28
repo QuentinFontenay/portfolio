@@ -52,7 +52,7 @@ function FormContact() {
                 {!submitted && (
                     <LeftContent>
                         <FaHandshake style={{ fontSize: "5em" }} />
-                        <p>I would love to talk to you!</p>
+                        <p>Au plaisir de discuter avec vous !</p>
                     </LeftContent>
                 )}
                 {!submitted ? (
@@ -71,7 +71,7 @@ function FormContact() {
                             />
                         </label>
                         <label className="label__name">
-                            <span>Name</span>
+                            <span>Nom</span>
                             <input
                                 className={errors.name && "invalid"}
                                 onChange={handleInput}
@@ -79,7 +79,7 @@ function FormContact() {
                                 name="name"
                                 type="text"
                                 required
-                                placeholder="John Doe"
+                                placeholder="Michel Dupont"
                             />
                         </label>
                         <label className="label__message">
@@ -90,7 +90,7 @@ function FormContact() {
                                 value={formData.message}
                                 name="message"
                                 required
-                                placeholder="Hey there!"
+                                placeholder="Ajoutez votre commentaire"
                             />
                         </label>
 
