@@ -1,10 +1,10 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const Boxes = styled.div`
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(${props => props.nbDisplay}, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
     margin: 24px 0 40px;
     @media ${props => props.theme.breakpoints.md}{
         gap: 16px;
@@ -23,7 +23,7 @@ export const Boxes = styled.div`
 export const Box = styled.div`
     background: #212D45;
     border-radius: 12px;
-    height: 144px;
+    height: 444px;
     padding: 24px;
     text-align: center;
     @media ${props => props.theme.breakpoints.lg} {

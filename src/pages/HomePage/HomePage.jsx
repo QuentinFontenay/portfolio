@@ -8,18 +8,22 @@ import Slider from '../../components/slider/Slider';
 import { Section } from '../../styles/GlobalComponents';
 import { TESTIMONIALS } from '../../constants/testimonials';
 import { projects } from '../../constants/projects';
+import { services } from '../../constants/services';
 
-const TITLE_PART = "Projet en cours";
+const TITLE_PART_PROJET_EN_COURS = "Projet en cours";
+const TITLE_PART_SERVICE = "Mes services"
 
 const HomePage = () => {
     return (
         <Layout>
-            <Section grid>
+            <HeroBanner/>
+            <HeroImage />
+            {/* <Section grid>
                 <HeroBanner />
                 <HeroImage />
-            </Section>
-            <MyService />
-            <Project titlePart={TITLE_PART} projects={projects.slice(0, 1)} />
+            </Section> */}
+            <MyService titlePart={TITLE_PART_SERVICE} data={services} />
+            <Project titlePart={TITLE_PART_PROJET_EN_COURS} projects={projects.slice(0, 1)} />
             <Slider testimonials={TESTIMONIALS.slice(2)} large />
         </Layout>
     );
