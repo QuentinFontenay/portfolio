@@ -58,4 +58,4 @@ Slider.propTypes = {
   large: PropTypes.bool,
 }
 
-export default Slider
+export default Slider;

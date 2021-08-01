@@ -1,4 +1,3 @@
-import { SiMaterialUi, SiReact, SiRedux, SiTailwindcss } from 'react-icons/si';
 import { BiTennisBall } from 'react-icons/bi';
 import { GiCommercialAirplane } from 'react-icons/gi';
 import { BsNewspaper } from 'react-icons/bs';

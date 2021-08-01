@@ -1,8 +1,8 @@
 import React from 'react';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './MyServiceStyles';
+import { Box, Boxes, BoxNum, BoxText } from './CardsStyles';
 
-const MyService = (props) => {
+const Cards = (props) => {
     const sizeElement = props.data.length;
     return (
         <Section>
@@ -24,4 +24,4 @@ const MyService = (props) => {
     )
 };
 
-export default MyService;
+export default Cards;
