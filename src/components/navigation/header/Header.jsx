@@ -14,7 +14,7 @@ const menuItems = [
 const socialItems = [
     { balise: <AiFillGithub size="3rem" />, link: "https://github.com/QuentinFontenay" },
     { balise: <AiFillLinkedin size="3rem" />, link: "https://www.linkedin.com/in/quentin-fontenay-907091156/" },
-    { balise: <AiFillInstagram size="3rem" />, link: "https://www.instagram.com/_nttrungg_/" }
+    { balise: <AiFillInstagram size="3rem" />, link: "https://www.instagram.com/fontenayquentin/" }
 ]
 const Header = () => (
     <Container>
