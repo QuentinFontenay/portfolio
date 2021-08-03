@@ -5,7 +5,8 @@ import {
     ContactPage,
     AboutMePage,
     ProjectPage,
-    ProcessPage
+    ProcessPage,
+    NotFoundPage
 } from "../pages/index";
 
 const Router = () => (
@@ -15,6 +16,7 @@ const Router = () => (
         <Route path="/about_me" component={AboutMePage} />
         <Route path="/projects" component={ProjectPage} />
         <Route path="/process" component={ProcessPage} />
+        <Route path="*" component={NotFoundPage} />
     </BrowserRouter>
 );
 
