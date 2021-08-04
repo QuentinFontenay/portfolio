@@ -22,7 +22,7 @@ function FormContact() {
         }
 
         try {
-            await fetch("https://formspree.io/mgenrlnr", requestOptions)
+            await fetch("***REMOVED***", requestOptions)
             setSubmitted(true)
         } catch (e) {
             setSubmitted(false)
@@ -42,10 +42,10 @@ function FormContact() {
             <ContactBox>
                 {submitted && (
                     <Recieved>
-                        <FaHandshake style={{ fontSize: "7em" }} />
+                        <FaHandshake style={{ fontSize: "7em", marginTop: "8rem" }} />
                         <p>
-                            Your message has been recieved. I will try to get back to you as
-                            soon as possible. Thanks
+                            Votre message a été recu avec succés. Je reviens vers vous le plus 
+                            rapidement possible. Merci de m'avoir contact
                         </p>
                     </Recieved>
                 )}

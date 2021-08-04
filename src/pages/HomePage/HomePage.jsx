@@ -4,7 +4,6 @@ import HeroImage from '../../components/heroImage/HeroImage';
 import { Layout } from '../../components/layout/LayoutContainer';
 import Project from '../../components/project/Project';
 import Slider from '../../components/slider/Slider';
-import { Section } from '../../styles/GlobalComponents';
 import { TESTIMONIALS } from '../../constants/testimonials';
 import { projects } from '../../constants/projects';
 import { services } from '../../constants/services';
