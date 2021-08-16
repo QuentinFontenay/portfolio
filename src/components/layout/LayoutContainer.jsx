@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../navigation/footer/Footer'
 import Header from '../navigation/header/Header'
-import { Container } from './LayoutStyles'
+import { Container, Copyright } from './LayoutStyles'
 
 export const Layout = ({children}) => {
   return (
@@ -11,6 +11,7 @@ export const Layout = ({children}) => {
       <main>{children}</main> 
       
       <Footer/>
+      <Copyright> © 2021 Quentin Fontenay </Copyright>
     </Container>
   )
 }
