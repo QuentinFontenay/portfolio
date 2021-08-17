@@ -1,97 +1,157 @@
 import styled from 'styled-components';
 
-export const ProjectWrapper = styled.div`
-  margin: 24px 0 40px;
-`
-export const GridContainer = styled.section`
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    padding: 3rem;
-    place-items: center;
-    column-gap: 2rem;
-    row-gap: 3rem;
-    @media ${(props) => props.theme.breakpoints.sm} {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
-        padding-bottom: 0;
-    }
-`;
-
-export const Img = styled.img`
-    width:100%;
-    height:100%;
-`;
-
-export const ProjectContent = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 170px 1fr;
-  grid-template-rows: 1fr;
+export const ProjectContainer = styled.div`
+  margin: 3rem 0;
+  width: 100%;
+  display: flex;
   align-items: center;
-`
-
-export const ProjectDetail = styled.div`
-  padding: 50px;
-  background-color: #1F398A;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
-  min-height: 350px;
-  grid-column: 1 / 3;
-  grid-row: 1;
-  h2 {
-    margin-bottom: 25px;
+  @media only screen and (max-width: 1410px) {
+    align-items: center;
   }
-  .project__detail-container {
-    width: 75%;
-    p {
-      line-height: 170%;
-      min-height: 250px;
+  @media only screen and (max-width: 900px) {
+    margin: 0 0 1em;
+  }
+`;
+
+export const ProjectCaptionContainer = styled.div`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  @media only screen and (max-width: 1410px) {
+    width: 100%;
+    padding: 3em 0;
+    max-width: 35em;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 1em 0;
+  }
+`;
+
+export const ProjectLinkContainer = styled.div`
+  margin: auto 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+`;
+
+export const ProjectLink = styled.a`
+  margin: 0 0 0 1em;
+  display: flex;
+  align-items: center;
+  color: #fff5ee;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  svg {
+    opacity: 0.75;
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+    :hover {
+      text-decoration: none;
+      transform: scale(1.1);
+      opacity: 1;
     }
   }
-  @media (max-width: 1000px) {
-    min-height: unset;
-    grid-column: 1 / 4;
-    grid-row: unset;
-    padding: 30px 30px;
-    .project__detail-container {
-      width: 100%;
-      p {
-        min-height: unset;
+  @media only screen and (max-width: 768px) {
+    margin: 0 0 0 1em;
+    * {
+      font-size: 1rem;
+    }
+  }
+`;
+
+export const ProjectTitleContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const CustomImage = styled.img`
+  display: block;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  border: transparent;
+  background-color: #121113;
+`;
+
+export const ProjectTitle = styled.h2`
+  margin: 0.25em 1em 0.25em 0;
+  color: ${({ theme: { palette } }) => palette?.font.primary};
+  font-family: ${({ theme: { typography } }) => typography?.heading.fontFamily};
+  font-size: ${({ theme: { typography } }) => typography?.heading.fontSize.primary};
+  font-weight: ${({ theme: { typography } }) => typography?.heading.fontWeight};
+  letter-spacing: ${({ theme: { typography } }) =>
+    typography?.heading.letterSpacing};
+  white-space: nowrap;
+  @media only screen and (max-width: 768px) {
+    font-size: ${({ theme: { typography } }) => typography?.heading.fontSize.secondary};
+    white-space: normal;
+  }
+  @media only screen and (max-width: 768px) {
+    white-space: nowrap;
+    align-content: center;
+  }
+  @media only screen and (max-width: 500px) {
+    margin: 0 auto 0 0;
+  }
+`;
+
+export const ProjectHorizontalLine = styled.div`
+width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 10em;
+  border-top: 1px solid #fff5ee;
+  opacity: 0.75;
+  @media only screen and (max-width: 500px) {
+    display: none;
+    margin: 0;
+  }
+`;
+
+export const PortfolioContent = styled.div`
+  min-height: 100%;
+  /* width: 75%; */
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  > div:nth-child(odd) {
+    flex-direction: row;
+    > div {
+      margin-left: 3em;
+    }
+  }
+  > div:nth-child(even) {
+    flex-direction: row-reverse;
+    > div {
+      margin-right: 3em;
+    }
+  }
+  @media only screen and (max-width: 1410px) {
+    > div:nth-child(odd) {
+      flex-direction: column;
+      > div {
+        margin-left: unset;
+      }
+    }
+    > div:nth-child(even) {
+      flex-direction: column;
+      > div {
+        margin-right: unset;
       }
     }
   }
-`
-
-export const ProjectLinks = styled.div`
-  display: flex;
-  align-items: center;
-  margin: 20px 0 0;
-  a {
-    margin-right: 10px;
+  @media only screen and (max-width: 768px) {
+    margin: 0 0 1em;
   }
-`
-
-export const ProjectPreview = styled.div`
-  grid-column: 2 / 4;
-  grid-row: 1;
-  position: relative;
-  right: -20px;
-  @media (max-width: 1000px) {
-    right: 0;
-    grid-column: 1 / 4;
-    margin-bottom: 20px;
-  }
-  iframe {
-    border-radius: 10px;
-  }
-`
-export const Tags = styled.div`
-  margin: 10px;
-  color: red;
-  display: flex;
-  font-size: 24px;
-  svg,
-  i {
-    margin-right: 25px;
-  }
-`
+`;

@@ -1,37 +1,66 @@
 import React from 'react';
 
-import { ProjectPreview, Tags, ProjectContent, ProjectDetail, ProjectWrapper, Img } from './ProjectStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { SiMaterialUi, SiMongodb, SiReact, SiTailwindcss } from 'react-icons/si';
+import { FiExternalLink } from 'react-icons/fi';
+import { AiFillGithub } from 'react-icons/ai';
+import LinkedImage from './LinkedImage';
 import PropTypes from 'prop-types'
+import {
+    ProjectContainer,
+    ProjectLink,
+    ProjectCaptionContainer,
+    ProjectHorizontalLine,
+    ProjectTitle,
+    ProjectTitleContainer,
+    PortfolioContent,
+    CustomImage
+} from "./ProjectStyles";
 
 const Project = (props) => (
     <Section nopadding id="projects">
         <SectionDivider />
         <SectionTitle main>{props.titlePart}</SectionTitle>
-        {
-            props.projects.map((index, project) => (
-                <ProjectWrapper>
-                    <ProjectContent key={index}>
-                        <ProjectDetail>
-                            <div className="project__detail-container">
-                                <h2>{project.title}</h2>
-                                <p>{project.description}</p>
-                            </div>
-                        </ProjectDetail>
-                        <ProjectPreview>
-                            <Img src={project.image}></Img>
-                            {/* <Tags>
-                            <SiReact fontSize="4rem" color="#79d8f7" />
-                            <SiTailwindcss fontSize="4rem" color="#07b0ce" />
-                            <SiMaterialUi fontSize="4rem" color="#00aaf7" />
-                            <SiMongodb fontSize="4rem" color="#00a540" />
-                        </Tags> */}
-                        </ProjectPreview>
-                    </ProjectContent>
-                </ProjectWrapper>
-            ))
-        }
+        <PortfolioContent>
+            {
+                props.projects.map((project, index) => (
+                    <ProjectContainer key={index}>
+                        <LinkedImage url={project.visit} maxWidth="35em" overlayText={project.title}>
+                            <CustomImage
+                                src={project.image}
+                                alt={project.title}
+                                height="280px"
+                                width="500px"
+                                loading="lazy"
+                            />
+                        </LinkedImage>
+                        <ProjectCaptionContainer>
+                            <ProjectTitleContainer>
+                                <ProjectTitle>{project.title}</ProjectTitle>
+                                <ProjectHorizontalLine />
+                                <ProjectLink
+                                    href={project.visit}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="website link"
+                                >
+                                    <FiExternalLink size="3rem" />
+                                </ProjectLink>
+                                <ProjectLink
+                                    href={project.source}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="code repository"
+                                >
+                                    <AiFillGithub size="3rem" />
+                                </ProjectLink>
+                            </ProjectTitleContainer>
+                            <p>{project.description}</p>
+                            {/* <ChipContainer>{project.tags}</ChipContainer> */}
+                        </ProjectCaptionContainer>
+                    </ProjectContainer>
+                ))
+            }
+        </PortfolioContent>
     </Section>
 );
 

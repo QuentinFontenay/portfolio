@@ -19,6 +19,10 @@ export const Boxes = styled.div`
         margin: 24px auto;
     }
 `
+export const Divider = styled.hr`
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin-bottom: 2rem;
+`;
 
 export const Box = styled.div`
     background: #17181d;
@@ -78,6 +82,16 @@ export const BoxText = styled.p`
     }
 `
 
+export const BoxSubText = styled.p`
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #C7C7C8;
+`
 export const Join = styled.div`
     display: flex;
     max-width: 1040px;
