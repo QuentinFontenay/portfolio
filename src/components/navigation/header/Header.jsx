@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillMediumSquare, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 import { Container, Home, Navbar, SocialContainer, NavLink, SocialIcons, Span } from './HeaderStyles';
 
@@ -8,13 +8,13 @@ const menuItems = [
     { title: "Accueil", link: "/" },
     { title: "Travaux", link: "projects" },
     { title: "Qui suis je ?", link: "about_me" },
-    { title: "Processus", link: "process" },
+    // { title: "Processus", link: "process" },
     { title: "Contact", link: "contact" }
 ]
 const socialItems = [
     { balise: <AiFillGithub size="3rem" />, link: "https://github.com/QuentinFontenay" },
     { balise: <AiFillLinkedin size="3rem" />, link: "https://www.linkedin.com/in/quentin-fontenay-907091156/" },
-    { balise: <AiFillInstagram size="3rem" />, link: "https://www.instagram.com/fontenayquentin/" }
+    { balise: <AiFillMediumSquare size="3rem" />, link: "https://www.instagram.com/fontenayquentin/" }
 ]
 const Header = () => (
     <Container>

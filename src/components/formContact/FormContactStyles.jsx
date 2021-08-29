@@ -29,6 +29,7 @@ export const BoxTitle1 = styled.span`
 `
 export const BoxTitle2 = styled.span`
     margin-top: 30px;
+    font-size: 60px;
 `
 
 export const BoxText = styled.p`

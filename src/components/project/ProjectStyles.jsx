@@ -14,8 +14,9 @@ export const ProjectContainer = styled.div`
 `;
 
 export const ProjectCaptionContainer = styled.div`
-  width: 50%;
+  width: 90%;
   display: flex;
+  padding: 0 0 14em 0;
   flex-direction: column;
   flex-grow: 1;
   @media only screen and (max-width: 1410px) {
@@ -64,6 +65,7 @@ export const ProjectLink = styled.a`
 
 export const ProjectTitleContainer = styled.div`
   display: flex;
+  margin-bottom: 1rem;
   flex-direction: row;
   align-items: center;
 `;
