@@ -8,6 +8,7 @@ import { TESTIMONIALS } from '../../constants/testimonials';
 import { projects } from '../../constants/projects';
 import { services } from '../../constants/services';
 import Box from '../../components/cards/Cards';
+import '../../components/loading/LoadingAnimation.css';
 
 const TITLE_PART_PROJET_EN_COURS = "Projet en cours";
 const TITLE_PART_SERVICE = "Mes services"
