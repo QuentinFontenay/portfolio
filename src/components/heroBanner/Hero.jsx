@@ -3,6 +3,8 @@ import React from 'react';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { LeftSection } from './HeroStyles';
 import Button from '../../styles/GlobalComponents/Button';
+import { CSSTransition, TransitionGroup } from "react-transition-group"
+import ReactTypingEffect from "react-typing-effect"
 
 
 const Hero = (props) => (
