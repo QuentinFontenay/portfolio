@@ -9,6 +9,7 @@ import { projects } from '../../constants/projects';
 import { services } from '../../constants/services';
 import Box from '../../components/cards/Cards';
 import '../../components/loading/LoadingAnimation.css';
+import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 
 const TITLE_PART_PROJET_EN_COURS = "Projet en cours";
 const TITLE_PART_SERVICE = "Mes services"
@@ -17,10 +18,9 @@ const HomePage = () => {
     return (
         <Layout>
             <HeroBanner/>
-            <HeroImage />
+            {/* <HeroImage /> */}
             {/* <Section grid>
                 <HeroBanner />
-                <HeroImage />
             </Section> */}
             <Box titlePart={TITLE_PART_SERVICE} data={services} />
             <Project titlePart={TITLE_PART_PROJET_EN_COURS} projects={projects.slice(0, 1)} />
