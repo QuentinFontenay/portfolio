@@ -10,6 +10,8 @@ import { services } from '../../constants/services';
 import Box from '../../components/cards/Cards';
 import '../../components/loading/LoadingAnimation.css';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import Scroll from '../../components/heroBanner/ScrollSvg';
+import '../../components/heroBanner/ScrollAnimation.css';
 
 const TITLE_PART_PROJET_EN_COURS = "Projet en cours";
 const TITLE_PART_SERVICE = "Mes services"
@@ -23,6 +25,7 @@ const HomePage = () => {
             <Section grid hero nopadding>
                 <HeroBanner />
                 <HeroImage />
+                {/* <Scroll /> */}
             </Section>
             <Box titlePart={TITLE_PART_SERVICE} data={services} />
             <Project titlePart={TITLE_PART_PROJET_EN_COURS} projects={projects.slice(0, 1)} />

@@ -9,7 +9,7 @@ const HeroImage = (props) => (
             flexDirection: 'row',
             marginTop: '28vh',
             // justifyContent: 'right',
-            marginLeft: '10vh',
+            marginLeft: '7vh',
             // alignItems: 'right',
             background: '#1F2024',
         }}>

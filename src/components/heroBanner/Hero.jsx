@@ -7,6 +7,7 @@ import Button from '../../styles/GlobalComponents/Button';
 import { CSSTransition, TransitionGroup } from "react-transition-group"
 import ReactTypingEffect from "react-typing-effect"
 import HeroImage from "../heroImage/HeroImage";
+import Scroll from "./ScrollSvg";
 
 const Hero = ({ props }) => {
 
@@ -26,6 +27,7 @@ const Hero = ({ props }) => {
                 A la recherche de ma première opportunité dans le développement web.
                 </SubText>
             </TextContainer>
+            <Scroll></Scroll>
         </Box>
     )
 };
