@@ -17,11 +17,13 @@ const TITLE_PART_SERVICE = "Mes services"
 const HomePage = () => {
     return (
         <Layout>
-            <HeroBanner/>
+            {/* <HeroBanner/> */}
             {/* <HeroImage /> */}
-            {/* <Section grid>
+            {/* <HeroImage /> */}
+            <Section grid hero nopadding>
                 <HeroBanner />
-            </Section> */}
+                <HeroImage />
+            </Section>
             <Box titlePart={TITLE_PART_SERVICE} data={services} />
             <Project titlePart={TITLE_PART_PROJET_EN_COURS} projects={projects.slice(0, 1)} />
             <Slider testimonials={TESTIMONIALS.slice(2)} large />

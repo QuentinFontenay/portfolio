@@ -1,47 +1,49 @@
 import styled from 'styled-components';
 
-export const Head = styled.header`
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: "#1F2024";
-  padding-left: 1rem;
-  padding-right: 1rem;
-`
-export const Container = styled.div`
-  padding-top: 90px;
-  padding-bottom: 90px;
-  margin: 0 auto;
-  width: 100%;
-  /* max-width: 1280px; */
-`
+export const Box = styled.div`
+    justify-content: space-around;
+    height: 70vh;
+    margin-top: 140px;
+    /* padding: 40px; */
+    /* padding-left: 40px; */
+    /* padding-right: 40px; */
+`;
+
+export const SubText = styled.p`
+  text-align: left;
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  color: white;
+
+`;
+
 export const HeaderText = styled.h1`
-  margin-bottom: 5px;
-  font-size: 80px;
-  /* max-width: 900px; */
-  @media ${(props) => props.theme.breakpoints.md} {
-    max-width: 700px;
+  text-align: left;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  color: white;
+  
+`;
+
+export const TextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    text-align: left;
+    max-width: auto;
+    p {
+        text-align: justify;
+        line-height: 1.5;
+        max-width: 550px;
     }
-    @media ${(props) => props.theme.breakpoints.sm} {
-    max-width: 700px;
+    h1 {
+        color: white;
+        /* margin-top: 2vh;
+        margin-left: 0;
+        padding-left: 0; */
     }
-`
-
-export const HeaderCopy = styled.h3`
-  max-width: 900px;
-  margin-bottom: 15px;
-`
-
-export const HeaderSubCopy = styled.h5`
-  font-size: 30px;
-  color: gray;
-  /* max-width: 480px; */
-  margin-bottom: 10px;
-`
-
-export const HeaderLink = styled.a`
-  color: yellow;
-  line-height: 44px;
-`
+`;
