@@ -1,8 +1,33 @@
-import { SiMaterialUi, SiReact, SiRedux, SiTailwindcss } from 'react-icons/si';
-
 export const services = [
-    { icon: <SiReact fontSize="5rem" color="#79d8f7" />, text: 'React.JS'},
-    { icon: <SiRedux fontSize="5rem" color="#7248b6" />, text: 'Redux', },
-    { icon: <SiTailwindcss fontSize="5rem" color="#07b0ce" />, text: 'TailwinCSS', },
-    { icon: <SiMaterialUi fontSize="5rem" color="#00aaf7" />, text: 'Material UI', },
-]
+    {
+        icon: process.env.PUBLIC_URL + '/images/wireframe.svg',
+        title: 'Site E-commerce',
+        desc: 'Besoin de développer votre site e-commerce afin de développer votre marque'
+    },
+    {
+        icon: process.env.PUBLIC_URL + '/images/setting.svg',
+        title: 'Hébergement web',
+        desc: 'You can access our platform online anywhere in the world'
+
+    },
+    {
+        icon: process.env.PUBLIC_URL + '/images/algorithm.svg',
+        title: 'Application web',
+        desc: 'Unlock our specual memebership card that return 5% cash back'
+    },
+    {
+        icon: process.env.PUBLIC_URL + '/images/algorithm.svg',
+        title: 'Application web',
+        desc: 'Unlock our specual memebership card that return 5% cash back'
+    },
+    {
+        icon: process.env.PUBLIC_URL + '/images/algorithm.svg',
+        title: 'Application web',
+        desc: 'Unlock our specual memebership card that return 5% cash back'
+    },
+    {
+        icon: process.env.PUBLIC_URL + '/images/algorithm.svg',
+        title: 'Application web',
+        desc: 'Unlock our specual memebership card that return 5% cash back'
+    },
+];

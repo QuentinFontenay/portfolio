@@ -1,22 +1,26 @@
 import React from 'react';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './CardsStyles';
+import { CardDesc, CardIcon, CardTitle, CardWrapper, Boxes } from './CardsStyles';
 
 const Cards = (props) => {
-    const sizeElement = props.data.length;
     return (
         <Section>
             <SectionDivider />
             <SectionTitle main>{props.titlePart}</SectionTitle>
 
-            <Boxes nbDisplay={sizeElement}>
+            <Boxes>
                 {
                     props.data.map((card, index) => (
-                        <Box key={index}>
-                            <BoxNum>{card.icon}</BoxNum>
+                        <CardWrapper>
+                            <CardIcon src={card.icon} />
+                            <CardTitle>{card.title}</CardTitle>
+                            <CardDesc>{card.desc}</CardDesc>
+                        </CardWrapper>
+                        // <Box key={index}>
+                        //     <BoxNum>{card.icon}</BoxNum>
 
-                            <BoxText>{card.text}</BoxText>
-                        </Box>
+                        //     <BoxText>{card.text}</BoxText>
+                        // </Box>
                     ))
                 }
             </Boxes>
