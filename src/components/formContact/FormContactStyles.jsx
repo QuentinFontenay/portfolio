@@ -1,10 +1,12 @@
 import styled from "styled-components"
 
 export const Box = styled.div`
-    background: #212D45;
+    background: #17181d;
     border-radius: 12px;
     height: 344px;
+    border-bottom: solid 0.5em;
     width: 100%;
+    border-bottom-color: green;
     padding: 24px;
     text-align: center;
     @media ${props => props.theme.breakpoints.lg} {
@@ -23,13 +25,15 @@ export const BoxTitle = styled.h2`
     color: white;
     text-align: center;
     font-weight: 400;
-`
-export const BoxTitle1 = styled.span`
     font-size: 2.125rem;
+
 `
-export const BoxTitle2 = styled.span`
-    margin-top: 30px;
-    font-size: 60px;
+
+export const BoxTitle2 = styled.h1`
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-top: 5vh;
 `
 
 export const BoxText = styled.p`
@@ -140,7 +144,7 @@ export const ContactForm = styled.form`
   top: -50px;
   right: -40px;
   padding: 50px 30px;
-  background: #000b1d;
+  background: #17181d;
   border-radius: 10px;
   min-height: 400px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
@@ -182,9 +186,9 @@ export const ContactForm = styled.form`
   }
   input,
   textarea {
-    padding: 10px 15px;
+    padding: 15px 15px;
     border-radius: 5px;
-    background-color: #0c1a34;
+    background-color: #1F2024;
     border: none;
     margin: 10px 0;
     width: 100%;

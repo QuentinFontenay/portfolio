@@ -153,32 +153,20 @@ export const SecondaryBtn = styled.button`
 
 export const ButtonFront = styled.button`
     margin: 0;
-    display: inline-block;
+    width: 50%;
     text-align: center;
-    line-height: inherit;
-    -webkit-text-decoration: none;
-    text-decoration: none;
-    color: white;
     background-color: #8578F9;
+    border-radius: 5px;
     border: 0;
-    border-radius: 45px;
-    font-size: 14px;
-    -webkit-letter-spacings: -0.15px;
-    -moz-letter-spacings: -0.15px;
-    -ms-letter-spacings: -0.15px;
+    font-size: 16px;
     padding: 12px 20px;
-    cursor: pointer;
+    cursor: ${({ disabled }) => disabled ? 'not-allowed' : 'pointer'};
     line-height: 1.2;
-    -webkit-transition: all 0.25s;
-    transition: all 0.25s;
     font-weight: 500;
     color: white;
-    &:disabled {
-      cursor: not-allowed;
-    }
-    &:hover {
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      background-color: "#9A999E";
+    opacity: ${({ disabled }) => disabled ? '.5' : '1'};
+    &:hover:enabled {
+      opacity: 0.8;
     }
 
   @media ${(props) => props.theme.breakpoints.md} {

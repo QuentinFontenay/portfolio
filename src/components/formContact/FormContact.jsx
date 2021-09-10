@@ -33,18 +33,15 @@ function FormContact() {
             <SectionDivider />
             <SectionTitle main>Formulaire de contact</SectionTitle>
             <Box>
-                <BoxTitle>
-                    <BoxTitle1>Status</BoxTitle1>
-                    <br />
-                    <BoxTitle2>Disponible</BoxTitle2>
-                </BoxTitle>
+                <BoxTitle>Status</BoxTitle>
+                <BoxTitle2>Disponible</BoxTitle2>
             </Box>
             <ContactBox>
                 {submitted && (
                     <Recieved>
                         <FaHandshake style={{ fontSize: "7em", marginTop: "8rem" }} />
                         <p>
-                            Votre message a été recu avec succés. Je reviens vers vous le plus 
+                            Votre message a été recu avec succés. Je reviens vers vous le plus
                             rapidement possible. Merci de m'avoir contact
                         </p>
                     </Recieved>
@@ -96,14 +93,14 @@ function FormContact() {
 
                         <Button
                             disabled={!isFormValid}
-                            className="submit__btn"
-                            as="button"
+                            // className="submit__btn"
+                            // as="button"
                             onClick={e => {
                                 e.preventDefault()
                                 sendEmail()
                             }}
                         >
-                            <FiSend /> Envoyer
+                            Envoyer
                         </Button>
                     </ContactForm>
                 ) : (
