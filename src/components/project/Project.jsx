@@ -13,7 +13,10 @@ import {
     ProjectTitle,
     ProjectTitleContainer,
     PortfolioContent,
-    CustomImage
+    CustomImage,
+    Boxes,
+    Box,
+    BoxText
 } from "./ProjectStyles";
 
 const Project = (props) => (
@@ -24,15 +27,15 @@ const Project = (props) => (
             {
                 props.projects.map((project, index) => (
                     <ProjectContainer key={index}>
-                        <LinkedImage url={project.visit} maxWidth="35em" overlayText={project.title}>
-                            <CustomImage
-                                src={project.image}
-                                alt={project.title}
-                                height="280px"
-                                width="500px"
-                                loading="lazy"
-                            />
-                        </LinkedImage>
+                        {/* <LinkedImage url={project.visit} maxWidth="35em" overlayText={project.title}> */}
+                        <CustomImage
+                            src={project.image}
+                            alt={project.title}
+                            height="280px"
+                            width="200px"
+                            loading="lazy"
+                        />
+                        {/* </LinkedImage> */}
                         <ProjectCaptionContainer>
                             <ProjectTitleContainer>
                                 <ProjectTitle>{project.title}</ProjectTitle>
@@ -55,6 +58,15 @@ const Project = (props) => (
                                 </ProjectLink>
                             </ProjectTitleContainer>
                             <p>{project.description}</p>
+                            <Boxes>
+                                {
+                                    project.tags.map((tag, index) => (
+                                        <Box key={index}>
+                                            <BoxText>{tag}</BoxText>
+                                        </Box>
+                                    ))
+                                }
+                            </Boxes>
                             {/* <ChipContainer>{project.tags}</ChipContainer> */}
                         </ProjectCaptionContainer>
                     </ProjectContainer>

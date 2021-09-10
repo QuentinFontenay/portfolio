@@ -8,7 +8,7 @@ const menuItems = [
     { title: "Accueil", link: "/" },
     { title: "Travaux", link: "projects" },
     { title: "Qui suis je ?", link: "about_me" },
-    // { title: "Processus", link: "process" },
+    { title: "Processus", link: "process" },
     { title: "Contact", link: "contact" }
 ]
 const socialItems = [
