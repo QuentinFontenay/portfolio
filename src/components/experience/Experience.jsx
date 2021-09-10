@@ -15,15 +15,15 @@ export const Experience = ({ experience, education }) => {
                     </Text>
                     {experience.map((item, key) => (
                         <CardDescription key={key}>
-                            <Text size="2rem" weight={600} padding="1rem 0 0 0">
+                            <Text size="2rem" weight={600} padding="1rem 0 1rem 0">
                                 {item.role}
                             </Text>
 
-                            <Text size="1rem">
-                                <FaCalendarAlt size="2rem" style={{ margin: '0 0.5rem 0.2rem 0' }} />
+                            <Text size="1.3rem">
+                                <FaCalendarAlt size="2rem" style={{ margin: '0 0.5rem -0.4rem 0' }} />
                                 {item.period} | {item.company}
                             </Text>
-                            <Text padding="0.5rem 0" weight={300}>
+                            <Text padding="1rem 0" weight={300}>
                                 {item.description}
                             </Text>
                         </CardDescription>
@@ -35,15 +35,15 @@ export const Experience = ({ experience, education }) => {
                     </Text>
                     {education.map((item, key) => (
                         <CardDescription key={key}>
-                            <Text size="1rem" weight={600} padding="1rem 0 0 0">
+                            <Text size="2rem" weight={600} padding="1rem 0 1rem 0">
                                 {item.role}
                             </Text>
 
-                            <Text size="0.8rem">
-                                <FaCalendarAlt size="2rem" style={{ margin: '0 0.5rem 0.2rem 0' }} />
+                            <Text size="1.3rem">
+                                <FaCalendarAlt size="2rem" style={{ margin: '0 0.5rem -0.4rem 0' }} />
                                 {item.period} | {item.company}
                             </Text>
-                            <Text padding="0.5rem 0" weight={300}>
+                            <Text padding="1rem 0" weight={300}>
                                 {item.description}
                             </Text>
                         </CardDescription>

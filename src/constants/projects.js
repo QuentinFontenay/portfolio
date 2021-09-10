@@ -6,7 +6,7 @@ export const projects = [
     {
         title: 'viluShop',
         description: "Using React and CSS libraries such as TailwindCSS, Material UI to make an E-commerce web app. User can search, choose products into cart and pay via fake Paypal API.",
-        image: '/images/vilushop.JPG',
+        image: process.env.PUBLIC_URL + '/images/image_projet.png',
         tags: [
             <SiReact fontSize="4rem" color="#79d8f7" />, 
             <SiTailwindcss fontSize="4rem" color="#07b0ce" />, 
