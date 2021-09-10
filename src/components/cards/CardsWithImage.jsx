@@ -1,8 +1,8 @@
 import React from 'react';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, BoxNum, BoxText, Boxes } from './CardsWithImageStyles';
+import { CardDesc, CardIcon, CardTitle, CardWrapper, Boxes } from './CardsWithImageStyles';
 
-const Cards = (props) => {
+const CardsWithImage = (props) => {
     return (
         <Section>
             <SectionDivider />
@@ -11,11 +11,11 @@ const Cards = (props) => {
             <Boxes>
                 {
                     props.data.map((card, index) => (
-                        <Box key={index}>
-                            <BoxNum>{card.icon}</BoxNum>
-
-                            <BoxText>{card.text}</BoxText>
-                        </Box>
+                        <CardWrapper>
+                            <CardIcon src={card.icon} />
+                            <CardTitle>{card.title}</CardTitle>
+                            <CardDesc>{card.desc}</CardDesc>
+                        </CardWrapper>
                     ))
                 }
             </Boxes>
@@ -23,4 +23,4 @@ const Cards = (props) => {
     )
 };
 
-export default Cards;
+export default CardsWithImage;

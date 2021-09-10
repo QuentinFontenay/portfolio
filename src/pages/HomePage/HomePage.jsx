@@ -7,10 +7,9 @@ import Slider from '../../components/slider/Slider';
 import { TESTIMONIALS } from '../../constants/testimonials';
 import { projects } from '../../constants/projects';
 import { services } from '../../constants/services';
-import Box from '../../components/cards/Cards';
+import CardsWithImage from '../../components/cards/CardsWithImage';
 import '../../components/loading/LoadingAnimation.css';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Scroll from '../../components/heroBanner/ScrollSvg';
 import '../../components/heroBanner/ScrollAnimation.css';
 
 const TITLE_PART_PROJET_EN_COURS = "Projet en cours";
@@ -23,7 +22,7 @@ const HomePage = () => {
                 <HeroBanner />
                 <HeroImage />
             </Section>
-            <Box titlePart={TITLE_PART_SERVICE} nb data={services} />
+            <CardsWithImage titlePart={TITLE_PART_SERVICE} nb data={services} />
             <Project titlePart={TITLE_PART_PROJET_EN_COURS} projects={projects.slice(0, 1)} />
             <Slider testimonials={TESTIMONIALS.slice(2)} large />
         </Layout>

@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutMe from '../../components/aboutMe/AboutMe';
-import Box from '../../components/cards/Cards';
+import Cards from '../../components/cards/Cards';
 import Experience from '../../components/experience/Experience';
 import { Layout } from '../../components/layout/LayoutContainer';
 import Skill from '../../components/skill/Skill';
@@ -16,7 +16,7 @@ const AboutMePage = () => {
             <AboutMe />
             <Experience experience={experiences} education={education} />
             <Skill />
-            <Box titlePart={TITLE_PART_PASSIONS} data={passions} />
+            <Cards titlePart={TITLE_PART_PASSIONS} data={passions} />
         </Layout>
     );
 };
