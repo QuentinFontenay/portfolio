@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Box = styled.div`
     justify-content: space-around;
     height: 70vh;
-    margin-top: 140px;
+    margin-top: 19vh;
     /* padding: 40px; */
     /* padding-left: 40px; */
     /* padding-right: 40px; */

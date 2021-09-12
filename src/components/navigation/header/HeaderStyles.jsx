@@ -19,6 +19,7 @@ export const Container = styled.div`
 
 export const Span = styled.span`
     font-size: 2rem;
+    color: white;
 `;
 
 export const Home = styled.div`
@@ -32,7 +33,7 @@ export const Home = styled.div`
 `;
 
 export const Navbar = styled.div`
-    grid-area: 1 / 2 / 2 / 4;
+    grid-area: 1 / 2 / 2 / 3;
     display: flex;
     justify-content: space-around;
     @media ${(props) => props.theme.breakpoints.sm} {

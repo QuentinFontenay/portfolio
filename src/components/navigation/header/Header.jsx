@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { AiFillGithub, AiFillMediumSquare, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
 import { Container, Home, Navbar, SocialContainer, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 const menuItems = [
@@ -19,10 +18,8 @@ const socialItems = [
 const Header = () => (
     <Container>
         <Home>
-            <Link to="/">
-                <a style={{ display: 'flex', alignItems: 'center', color: 'white', marginBottom: '20px' }}>
-                    <DiCssdeck size="3rem" /> <Span>Fontenay Quentin</Span>
-                </a>
+            <Link to="/" style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
+                <Span>Fontenay Quentin</Span>
             </Link>
         </Home>
 
@@ -35,13 +32,13 @@ const Header = () => (
                 </li>
             ))}
         </Navbar>
-        <SocialContainer>
+        {/* <SocialContainer>
             {socialItems.map(item => (
                 <SocialIcons href={item.link}>
                     {item.balise}
                 </SocialIcons>
             ))}
-        </SocialContainer>
+        </SocialContainer> */}
     </Container>
 );
 
