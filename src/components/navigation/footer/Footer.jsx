@@ -36,6 +36,7 @@ const Footer = () => {
                         <AiFillMediumSquare size="3.5rem" />
                     </SocialIcons>
                 </SocialContainer>
+                <p style={{ marginBottom: '1rem' }}>© 2021 Quentin Fontenay</p>
             </SocialIconsContainer>
         </FooterWrapper>
     );

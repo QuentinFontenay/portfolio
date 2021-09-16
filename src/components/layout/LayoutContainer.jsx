@@ -10,7 +10,7 @@ export const Layout = ({ children }) => {
 
       <main>{children}</main>
       <Footer />
-      <Copyright> © 2021 Quentin Fontenay </Copyright>
+      {/* <Copyright> © 2021 Quentin Fontenay </Copyright> */}
     </Container>
   )
 }

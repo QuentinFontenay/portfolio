@@ -1,11 +1,12 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.section`
-	width: calc(100vw - 96px);
-	max-width: 1040px;
+	/* width: calc(100vw - 96px); */
+	max-width: 1840px;
 	padding: 6rem 44px 0px;
-	margin: 1rem auto;
+	/* margin: 1rem auto; */
 	box-sizing: content-box;
+	background-color: #17181D;
 `
 
 export const LinkItem = styled.a`
@@ -23,7 +24,7 @@ export const LinkItem = styled.a`
 `
 
 export const SocialIconsContainer = styled.div`
-	max-width: 1040px;
+	max-width: 1840px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -50,6 +51,7 @@ export const Slogan = styled.p`
 export const SocialContainer = styled.div`
 	display: flex;
   	align-items: center;
+	margin: 1rem auto;
 `
 
 
