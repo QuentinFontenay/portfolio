@@ -7,7 +7,8 @@ import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTi
 const Footer = () => {
     return (
         <FooterWrapper>
-            <LinkList>
+
+            {/* <LinkList>
                 <LinkColumn>
                     <LinkTitle>Téléphone</LinkTitle>
 
@@ -19,24 +20,20 @@ const Footer = () => {
 
                     <LinkItem href="mailto:quentin.fontenay@hotmail.com">quentin.fontenay@hotmail.com</LinkItem>
                 </LinkColumn>
-            </LinkList>
+            </LinkList> */}
 
             <SocialIconsContainer>
-                <CompanyContainer>
-                    <Slogan>Make it better</Slogan>
-                </CompanyContainer>
-
                 <SocialContainer>
                     <SocialIcons href="https://github.com/QuentinFontenay">
-                        <AiFillGithub size="3rem" />
+                        <AiFillGithub size="3.5rem" />
                     </SocialIcons>
 
                     <SocialIcons href="https://www.linkedin.com/in/quentin-fontenay-907091156/">
-                        <AiFillLinkedin size="3rem" />
+                        <AiFillLinkedin size="3.5rem" />
                     </SocialIcons>
 
                     <SocialIcons href="https://www.instagram.com/_nttrungg_/">
-                        <AiFillMediumSquare size="3rem" />
+                        <AiFillMediumSquare size="3.5rem" />
                     </SocialIcons>
                 </SocialContainer>
             </SocialIconsContainer>

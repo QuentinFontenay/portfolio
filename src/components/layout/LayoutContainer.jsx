@@ -3,14 +3,13 @@ import Footer from '../navigation/footer/Footer'
 import Header from '../navigation/header/Header'
 import { Container, Copyright } from './LayoutStyles'
 
-export const Layout = ({children}) => {
+export const Layout = ({ children }) => {
   return (
     <Container>
-      <Header/>
+      <Header />
 
-      <main>{children}</main> 
-      
-      <Footer/>
+      <main>{children}</main>
+      <Footer />
       <Copyright> © 2021 Quentin Fontenay </Copyright>
     </Container>
   )

@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const FooterWrapper = styled.section`
 	width: calc(100vw - 96px);
 	max-width: 1040px;
-	padding: 2rem 48px 40px;
+	padding: 6rem 44px 0px;
 	margin: 1rem auto;
 	box-sizing: content-box;
 `
@@ -26,6 +26,8 @@ export const SocialIconsContainer = styled.div`
 	max-width: 1040px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
 `
 
 export const CompanyContainer = styled.div`
