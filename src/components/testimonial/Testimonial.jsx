@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
-import { TestimonialText, TestimonialsContainer, QuoteIconContainer, Name, Position, Image, Name2, Title } from './SliderStyles'
+import { TestimonialText, TestimonialsContainer, QuoteIconContainer, Name, Position, Image, Name2, Title } from './TestimonialStyles'
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { FaQuoteRight } from 'react-icons/fa';
 
-const Slider = ({ testimonials }) => {
+const Testimonial = ({ testimonials }) => {
   // const [slideIndex, setSlideIndex] = useState(0)
 
   return (
@@ -37,4 +37,4 @@ const Slider = ({ testimonials }) => {
   )
 }
 
-export default Slider;
+export default Testimonial;
