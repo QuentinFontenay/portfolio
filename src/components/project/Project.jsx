@@ -3,7 +3,6 @@ import React from 'react';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { FiExternalLink } from 'react-icons/fi';
 import { AiFillGithub } from 'react-icons/ai';
-import LinkedImage from './LinkedImage';
 import PropTypes from 'prop-types'
 import {
     ProjectContainer,
@@ -20,14 +19,13 @@ import {
 } from "./ProjectStyles";
 
 const Project = (props) => (
-    <Section nopadding id="projects">
+    <Section id="projects">
         <SectionDivider />
         <SectionTitle main>{props.titlePart}</SectionTitle>
         <PortfolioContent>
             {
                 props.projects.map((project, index) => (
                     <ProjectContainer key={index}>
-                        {/* <LinkedImage url={project.visit} maxWidth="35em" overlayText={project.title}> */}
                         <CustomImage
                             src={project.image}
                             alt={project.title}
@@ -35,7 +33,6 @@ const Project = (props) => (
                             width="200px"
                             loading="lazy"
                         />
-                        {/* </LinkedImage> */}
                         <ProjectCaptionContainer>
                             <ProjectTitleContainer>
                                 <ProjectTitle>{project.title}</ProjectTitle>
