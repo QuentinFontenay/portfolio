@@ -13,7 +13,6 @@ export const CardWrapper = styled.div`
     &:hover {
         transform: scale(1.05);
         transition: all 0.2s ease-in-out;
-        cursor: pointer;
     }
 `
 
