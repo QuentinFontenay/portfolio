@@ -64,3 +64,8 @@ export const CardInfo = styled.div`
     padding-top: 1rem;
   }
 `;
+
+export const BlocButton = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`

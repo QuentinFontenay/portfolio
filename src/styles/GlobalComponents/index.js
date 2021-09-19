@@ -153,7 +153,7 @@ export const SecondaryBtn = styled.button`
 
 export const ButtonFront = styled.button`
     margin: 0;
-    width: 50%;
+    width: ${({ alt }) => alt ? '26%' : '50%'};
     text-align: center;
     background-color: #8578F9;
     border-radius: 5px;

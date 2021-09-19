@@ -6,7 +6,7 @@ export const projects = [
     {
         title: 'viluShop',
         description: "Using React and CSS libraries such as TailwindCSS, Material UI to make an E-commerce web app. User can search, choose products into cart and pay via fake Paypal API.",
-        image: process.env.PUBLIC_URL + '/images/image_projet.png',
+        image: process.env.PUBLIC_URL + '/images/projects/image_projet.png',
         // tags: ["react", "styled-component", "node-js"],
         tags: [
             <SiReact fontSize="3rem" color="#79d8f7" />,
@@ -21,7 +21,7 @@ export const projects = [
     {
         title: 'Skisra',
         description: "jGram - a clone social network based on Instagram. Users can upload and interact with posts, follow/unfollow other users, edit profile and realtime message.",
-        image: process.env.PUBLIC_URL + '/images/image-projet3.png',
+        image: process.env.PUBLIC_URL + '/images/projects/image-projet3.png',
         tags: [
             <SiShopify fontSize="3rem" />,
             <SiGoogleads fontSize="3rem" />,
@@ -35,7 +35,7 @@ export const projects = [
     {
         title: 'Skyreast',
         description: "This website using Nextjs and CSS3 in order to search and check general information about every countries around the world based on a free updated API.",
-        image: process.env.PUBLIC_URL + '/images/image-projet2.png',
+        image: process.env.PUBLIC_URL + '/images/projects/image-projet2.png',
         tags: [
             <SiShopify fontSize="3rem" />,
             <SiGoogleads fontSize="3rem" />,
