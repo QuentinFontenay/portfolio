@@ -72,9 +72,9 @@ export const Next = styled.button`
 export const GroupButton = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   padding-bottom: 5vh;
+  justify-content: center;
+  align-items: center;
 `
 
 export const BlockText = styled.div`
@@ -96,4 +96,24 @@ export const ArrowDown = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
+`
+
+export const CarouselDot = styled.div`
+  /* top: 50%; */
+  /* transform: translateX(-50%); */
+  .dot {
+        background: #ccc;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 2rem;
+        margin: 0 0.3rem 0;
+        outline: none;
+        transform: scale(0.5);
+        width: 2rem;
+
+        &.active {
+            background: #8579f9;
+        }
+    }
 `

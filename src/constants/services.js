@@ -11,12 +11,12 @@ export const services = [
 
     },
     {
-        icon: process.env.PUBLIC_URL + '/images/website-designing.svg',
+        icon: process.env.PUBLIC_URL + '/images/collaborate.svg',
         title: 'Développement web',
         desc: 'Création de site web | Application sur-mesure repondant aux besoins des clients'
     },
     {
-        icon: process.env.PUBLIC_URL + '/images/web-designing.svg',
+        icon: process.env.PUBLIC_URL + '/images/website-designing.svg',
         title: 'UI/UX design',
         desc: 'Logos, templates Web, plaquettes publicitaires, cartes de visite, newsletters...'
     },

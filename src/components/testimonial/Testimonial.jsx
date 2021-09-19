@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { TestimonialText, TestimonialsContainer, QuoteIconContainer, Image, Name2, Title, Next, Previous, GroupButton, BlockText, ArrowDown } from './TestimonialStyles'
+import React, { useState, useEffect } from 'react'
+import { TestimonialText, TestimonialsContainer, QuoteIconContainer, Image, Name2, Title, Next, Previous, GroupButton, BlockText, ArrowDown, CarouselDot } from './TestimonialStyles'
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { FaQuoteRight } from 'react-icons/fa';
 import { FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi';
@@ -7,6 +7,15 @@ import { FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi';
 const Testimonial = ({ testimonials }) => {
   const [slideIndex, setSlideIndex] = useState(1);
   const { name, avatar, position, text, id } = testimonials[slideIndex]
+  const MINUTE_MS = 8000;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextTestimonials();
+    }, MINUTE_MS);
+
+    return () => clearInterval(interval);
+  }, [])
 
   const checkTestimonials = (number) => {
     if (number > testimonials.length - 1) {
@@ -33,6 +42,9 @@ const Testimonial = ({ testimonials }) => {
       let newIndex = index - 1;
       return checkTestimonials(newIndex)
     });
+  }
+  const handleDotClick = (index) => {
+    setSlideIndex(index);
   }
   return (
     <Section nopadding>
@@ -63,12 +75,15 @@ const Testimonial = ({ testimonials }) => {
         </div>
       </TestimonialsContainer>
       <GroupButton>
-        <Previous onClick={previousTestimonials}>
-          <FiArrowLeftCircle size="3rem"></FiArrowLeftCircle>
-        </Previous>
-        <Next onClick={nextTestimonials}>
-          <FiArrowRightCircle size="3rem"></FiArrowRightCircle>
-        </Next>
+        <CarouselDot>
+          {testimonials.slice(0, testimonials.length).map((pos, i) => (
+            <button
+              key={i}
+              onClick={() => handleDotClick(i)}
+              className={i === slideIndex ? 'dot active' : 'dot'}
+            />
+          ))}
+        </CarouselDot>
       </GroupButton>
     </Section>
   )

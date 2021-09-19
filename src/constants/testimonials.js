@@ -18,10 +18,11 @@ export const TESTIMONIALS = [{
     id: 2345678,
 },
 // {
-//     quote: '“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”',
-//     name: 'John Tarkpor',
-//     title: 'Junior Front-end Developer',
-//     photo: profileImg2,
+//     text: '“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”',
+//     name: 'Guillaume Orain',
+//     position: 'Lead Symfony Developpeur',
+//     company: 'SDVI',
+//     avatar: profileImg2,
 //     id: 45678910,
 // },
 // {
