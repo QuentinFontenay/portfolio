@@ -15,9 +15,9 @@ export const Avatar = styled.span`
 `;
 
 export const TestimonialText = styled.p`
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 2em;
-  margin-top: 2em;
+  margin-top: 1.2em;
 `;
 
 export const Name = styled.h3`
@@ -45,6 +45,7 @@ export const Name2 = styled.p`
   font-weight: 700;
   font-size: '1.55rem';
   line-height: '2.375rem';
+  margin-top: 3rem;
   @media(max-width: 1050px) {
     font-size: 0.9375rem;
     line-height: 1.25rem;
@@ -55,4 +56,44 @@ export const Title = styled.span`
   font-weight: 500;
   color: #B9B9CE;
   margin-left: 0.625rem;
+`
+
+export const Previous = styled.button`
+  font-weight: 500;
+  color: #B9B9CE;
+`
+
+export const Next = styled.button`
+  font-weight: 500;
+  color: #4949cf;
+  margin-left: 2rem;
+`
+
+export const GroupButton = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5vh;
+`
+
+export const BlockText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #17181D;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+`
+
+export const ArrowDown = styled.div`
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 20px solid #17181D;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
 `

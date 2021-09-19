@@ -9,13 +9,14 @@ export const TESTIMONIALS = [{
     avatar: profileImg1,
     id: 1234567,
 },
-// {
-//     quote: '“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”',
-//     name: 'John Tarkpor',
-//     title: 'Junior Front-end Developer',
-//     photo: profileImg2,
-//     id: 2345678,
-// },
+{
+    text: '“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”',
+    name: 'John Tarkpor',
+    position: 'Junior Front-end Developer',
+    company: 'SDVI',
+    avatar: profileImg2,
+    id: 2345678,
+},
 // {
 //     quote: '“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”',
 //     name: 'John Tarkpor',

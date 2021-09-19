@@ -24,7 +24,7 @@ const HomePage = () => {
             </Section>
             <CardsWithImage titlePart={TITLE_PART_SERVICE} nb data={services} />
             <Project titlePart={TITLE_PART_PROJET_EN_COURS} projects={projects.slice(0, 1)} />
-            <Testimonial testimonials={TESTIMONIALS.slice(0, 1)} />
+            <Testimonial testimonials={TESTIMONIALS} />
         </Layout>
     );
 };
