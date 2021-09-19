@@ -37,7 +37,6 @@ const useForm = () => {
     const handleInput = e => {
         e.preventDefault()
         const { value, name } = e.target
-        // validate
         validateInput(name, value)
         setFormData({ ...formData, [name]: value })
     }

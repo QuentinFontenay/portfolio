@@ -42,7 +42,7 @@ function FormContact() {
                         <FaHandshake style={{ fontSize: "7em", marginTop: "8rem" }} />
                         <p>
                             Votre message a été recu avec succés. Je reviens vers vous le plus
-                            rapidement possible. Merci de m'avoir contact
+                            rapidement possible. Merci de m'avoir contactez
                         </p>
                     </Recieved>
                 )}
@@ -93,8 +93,6 @@ function FormContact() {
 
                         <Button
                             disabled={!isFormValid}
-                            // className="submit__btn"
-                            // as="button"
                             onClick={e => {
                                 e.preventDefault()
                                 sendEmail()

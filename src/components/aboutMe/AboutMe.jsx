@@ -36,7 +36,7 @@ const AboutMe = () => (
                 </Text>
                 <BlocButton>
                     <Button alt>
-                        <a href={process.env.PUBLIC_URL + 'cv.pdf'} download="cv.pdf" style={{ color: 'white' }}>
+                        <a href={process.env.PUBLIC_URL + '/pdf/cv.pdf'} download="cv.pdf" style={{ color: 'white' }}>
                             Télécharger mon CV
                         </a>
                     </Button>
