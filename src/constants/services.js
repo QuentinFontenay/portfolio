@@ -5,18 +5,18 @@ export const services = [
         desc: 'Landing page, site vitrine, e-commerce'
     },
     {
-        icon: process.env.PUBLIC_URL + '/images/setting.svg',
-        title: 'Hébergement web',
-        desc: "Besoin d'héberger votre site afin de le rendre accesible au plus grand nombre"
+        icon: process.env.PUBLIC_URL + '/images/concept-of-seo-ranking.svg',
+        title: 'Réferencement naturel',
+        desc: "Affichage sémantique des informations, des pages propres pour un référencement optimal."
 
     },
     {
-        icon: process.env.PUBLIC_URL + '/images/algorithm.svg',
+        icon: process.env.PUBLIC_URL + '/images/website-designing.svg',
         title: 'Développement web',
         desc: 'Création de site web | Application sur-mesure repondant aux besoins des clients'
     },
     {
-        icon: process.env.PUBLIC_URL + '/images/algorithm.svg',
+        icon: process.env.PUBLIC_URL + '/images/web-designing.svg',
         title: 'UI/UX design',
         desc: 'Logos, templates Web, plaquettes publicitaires, cartes de visite, newsletters...'
     },
