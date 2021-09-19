@@ -1,5 +1,5 @@
 import { FaSass } from 'react-icons/fa';
-import { SiCss3, SiMaterialUi, SiMongodb, SiReact, SiRedux, SiSocketDotIo, SiStyledComponents, SiTailwindcss } from 'react-icons/si';
+import { SiCss3, SiMaterialUi, SiReact, SiRedux, SiStyledComponents, SiShopify, SiGoogleads, SiFacebook } from 'react-icons/si';
 
 
 export const projects = [
@@ -9,9 +9,9 @@ export const projects = [
         image: process.env.PUBLIC_URL + '/images/image_projet.png',
         // tags: ["react", "styled-component", "node-js"],
         tags: [
-            <SiReact fontSize="3rem" color="#79d8f7" />, 
-            <SiStyledComponents fontSize="3rem" color="#7248b6" />, 
-            <SiCss3 fontSize="3rem" color="#07b0ce" />, 
+            <SiReact fontSize="3rem" color="#79d8f7" />,
+            <SiStyledComponents fontSize="3rem" color="#7248b6" />,
+            <SiCss3 fontSize="3rem" color="#07b0ce" />,
         ],
         source: 'https://github.com/ttnguyen115/vilushopDemo',
         visit: 'https://vilushop.herokuapp.com/',
@@ -19,30 +19,30 @@ export const projects = [
     },
 
     {
-        title: 'jGram',
-        description:"jGram - a clone social network based on Instagram. Users can upload and interact with posts, follow/unfollow other users, edit profile and realtime message.",
-        image: '/images/jgram.JPG',
+        title: 'Skisra',
+        description: "jGram - a clone social network based on Instagram. Users can upload and interact with posts, follow/unfollow other users, edit profile and realtime message.",
+        image: process.env.PUBLIC_URL + '/images/image-projet3.png',
         tags: [
-            <SiReact fontSize="3rem" color="#79d8f7" />, 
-            <SiRedux fontSize="3rem" color="#7248b6" />, 
-            <SiTailwindcss fontSize="3rem" color="#07b0ce" />, 
-            <SiSocketDotIo fontSize="3rem" />
+            <SiShopify fontSize="3rem" />,
+            <SiGoogleads fontSize="3rem" />,
+            <SiFacebook fontSize="3rem" />
         ],
-        source: 'https://github.com/ttnguyen115/jGram_v2',
-        visit: 'http://jgramv2.herokuapp.com/',
+        source: 'https://github.com/QuentinFontenay',
+        visit: 'https://www.skisra.com/',
         id: 1,
     },
 
     {
-        title: 'CountryFlix',
+        title: 'Skyreast',
         description: "This website using Nextjs and CSS3 in order to search and check general information about every countries around the world based on a free updated API.",
-        image: '/images/countryflix.JPG',
+        image: process.env.PUBLIC_URL + '/images/image-projet2.png',
         tags: [
-            <span className="iconify" data-icon="logos-nextjs" data-inline="false" style={{fontSize: '4rem', filter: 'invert(1)'}}></span>, 
-            <SiCss3 fontSize="4rem" color="#2449d8" />
+            <SiShopify fontSize="3rem" />,
+            <SiGoogleads fontSize="3rem" />,
+            <SiFacebook fontSize="3rem" />
         ],
-        source: 'https://github.com/ttnguyen115/CountryFlix',
-        visit: 'https://countryflix.vercel.app/',
+        source: 'https://github.com/QuentinFontenay',
+        visit: 'https://www.skyreast.com/',
         id: 2,
     },
 
@@ -51,9 +51,9 @@ export const projects = [
         description: "Based on everyday updated free API from IMDb, users can search, filter, watch trailers and check out detail information about newest movies, TV series.",
         image: '/images/jettflix.JPG',
         tags: [
-            <SiReact fontSize="4rem" color="#79d8f7" />, 
-            <SiRedux fontSize="4rem" color="#7248b6" />, 
-            <FaSass fontSize="4rem" color="#c36291" />, 
+            <SiReact fontSize="4rem" color="#79d8f7" />,
+            <SiRedux fontSize="4rem" color="#7248b6" />,
+            <FaSass fontSize="4rem" color="#c36291" />,
             <SiMaterialUi fontSize="4rem" color="#00aaf7" />
         ],
         source: 'https://github.com/ttnguyen115/jettflix',
@@ -61,7 +61,7 @@ export const projects = [
         id: 3,
     },
 ];
-  
+
 export const TimeLineData = [
     { year: '7/2018', text: 'Graduated from high school.', },
     { year: '11/2018', text: 'Started learning computer programming in Seneca College (Canada).', },
