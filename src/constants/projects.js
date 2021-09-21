@@ -4,17 +4,16 @@ import { SiCss3, SiMaterialUi, SiReact, SiRedux, SiStyledComponents, SiShopify, 
 
 export const projects = [
     {
-        title: 'viluShop',
-        description: "Using React and CSS libraries such as TailwindCSS, Material UI to make an E-commerce web app. User can search, choose products into cart and pay via fake Paypal API.",
-        image: process.env.PUBLIC_URL + '/images/projects/image_projet.png',
-        // tags: ["react", "styled-component", "node-js"],
+        title: 'Troc',
+        description: "Application destiné au particulier souhaitant échanger un objet contre un autre objet équivalent à la même valeur",
+        image: process.env.PUBLIC_URL + '/images/projects/image-projet4.png',
         tags: [
             <SiReact fontSize="3rem" color="#79d8f7" />,
             <SiStyledComponents fontSize="3rem" color="#7248b6" />,
             <SiCss3 fontSize="3rem" color="#07b0ce" />,
         ],
-        source: 'https://github.com/ttnguyen115/vilushopDemo',
-        visit: 'https://vilushop.herokuapp.com/',
+        source: 'https://github.com/QuentinFontenay',
+        visit: 'https://www.google.fr/',
         id: 0,
     },
 
