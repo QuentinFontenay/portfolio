@@ -9,7 +9,7 @@ import { projects } from '../../constants/projects';
 import { services } from '../../constants/services';
 import CardsWithImage from '../../components/cards/CardsWithImage';
 import '../../components/loading/LoadingAnimation.css';
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section } from '../../styles/GlobalComponents';
 import '../../components/heroBanner/ScrollAnimation.css';
 
 const TITLE_PART_PROJET_EN_COURS = "Projet en cours";

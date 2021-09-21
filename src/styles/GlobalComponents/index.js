@@ -23,15 +23,15 @@ export const Section = styled.section`
 
 export const SectionTitle = styled.h2`
   font-weight: 800;
-  font-size: ${(props) => props.main ? '65px' : '56px'};
-  line-height: ${(props) => props.main ? '72px' : '56px'};
+  font-size: ${(props) => props.main ? '55px' : '55px'};
+  line-height: ${(props) => props.main ? '72px' : '72px'};
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 16px;
-  padding: ${(props) => props.main ? '58px 0 16px' : '0'};
+  /* margin-bottom: 10px; */
+  padding: ${(props) => props.main ? '58px 0 16px' : '0 0 16px 0'};
   @media ${props => props.theme.breakpoints.md}{
     font-size: ${(props) => props.main ? '56px' : '48px'};
     line-height: ${(props) => props.main ? '56px' : '48px'};
@@ -70,13 +70,12 @@ export const SectionText = styled.p`
 `
 
 export const SectionDivider = styled.div`
-  width: 64px;
-  height: 6px;
+  width: 84px;
+  height: 8px;
   border-radius: 10px;
   background-color: #fff;
-  background: ${(props) => props.colorAlt ?
-    'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' :
-    'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+  background: #4949cf;
+  margin-bottom: 16px;
     margin: ${(props) => props.divider ? "4rem 0" : ""};
   @media ${(props) => props.theme.breakpoints.md} {
     width: 48px;

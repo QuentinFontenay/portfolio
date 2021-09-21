@@ -6,8 +6,8 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 export const Experience = ({ experience, education }) => {
     return (
         <Section>
-            <SectionDivider />
             <SectionTitle main>Mes experiences</SectionTitle>
+            <SectionDivider />
             <Container>
                 <Card className="experience">
                     <Text size="3rem" weight={600} margin="0 0 1rem 0">

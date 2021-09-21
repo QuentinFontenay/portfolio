@@ -5,9 +5,8 @@ import { Box, BoxNum, BoxText, Boxes } from './CardsWithImageStyles';
 const Cards = (props) => {
     return (
         <Section>
-            <SectionDivider />
             <SectionTitle main>{props.titlePart}</SectionTitle>
-
+            <SectionDivider />
             <Boxes>
                 {
                     props.data.map((card, index) => (

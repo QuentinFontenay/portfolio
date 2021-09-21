@@ -1,13 +1,11 @@
 import React from 'react';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import { Section } from '../../styles/GlobalComponents';
 import { Card, Text, Image, BlocButton } from './AboutMeStyles';
 import { FaMapMarkedAlt } from 'react-icons/fa';
 import Button from '../../styles/GlobalComponents/Button';
 
 const AboutMe = () => (
     <Section>
-        {/* <SectionDivider />
-        <SectionTitle main>A propos de moi</SectionTitle> */}
         <Card>
             <div className="image-profile">
                 <Image

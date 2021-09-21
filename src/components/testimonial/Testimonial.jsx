@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { TestimonialText, TestimonialsContainer, QuoteIconContainer, Image, Name2, Title, Next, Previous, GroupButton, BlockText, ArrowDown, CarouselDot } from './TestimonialStyles'
+import { TestimonialText, TestimonialsContainer, QuoteIconContainer, Image, Name2, Title, GroupButton, BlockText, ArrowDown, CarouselDot } from './TestimonialStyles'
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { FaQuoteRight } from 'react-icons/fa';
-import { FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi';
 
 const Testimonial = ({ testimonials }) => {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -37,19 +36,13 @@ const Testimonial = ({ testimonials }) => {
     });
   }
 
-  const previousTestimonials = () => {
-    setSlideIndex((index) => {
-      let newIndex = index - 1;
-      return checkTestimonials(newIndex)
-    });
-  }
   const handleDotClick = (index) => {
     setSlideIndex(index);
   }
   return (
     <Section nopadding>
+      <SectionTitle>Témoignages</SectionTitle>
       <SectionDivider />
-      <SectionTitle main>Témoignages</SectionTitle>
       <TestimonialsContainer>
         <QuoteIconContainer>
           <FaQuoteRight size="6rem" />

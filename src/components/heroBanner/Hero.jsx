@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { LeftSection } from './HeroStyles';
 import { Box, TextContainer, HeaderText, SubText } from "./HeroStyles"
-import Button from '../../styles/GlobalComponents/Button';
-import { CSSTransition, TransitionGroup } from "react-transition-group"
-import ReactTypingEffect from "react-typing-effect"
-import HeroImage from "../heroImage/HeroImage";
 import Scroll from "./ScrollSvg";
 
 const Hero = ({ props }) => {
-
-    const stringTyping = ["Developpeur Full Stack", "Développeur Mobile", "un passionnée de nouvelle technologie"]
 
     return (
         <Box>

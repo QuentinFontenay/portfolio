@@ -27,7 +27,6 @@ export const Divider = styled.hr`
 export const Box = styled.div`
     background: #17181d;
     border-radius: 12px;
-    height: 444px;
     padding: 24px;
     text-align: center;
     @media ${props => props.theme.breakpoints.lg} {
@@ -69,6 +68,7 @@ export const BoxText = styled.p`
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
+    margin-top: 1vh;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: rgba(255, 255, 255, 0.75);

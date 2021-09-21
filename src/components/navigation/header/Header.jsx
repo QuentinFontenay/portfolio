@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import { AiFillGithub, AiFillMediumSquare, AiFillLinkedin } from 'react-icons/ai';
-import { Container, Home, Navbar, SocialContainer, NavLink, SocialIcons, Span } from './HeaderStyles';
+import { Container, Home, Navbar, NavLink, Span } from './HeaderStyles';
 
 const menuItems = [
     { title: "Accueil", link: "/" },
@@ -10,11 +9,7 @@ const menuItems = [
     { title: "Processus", link: "process" },
     { title: "Contact", link: "contact" }
 ]
-const socialItems = [
-    { balise: <AiFillGithub size="3rem" />, link: "https://github.com/QuentinFontenay" },
-    { balise: <AiFillLinkedin size="3rem" />, link: "https://www.linkedin.com/in/quentin-fontenay-907091156/" },
-    { balise: <AiFillMediumSquare size="3rem" />, link: "https://www.instagram.com/fontenayquentin/" }
-]
+
 const Header = () => (
     <Container>
         <Home>
@@ -32,13 +27,6 @@ const Header = () => (
                 </li>
             ))}
         </Navbar>
-        {/* <SocialContainer>
-            {socialItems.map(item => (
-                <SocialIcons href={item.link}>
-                    {item.balise}
-                </SocialIcons>
-            ))}
-        </SocialContainer> */}
     </Container>
 );
 

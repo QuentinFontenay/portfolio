@@ -18,60 +18,67 @@ import {
     BoxText
 } from "./ProjectStyles";
 
-const Project = (props) => (
-    <Section id="projects">
-        <SectionDivider />
-        <SectionTitle main>{props.titlePart}</SectionTitle>
-        <PortfolioContent>
-            {
-                props.projects.map((project, index) => (
-                    <ProjectContainer key={index}>
-                        <CustomImage
-                            src={project.image}
-                            alt={project.title}
-                            height="280px"
-                            width="200px"
-                            loading="lazy"
-                        />
-                        <ProjectCaptionContainer>
-                            <ProjectTitleContainer>
-                                <ProjectTitle>{project.title}</ProjectTitle>
-                                <ProjectHorizontalLine />
-                                <ProjectLink
-                                    href={project.visit}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="website link"
-                                >
-                                    <FiExternalLink size="3rem" />
-                                </ProjectLink>
-                                <ProjectLink
-                                    href={project.source}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="code repository"
-                                >
-                                    <AiFillGithub size="3rem" />
-                                </ProjectLink>
-                            </ProjectTitleContainer>
-                            <p>{project.description}</p>
-                            <Boxes>
-                                {
-                                    project.tags.map((tag, index) => (
-                                        <Box key={index}>
-                                            <BoxText>{tag}</BoxText>
-                                        </Box>
-                                    ))
-                                }
-                            </Boxes>
-                            {/* <ChipContainer>{project.tags}</ChipContainer> */}
-                        </ProjectCaptionContainer>
-                    </ProjectContainer>
-                ))
+const Project = (props) => {
+    return (
+        <Section id="projects">
+            {props.projects.length === 1 &&
+                <div>
+                    <SectionTitle main>{props.titlePart}</SectionTitle>
+                    <SectionDivider />
+                </div>
             }
-        </PortfolioContent>
-    </Section>
-);
+
+            <PortfolioContent>
+                {
+                    props.projects.map((project, index) => (
+                        <ProjectContainer key={index}>
+                            <CustomImage
+                                src={project.image}
+                                alt={project.title}
+                                height="280px"
+                                width="200px"
+                                loading="lazy"
+                            />
+                            <ProjectCaptionContainer>
+                                <ProjectTitleContainer>
+                                    <ProjectTitle>{project.title}</ProjectTitle>
+                                    <ProjectHorizontalLine />
+                                    <ProjectLink
+                                        href={project.visit}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="website link"
+                                    >
+                                        <FiExternalLink size="3rem" />
+                                    </ProjectLink>
+                                    <ProjectLink
+                                        href={project.source}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="code repository"
+                                    >
+                                        <AiFillGithub size="3rem" />
+                                    </ProjectLink>
+                                </ProjectTitleContainer>
+                                <p>{project.description}</p>
+                                <Boxes>
+                                    {
+                                        project.tags.map((tag, index) => (
+                                            <Box key={index}>
+                                                <BoxText>{tag}</BoxText>
+                                            </Box>
+                                        ))
+                                    }
+                                </Boxes>
+                                {/* <ChipContainer>{project.tags}</ChipContainer> */}
+                            </ProjectCaptionContainer>
+                        </ProjectContainer>
+                    ))
+                }
+            </PortfolioContent>
+        </Section>
+    );
+};
 
 Project.propTypes = {
     titlePart: PropTypes.string,

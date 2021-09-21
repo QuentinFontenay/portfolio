@@ -5,8 +5,8 @@ import { CardDesc, CardIcon, CardTitle, CardWrapper, Boxes } from './CardsWithIm
 const CardsWithImage = (props) => {
     return (
         <Section>
-            <SectionDivider />
             <SectionTitle main>{props.titlePart}</SectionTitle>
+            <SectionDivider />
 
             <Boxes>
                 {
