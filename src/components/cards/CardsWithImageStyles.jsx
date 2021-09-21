@@ -17,8 +17,8 @@ export const CardWrapper = styled.div`
 `
 
 export const CardIcon = styled.img`
-    height: 160px;
-    width: 160px;
+    height: 200px;
+    width: 200px;
     margin-bottom: 10px;
 `
 

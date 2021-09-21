@@ -6,8 +6,8 @@ import Button from '../../styles/GlobalComponents/Button';
 
 const AboutMe = () => (
     <Section>
-        <SectionDivider />
-        <SectionTitle main>A propos de moi</SectionTitle>
+        {/* <SectionDivider />
+        <SectionTitle main>A propos de moi</SectionTitle> */}
         <Card>
             <div className="image-profile">
                 <Image

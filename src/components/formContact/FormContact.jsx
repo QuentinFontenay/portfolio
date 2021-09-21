@@ -30,8 +30,8 @@ function FormContact() {
     }
     return (
         <Section>
-            <SectionDivider />
-            <SectionTitle main>Formulaire de contact</SectionTitle>
+            {/* <SectionDivider />
+            <SectionTitle main>Formulaire de contact</SectionTitle> */}
             <Box>
                 <BoxTitle>Status</BoxTitle>
                 <BoxTitle2>Disponible</BoxTitle2>

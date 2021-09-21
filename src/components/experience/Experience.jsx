@@ -11,7 +11,7 @@ export const Experience = ({ experience, education }) => {
             <Container>
                 <Card className="experience">
                     <Text size="3rem" weight={600} margin="0 0 1rem 0">
-                        Experience Professionel
+                        Expérience Professionel
                     </Text>
                     {experience.map((item, key) => (
                         <CardDescription key={key}>
@@ -31,7 +31,7 @@ export const Experience = ({ experience, education }) => {
                 </Card>
                 <Card className="education">
                     <Text size="3rem" weight={600} margin="0 0 1rem 0">
-                        Parcours scolaire
+                        Expérience scolaire
                     </Text>
                     {education.map((item, key) => (
                         <CardDescription key={key}>
