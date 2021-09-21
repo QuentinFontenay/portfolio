@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { TestimonialText, TestimonialsContainer, QuoteIconContainer, Image, Name2, Title, GroupButton, BlockText, ArrowDown, CarouselDot } from './TestimonialStyles'
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { FaQuoteRight } from 'react-icons/fa';
@@ -8,15 +8,7 @@ const Testimonial = ({ testimonials }) => {
   const { name, avatar, position, text, id } = testimonials[slideIndex]
   const MINUTE_MS = 8000;
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextTestimonials();
-    }, MINUTE_MS);
-
-    return () => clearInterval(interval);
-  }, [])
-
-  const checkTestimonials = (number) => {
+  const checkTestimonials = useCallback((number) => {
     if (number > testimonials.length - 1) {
 
       return 0;
@@ -27,14 +19,18 @@ const Testimonial = ({ testimonials }) => {
     }
 
     return number;
-  };
+  }, [testimonials]);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlideIndex((index) => {
+        let newIndex = index + 1;
+        return checkTestimonials(newIndex)
+      });
+    }, MINUTE_MS);
 
-  const nextTestimonials = () => {
-    setSlideIndex((index) => {
-      let newIndex = index + 1;
-      return checkTestimonials(newIndex)
-    });
-  }
+    return () => clearInterval(interval);
+  });
 
   const handleDotClick = (index) => {
     setSlideIndex(index);
