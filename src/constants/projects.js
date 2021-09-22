@@ -1,25 +1,37 @@
-import { FaSass } from 'react-icons/fa';
-import { SiCss3, SiMaterialUi, SiReact, SiRedux, SiStyledComponents, SiShopify, SiGoogleads, SiFacebook } from 'react-icons/si';
+import { SiCss3, SiReact, SiStyledComponents, SiShopify, SiGoogleads, SiFacebook, SiNetlify } from 'react-icons/si';
 
 
 export const projects = [
     {
         title: 'Troc',
-        description: "Application destiné au particulier souhaitant échanger un objet contre un autre objet équivalent à la même valeur",
+        description: "Application destiné au particulier souhaitant échanger un objet contre un autre objet équivalent à la même valeur. Ce projet est à l'état de conception pour l'instant plus d'informations à venir !",
         image: process.env.PUBLIC_URL + '/images/projects/image-projet4.png',
         tags: [
-            <SiReact fontSize="3rem" color="#79d8f7" />,
-            <SiStyledComponents fontSize="3rem" color="#7248b6" />,
-            <SiCss3 fontSize="3rem" color="#07b0ce" />,
+            <SiReact fontSize="3rem" />,
+            <SiStyledComponents fontSize="3rem" />,
+            <SiCss3 fontSize="3rem" />,
         ],
         source: 'https://github.com/QuentinFontenay',
         visit: 'https://www.google.fr/',
         id: 0,
     },
-
+    {
+        title: 'Mon portfolio',
+        description: "Portfolio réalisé à l'aide du framework React permettant de présenter les différents service que je peux vous proposer ainsi que mon experience.",
+        image: process.env.PUBLIC_URL + '/images/projects/image-projet1.png',
+        tags: [
+            <SiReact fontSize="3rem" />,
+            <SiStyledComponents fontSize="3rem" />,
+            <SiCss3 fontSize="3rem" />,
+            <SiNetlify fontSize="3rem" />
+        ],
+        source: 'https://github.com/QuentinFontenay/portfolio',
+        visit: 'https://www.skyreast.com/',
+        id: 1,
+    },  
     {
         title: 'Skisra',
-        description: "jGram - a clone social network based on Instagram. Users can upload and interact with posts, follow/unfollow other users, edit profile and realtime message.",
+        description: "Skisra était une boutique spécialisé dans les équipement de barbecue. Je l'es développé à l'aide du CMS Shopify et j'ai pu aussi utiliser Google Ads et Facebook Ads afin de réaliser des publicités.",
         image: process.env.PUBLIC_URL + '/images/projects/image-projet3.png',
         tags: [
             <SiShopify fontSize="3rem" />,
@@ -28,12 +40,12 @@ export const projects = [
         ],
         source: 'https://github.com/QuentinFontenay',
         visit: 'https://www.skisra.com/',
-        id: 1,
+        id: 2,
     },
 
     {
         title: 'Skyreast',
-        description: "This website using Nextjs and CSS3 in order to search and check general information about every countries around the world based on a free updated API.",
+        description: "Skyreast était un site réalisé en collaboration avec un collégue qui était spécialisé dans la vente d'une peluche parlante pour les enfants. Elle a été développer à l'aide de Wordpress avec son extension WooCommerce.",
         image: process.env.PUBLIC_URL + '/images/projects/image-projet2.png',
         tags: [
             <SiShopify fontSize="3rem" />,
@@ -42,28 +54,6 @@ export const projects = [
         ],
         source: 'https://github.com/QuentinFontenay',
         visit: 'https://www.skyreast.com/',
-        id: 2,
-    },
-
-    {
-        title: 'JettFlix',
-        description: "Based on everyday updated free API from IMDb, users can search, filter, watch trailers and check out detail information about newest movies, TV series.",
-        image: '/images/jettflix.JPG',
-        tags: [
-            <SiReact fontSize="4rem" color="#79d8f7" />,
-            <SiRedux fontSize="4rem" color="#7248b6" />,
-            <FaSass fontSize="4rem" color="#c36291" />,
-            <SiMaterialUi fontSize="4rem" color="#00aaf7" />
-        ],
-        source: 'https://github.com/ttnguyen115/jettflix',
-        visit: 'https://jettflix.vercel.app/',
         id: 3,
     },
-];
-
-export const TimeLineData = [
-    { year: '7/2018', text: 'Graduated from high school.', },
-    { year: '11/2018', text: 'Started learning computer programming in Seneca College (Canada).', },
-    { year: '4/2020', text: 'Shared the first big projects - viluShop.', },
-    { year: '4/2021', text: 'Graduated from my College and started to improve my careers.', },
 ];

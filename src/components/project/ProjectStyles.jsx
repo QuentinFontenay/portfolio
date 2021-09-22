@@ -181,7 +181,7 @@ export const Boxes = styled.div`
 `
 
 export const Box = styled.div`
-    background: #17181d;
+    background: #8578F9;
     border-radius: 12px;
     height: 55px;
     /* width: 60%; */

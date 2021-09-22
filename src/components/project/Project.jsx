@@ -70,7 +70,6 @@ const Project = (props) => {
                                         ))
                                     }
                                 </Boxes>
-                                {/* <ChipContainer>{project.tags}</ChipContainer> */}
                             </ProjectCaptionContainer>
                         </ProjectContainer>
                     ))
