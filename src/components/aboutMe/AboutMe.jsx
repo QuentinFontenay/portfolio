@@ -29,8 +29,7 @@ const AboutMe = () => (
                     J'ai aussi développer une grande passion pour le tennis depuis quelque année que je pratique en compétition.
                     L’informatique est un domaine que j'ai choisis car il permet de comprendre comment réaliser des
                     logiciels, des objets connectés, des robots et tous les objets qui construiront
-                    notre futur. Je m'interesse aussi au domaine financier ainsi qu'au différent investissement que l'on puisse
-                    réalisé afin de réaliser mon rêve de devenir rentier à 40 ans.
+                    notre futur. 
                 </Text>
                 <BlocButton>
                     <Button alt>

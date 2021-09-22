@@ -161,9 +161,9 @@ export const PortfolioContent = styled.div`
 `;
 
 export const Boxes = styled.div`
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    width: 6vh;
     gap: 14px;
     margin-top: 15px;
     @media ${props => props.theme.breakpoints.md}{
@@ -184,7 +184,7 @@ export const Box = styled.div`
     background: #8578F9;
     border-radius: 12px;
     height: 55px;
-    /* width: 60%; */
+    width: 8vh;
     padding: 10px;
     text-align: center;
     transition: transform 300ms ease-in-out 0s, box-shadow 300ms ease-in-out 0s;

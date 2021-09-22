@@ -1,4 +1,4 @@
-import { SiCss3, SiReact, SiStyledComponents, SiShopify, SiGoogleads, SiFacebook, SiNetlify } from 'react-icons/si';
+import { SiCss3, SiReact, SiStyledComponents, SiShopify, SiGoogleads, SiFacebook, SiNetlify, SiWordpress, SiWoocommerce, SiFigma, SiFlutter, SiFirebase } from 'react-icons/si';
 
 
 export const projects = [
@@ -7,9 +7,9 @@ export const projects = [
         description: "Application destiné au particulier souhaitant échanger un objet contre un autre objet équivalent à la même valeur. Ce projet est à l'état de conception pour l'instant plus d'informations à venir !",
         image: process.env.PUBLIC_URL + '/images/projects/image-projet4.png',
         tags: [
-            <SiReact fontSize="3rem" />,
-            <SiStyledComponents fontSize="3rem" />,
-            <SiCss3 fontSize="3rem" />,
+            <SiFlutter fontSize="3rem" />,
+            <SiFigma fontSize="3rem" />,
+            <SiFirebase fontSize="3rem" />
         ],
         source: 'https://github.com/QuentinFontenay',
         visit: 'https://www.google.fr/',
@@ -48,9 +48,10 @@ export const projects = [
         description: "Skyreast était un site réalisé en collaboration avec un collégue qui était spécialisé dans la vente d'une peluche parlante pour les enfants. Elle a été développer à l'aide de Wordpress avec son extension WooCommerce.",
         image: process.env.PUBLIC_URL + '/images/projects/image-projet2.png',
         tags: [
-            <SiShopify fontSize="3rem" />,
+            <SiWordpress fontSize="3rem" />,
             <SiGoogleads fontSize="3rem" />,
-            <SiFacebook fontSize="3rem" />
+            <SiFacebook fontSize="3rem" />,
+            <SiWoocommerce fontSize="3rem" />
         ],
         source: 'https://github.com/QuentinFontenay',
         visit: 'https://www.skyreast.com/',
