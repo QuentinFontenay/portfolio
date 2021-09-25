@@ -1,6 +1,7 @@
 import { BiTennisBall } from 'react-icons/bi';
 import { GiCommercialAirplane } from 'react-icons/gi';
 import { BsNewspaper } from 'react-icons/bs';
+import React from 'react';
 
 export const passions = [
     { icon: <BiTennisBall fontSize="5rem" />, text: 'Tennis'},
