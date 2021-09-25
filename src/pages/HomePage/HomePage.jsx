@@ -8,7 +8,6 @@ import { TESTIMONIALS } from '../../constants/testimonials';
 import { projects } from '../../constants/projects';
 import { services } from '../../constants/services';
 import CardsWithImage from '../../components/cards/CardsWithImage';
-import '../../components/loading/LoadingAnimation.css';
 import { Section } from '../../styles/GlobalComponents';
 import '../../components/heroBanner/ScrollAnimation.css';
 

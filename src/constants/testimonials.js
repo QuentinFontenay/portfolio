@@ -1,5 +1,5 @@
-let profileImg1 = process.env.PUBLIC_URL + '/images/testimonials/image-tanya.jpeg'
-let profileImg2 = process.env.PUBLIC_URL + '/images/testimonials/image-john.jpeg'
+let profileImg1 = new URL('../../public/images/testimonials/image-tanya.jpeg', import.meta.url)
+let profileImg2 = new URL('../../public/images/testimonials/image-john.jpeg', import.meta.url)
 
 export const TESTIMONIALS = [{
     text: '“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”',

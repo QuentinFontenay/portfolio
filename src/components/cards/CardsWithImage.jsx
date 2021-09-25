@@ -11,7 +11,7 @@ const CardsWithImage = (props) => {
             <Boxes>
                 {
                     props.data.map((card, index) => (
-                        <CardWrapper>
+                        <CardWrapper key={card.id}>
                             <CardIcon alt={card.alt} src={card.icon} />
                             <CardTitle>{card.title}</CardTitle>
                             <CardDesc>{card.desc}</CardDesc>

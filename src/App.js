@@ -3,6 +3,7 @@ import Router from './router/Router';
 import Theme from './styles/theme';
 import { useEffect, useState } from 'react';
 import Loading from '../src/components/loading/Loading';
+import '../src/components/loading/LoadingAnimation.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -10,19 +11,18 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 4000);
   }, [loading]);
 
   return (
     <Theme>
-      {/* {loading ? (
+      {/* {loading ? ( */}
         <Loading />
-      ) : ( */}
+      ) : (
         <div className="App">
           <Router />
         </div>
       {/* )} */}
-
     </Theme>
   );
 }

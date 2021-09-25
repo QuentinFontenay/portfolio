@@ -1,8 +1,8 @@
 import { React, useState } from 'react';
 import { Section } from '../../styles/GlobalComponents';
 import { Box, BoxTitle, BoxTitle2, LeftContent, ContactBox, ContactForm, Recieved } from './FormContactStyles';
-import useForm from "./useForm"
-import { FaHandshake } from "react-icons/all"
+import useForm from "./useForm";
+import { FaHandshake } from "react-icons/fa";
 import Button from '../../styles/GlobalComponents/Button';
 
 function FormContact() {
