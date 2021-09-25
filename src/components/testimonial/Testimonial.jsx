@@ -5,7 +5,7 @@ import { FaQuoteRight } from 'react-icons/fa';
 
 const Testimonial = ({ testimonials }) => {
   const [slideIndex, setSlideIndex] = useState(1);
-  const { name, avatar, position, text, id } = testimonials[slideIndex]
+  const { name, avatar, position, text, id, alt } = testimonials[slideIndex]
   const MINUTE_MS = 8000;
 
   const checkTestimonials = useCallback((number) => {
@@ -45,7 +45,7 @@ const Testimonial = ({ testimonials }) => {
         </QuoteIconContainer>
         <div key={id}>
           <Image
-            alt="user image"
+            alt={alt}
             src={avatar}
             width={200}
             height={200}

@@ -7,6 +7,7 @@ export const TESTIMONIALS = [{
     position: 'UX Engineer',
     company: 'SDVI',
     avatar: profileImg1,
+    alt: "photo de Tanya Sinclair",
     id: 1234567,
 },
 {
@@ -15,6 +16,7 @@ export const TESTIMONIALS = [{
     position: 'Junior Front-end Developer',
     company: 'SDVI',
     avatar: profileImg2,
+    alt: "photo de John Tarkpor",
     id: 2345678,
 },
 // {

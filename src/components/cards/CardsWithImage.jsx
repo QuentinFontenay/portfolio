@@ -12,7 +12,7 @@ const CardsWithImage = (props) => {
                 {
                     props.data.map((card, index) => (
                         <CardWrapper>
-                            <CardIcon src={card.icon} />
+                            <CardIcon alt={card.alt} src={card.icon} />
                             <CardTitle>{card.title}</CardTitle>
                             <CardDesc>{card.desc}</CardDesc>
                         </CardWrapper>

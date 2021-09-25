@@ -34,7 +34,7 @@ const Project = (props) => {
                         <ProjectContainer key={index}>
                             <CustomImage
                                 src={project.image}
-                                alt={project.title}
+                                alt={project.alt}
                                 height="280px"
                                 width="200px"
                                 loading="lazy"

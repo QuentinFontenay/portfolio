@@ -15,13 +15,13 @@ function App() {
 
   return (
     <Theme>
-      {loading ? (
+      {/* {loading ? (
         <Loading />
-      ) : (
+      ) : ( */}
         <div className="App">
           <Router />
         </div>
-      )}
+      {/* )} */}
 
     </Theme>
   );
