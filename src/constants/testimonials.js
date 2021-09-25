@@ -1,3 +1,5 @@
+import React from 'react';
+
 let profileImg1 = new URL('../../public/images/testimonials/image-tanya.jpeg', import.meta.url)
 let profileImg2 = new URL('../../public/images/testimonials/image-john.jpeg', import.meta.url)
 

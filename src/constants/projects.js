@@ -1,5 +1,5 @@
 import { SiCss3, SiReact, SiStyledComponents, SiShopify, SiGoogleads, SiFacebook, SiNetlify, SiWordpress, SiWoocommerce, SiFigma, SiFlutter, SiFirebase } from 'react-icons/si';
-
+import React from 'react';
 
 export const projects = [
     {

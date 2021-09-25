@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const services = [
     {
         icon: new URL('../../public/images/services/building-website.svg', import.meta.url),
