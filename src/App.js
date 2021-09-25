@@ -1,7 +1,7 @@
 import './App.css';
 import Router from './router/Router';
 import Theme from './styles/theme';
-import { useEffect, useState, React } from 'react';
+import React, { useEffect, useState } from 'react';
 import Loading from '../src/components/loading/Loading';
 import '../src/components/loading/LoadingAnimation.css';
 
