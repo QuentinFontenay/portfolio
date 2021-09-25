@@ -17,8 +17,8 @@ function App() {
   return (
     <Theme>
       {/* {loading ? ( */}
-        <Loading />
-      ) : (
+        {/* <Loading /> */}
+      {/* ) : ( */}
         <div className="App">
           <Router />
         </div>

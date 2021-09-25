@@ -11,8 +11,8 @@ function FormContact() {
     const sendEmail = async () => {
         const myHeaders = new Headers()
         myHeaders.append("Content-Type", "application/json")
-        const { _replyto, name, message } = formData
-        const raw = JSON.stringify({ _replyto, name, message })
+        const { replyto, name, message } = formData
+        const raw = JSON.stringify({ replyto, name, message })
 
         const requestOptions = {
             method: "POST",
@@ -57,11 +57,11 @@ function FormContact() {
                         <label className="label__email">
                             <span>Email</span>
                             <input
-                                className={errors._replyto && "invalid"}
+                                className={errors.replyto && "invalid"}
                                 onChange={handleInput}
                                 value={formData.email}
                                 id="email"
-                                name="_replyto"
+                                name="replyto"
                                 type="email"
                                 required
                                 placeholder="example@gmail.com"

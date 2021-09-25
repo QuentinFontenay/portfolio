@@ -10,7 +10,7 @@ const AboutMe = () => (
             <div className="image-profile">
                 <Image
                     alt="user image"
-                    src={process.env.PUBLIC_URL + '/images/heroProfile.jpg'}
+                    src={new URL('../../../public/images/heroProfile.jpg', import.meta.url)}
                     width={200}
                     height={200}
                     borderRadius="100%"
@@ -33,7 +33,7 @@ const AboutMe = () => (
                 </Text>
                 <BlocButton>
                     <Button alt>
-                        <a href={process.env.PUBLIC_URL + '/pdf/cv.pdf'} download="cv.pdf" style={{ color: 'white' }}>
+                        <a href={new URL('../../../public/pdf/cv.pdf', import.meta.url)} download="cv.pdf" style={{ color: 'white' }}>
                             Télécharger mon CV
                         </a>
                     </Button>

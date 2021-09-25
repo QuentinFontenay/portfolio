@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "parcel public/index.html",
-    "build": "npm run clean && parcel build public/index.html --public-url ./ --no-optimize",
+    "build": "npm run clean && parcel build public/index.html --public-url ./",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean": "rm -rf ./dist ./.parcel-cache"
@@ -41,6 +41,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
     "@parcel/packager-raw-url": "^2.0.0-rc.0",
     "@parcel/transformer-image": "^2.0.0-rc.0",
     "@parcel/transformer-svg-react": "^2.0.0-nightly.1739",

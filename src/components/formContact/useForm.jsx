@@ -23,7 +23,7 @@ const useForm = () => {
 
     function validateInput(name, value) {
         switch (name) {
-            case "_replyto":
+            case "replyto":
                 return isValid(value, name, emailRegex, "Email")
             case "name":
                 return isValid(value, name, nameRegex, "Name")
