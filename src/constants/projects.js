@@ -4,7 +4,7 @@ import React from 'react';
 export const projects = [
     {
         title: 'Troc',
-        description: "Application destiné au particulier souhaitant échanger un objet contre un autre objet équivalent à la même valeur. Ce projet est à l'état de conception pour l'instant plus d'informations à venir !",
+        description: "Application destinée au particulier souhaitant échanger un objet contre un autre objet équivalent à la même valeur. Ce projet est à l'état de conception pour l'instant plus d'informations à venir !",
         image: new URL('../../public/images/projects/image-projet4.png', import.meta.url),
         alt: 'maquette du projet Troc',
         tags: [
@@ -18,7 +18,7 @@ export const projects = [
     },
     {
         title: 'Mon portfolio',
-        description: "Portfolio réalisé à l'aide du framework React permettant de présenter les différents service que je peux vous proposer ainsi que mon experience.",
+        description: "Portfolio réalisé à l'aide du framework React permettant de présenter les différents services que je peux vous proposer ainsi que mon expérience.",
         image: new URL('../../public/images/projects/image-projet1.png', import.meta.url),
         alt: "page d'accueil de mon portfolio",
         tags: [
@@ -33,7 +33,7 @@ export const projects = [
     },  
     {
         title: 'Skisra',
-        description: "Skisra était une boutique spécialisé dans les équipement de barbecue. Je l'es développé à l'aide du CMS Shopify et j'ai pu aussi utiliser Google Ads et Facebook Ads afin de réaliser des publicités.",
+        description: "Skisra était une boutique spécialisée dans les équipements de barbecue. Je l'ai développé à l'aide du CMS Shopify et j'ai pu aussi utiliser Google Ads et Facebook Ads afin de réaliser des publicités.",
         image: new URL('../../public/images/projects/image-projet3.png', import.meta.url),
         alt: "page d'accueil du site Skisra",
         tags: [
@@ -48,7 +48,7 @@ export const projects = [
 
     {
         title: 'Skyreast',
-        description: "Skyreast était un site réalisé en collaboration avec un collégue qui était spécialisé dans la vente d'une peluche parlante pour les enfants. Elle a été développer à l'aide de Wordpress avec son extension WooCommerce.",
+        description: "Skyreast était un site réalisé en collaboration avec un collégue qui était spécialisé dans la vente d'une peluche parlante pour les enfants. Elle a été développée à l'aide de Wordpress avec son extension WooCommerce.",
         image: new URL('../../public/images/projects/image-projet2.png', import.meta.url),
         alt: "page d'accueil du site Skyreast",
         tags: [

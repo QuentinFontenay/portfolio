@@ -1,39 +1,24 @@
 import React from 'react';
 
-let profileImg1 = new URL('../../public/images/testimonials/image-tanya.jpeg', import.meta.url)
-let profileImg2 = new URL('../../public/images/testimonials/image-john.jpeg', import.meta.url)
+let profileImg1 = new URL('../../public/images/testimonials/avatar-1.svg', import.meta.url)
+let profileImg2 = new URL('../../public/images/testimonials/avatar-1.svg', import.meta.url)
 
 export const TESTIMONIALS = [{
-    text: '“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”',
-    name: 'Tanya Sinclair',
-    position: 'UX Engineer',
-    company: 'SDVI',
+    text: "“ Travailler avec Quentin a été un plaisir. Il était professionnel et s'est investi dans le projet du début à la fin. Je le recommanderais à toute personne cherchant de l'aide pour ses projets web. ”",
+    name: 'Gaëtan Fauconnier',
+    position: 'Développeur FullStack',
+    company: 'Sodius',
     avatar: profileImg1,
-    alt: "photo de Tanya Sinclair",
+    alt: "photo de Gaëtan Fauconnier",
     id: 1234567,
 },
 {
-    text: '“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”',
-    name: 'John Tarkpor',
-    position: 'Junior Front-end Developer',
+    text: "“ Quentin a été un élément important de mon équipe et j'apprécie ses efforts et le travail qu'il a effectué sur nos projets de développement web. Sa ponctualité, son professionnalisme ”",
+    name: 'Guillaume Orain',
+    position: 'Lead Développeur Symfony',
     company: 'SDVI',
     avatar: profileImg2,
-    alt: "photo de John Tarkpor",
+    alt: "photo de Guillaume Orain",
     id: 2345678,
-},
-// {
-//     text: '“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”',
-//     name: 'Guillaume Orain',
-//     position: 'Lead Symfony Developpeur',
-//     company: 'SDVI',
-//     avatar: profileImg2,
-//     id: 45678910,
-// },
-// {
-//     quote: '“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”',
-//     name: 'Tanya Sinclair',
-//     title: 'UX Engineer',
-//     photo: profileImg1,
-//     id: 3456789,
-// },
+}
 ]
