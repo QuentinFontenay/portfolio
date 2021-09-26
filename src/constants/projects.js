@@ -12,8 +12,8 @@ export const projects = [
             <SiFigma fontSize="3rem" />,
             <SiFirebase fontSize="3rem" />
         ],
-        source: 'https://github.com/QuentinFontenay',
-        visit: 'https://www.google.fr/',
+        source: '',
+        visit: '',
         id: 0,
     },
     {
@@ -28,7 +28,7 @@ export const projects = [
             <SiNetlify fontSize="3rem" />
         ],
         source: 'https://github.com/QuentinFontenay/portfolio',
-        visit: 'https://www.skyreast.com/',
+        visit: 'https://quentin-fontenay.fr/',
         id: 1,
     },  
     {
@@ -41,7 +41,7 @@ export const projects = [
             <SiGoogleads fontSize="3rem" />,
             <SiFacebook fontSize="3rem" />
         ],
-        source: 'https://github.com/QuentinFontenay',
+        source: '',
         visit: 'https://www.skisra.com/',
         id: 2,
     },
@@ -57,7 +57,7 @@ export const projects = [
             <SiFacebook fontSize="3rem" />,
             <SiWoocommerce fontSize="3rem" />
         ],
-        source: 'https://github.com/QuentinFontenay',
+        source: '',
         visit: 'https://www.skyreast.com/',
         id: 3,
     },

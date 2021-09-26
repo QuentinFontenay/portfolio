@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import React, { useState } from 'react';
 import { Section } from '../../styles/GlobalComponents';
 import { Box, BoxTitle, BoxTitle2, LeftContent, ContactBox, ContactForm, Recieved } from './FormContactStyles';
 import useForm from "./useForm";
@@ -30,8 +30,6 @@ function FormContact() {
     }
     return (
         <Section>
-            {/* <SectionDivider />
-            <SectionTitle main>Formulaire de contact</SectionTitle> */}
             <Box>
                 <BoxTitle>Status</BoxTitle>
                 <BoxTitle2>Disponible</BoxTitle2>

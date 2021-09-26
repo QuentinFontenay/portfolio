@@ -16,13 +16,13 @@ function App() {
 
   return (
     <Theme>
-      {/* {loading ? ( */}
-        {/* <Loading /> */}
-      {/* ) : ( */}
+      {loading ? (
+        <Loading />
+      ) : (
         <div className="App">
           <Router />
         </div>
-      {/* )} */}
+      )}
     </Theme>
   );
 }

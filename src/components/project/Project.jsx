@@ -43,22 +43,26 @@ const Project = (props) => {
                                 <ProjectTitleContainer>
                                     <ProjectTitle>{project.title}</ProjectTitle>
                                     <ProjectHorizontalLine />
-                                    <ProjectLink
-                                        href={project.visit}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label="website link"
-                                    >
-                                        <FiExternalLink size="3rem" />
-                                    </ProjectLink>
-                                    <ProjectLink
-                                        href={project.source}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label="code repository"
-                                    >
-                                        <AiFillGithub size="3rem" />
-                                    </ProjectLink>
+                                    {project.visit.length !== 0 && (
+                                        <ProjectLink
+                                            href={project.visit}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="website link"
+                                        >
+                                            <FiExternalLink size="3rem" />
+                                        </ProjectLink>
+                                    )}
+                                    {project.source.length !== 0 && (
+                                        <ProjectLink
+                                            href={project.source}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="code repository"
+                                        >
+                                            <AiFillGithub size="3rem" />
+                                        </ProjectLink>
+                                    )}
                                 </ProjectTitleContainer>
                                 <p>{project.description}</p>
                                 <Boxes>
