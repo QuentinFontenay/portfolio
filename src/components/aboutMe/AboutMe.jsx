@@ -25,11 +25,11 @@ const AboutMe = () => (
                     <FaMapMarkedAlt size="2rem" style={{ margin: '0 1rem 0 0' }} />
                     Nantes
                 </Text>
-                <Text padding="2rem 0 1rem 0">Je suis passionné d’informatique et des nouvelles technologies.
-                    J'ai aussi développer une grande passion pour le tennis depuis quelque année que je pratique en compétition.
-                    L’informatique est un domaine que j'ai choisis car il permet de comprendre comment réaliser des
-                    logiciels, des objets connectés, des robots et tous les objets qui construiront
-                    notre futur. 
+                <Text padding="2rem 0 1rem 0">J'aime travailler dans un environnement dynamique et stimulant. 
+                Je m'efforce d'avoir l'esprit d'équipe et de conserver une attitude positive face aux nouveaux défis. 
+                Mes plus grandes forces sont ma capacité à sortir des sentiers battus, mon désir d'apprendre et de progresser, 
+                et mon souci du détail. J'ai aussi développer une grande passion pour le tennis depuis quelque année que je pratique en compétition.
+                J'aime apprendre et je crois que pour réussir à long terme, il faut toujours apprendre.
                 </Text>
                 <BlocButton>
                     <Button alt>
