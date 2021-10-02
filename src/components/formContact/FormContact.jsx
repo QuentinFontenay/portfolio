@@ -22,7 +22,7 @@ function FormContact() {
         }
 
         try {
-            await fetch("***REMOVED***", requestOptions)
+            await fetch(process.env.FORMSPREE_LINK, requestOptions)
             setSubmitted(true)
         } catch (e) {
             setSubmitted(false)
