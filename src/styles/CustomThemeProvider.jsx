@@ -8,6 +8,7 @@ function CustomThemeProvider({ children }) {
     const [mode, setMode] = useState(localStorage.getItem('mode') || 'dark');
 
     useEffect(() => {
+        console.log(lightDark);
         document.querySelector('body').style.background = lightDark[mode].background1;
     }, [mode]);
 
