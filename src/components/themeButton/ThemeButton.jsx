@@ -1,11 +1,16 @@
 import React, { useEffect, useState, useContext, useRef } from 'react';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
+import ThemeContext from '../../context/ThemeContext';
+import { ButtonContainer, Button } from './ThemeButtonStyles';
+
 function ThemeButton() {
     const lastScrollTop = useRef(0);
     const [visibility, setVisibility] = useState(false);
+
     const theme = useContext(ThemeContext);
-    const isLightTheme = theme.mode === 'light';
-    const invertedTheme = () => (isLightTheme ? 'dark' : 'light');
+    console.log(theme);
+    const isDarkTheme = theme.mode === 'dark';
+    const invertedTheme = () => (isDarkTheme ? 'dark' : 'light');
 
     const scrollListener = () => {
         const position = window.pageYOffset || document.documentElement.scrollTop;
@@ -31,10 +36,10 @@ function ThemeButton() {
                 background={`var(--${invertedTheme()}-bg-color)`}
                 aria-label="Toggle theme"
             >
-                {(isLightTheme == 'light'
+                {/* {(isDarkTheme == 'light'
                     ? <BsFillSunFill size="2rem" />
                     : <BsFillMoonFill size="2rem" />
-                )}
+                )} */}
             </Button>
         </ButtonContainer>
     );

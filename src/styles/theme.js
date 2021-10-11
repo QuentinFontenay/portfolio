@@ -2,12 +2,13 @@ import { ThemeProvider } from 'styled-components';
 import theme from "../themes/default";
 import GlobalStyles from './globals';
 import React from 'react';
+import CustomThemeProvider from './CustomThemeProvider';
 
 const Theme = ({ children }) => (
-  <ThemeProvider theme={theme}>
+  <CustomThemeProvider>
     <GlobalStyles />
     {children}
-  </ThemeProvider>
+  </CustomThemeProvider>
 );
 
 export default Theme;

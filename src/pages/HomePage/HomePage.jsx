@@ -10,6 +10,7 @@ import { services } from '../../constants/services';
 import CardsWithImage from '../../components/cards/CardsWithImage';
 import { Section } from '../../styles/GlobalComponents';
 import '../../components/heroBanner/ScrollAnimation.css';
+import ThemeButton from '../../components/themeButton/themeButton';
 
 const TITLE_PART_PROJET_EN_COURS = "Projet en cours";
 const TITLE_PART_SERVICE = "Mes services"
@@ -17,6 +18,7 @@ const TITLE_PART_SERVICE = "Mes services"
 const HomePage = () => {
     return (
         <Layout>
+        <ThemeButton />
             <Section grid hero nopadding>
                 <HeroBanner />
                 <HeroImage />
