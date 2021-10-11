@@ -1,10 +1,17 @@
 export const education = [
     {
         title: '',
+        description: "",
+        company: 'DataScientest',
+        role: "Data Scientist",
+        period: '2021 - 2022',
+    },
+    {
+        title: '',
         description: "Cette formation m’a permis de réaliser des workshops et de découvrir la gestion d'un projet informatique avec la méthode agile notamment.",
         company: 'EPSI',
         role: "Expert en informatique et SI",
-        period: '2020 - 2022',
+        period: '2020 - 2021',
     },
     {
         title: '',

@@ -1,10 +1,17 @@
 export const experiences = [
     {
+        title: 'Développeur FullStack',
+        description: "",
+        company: 'Fit Lab',
+        role: 'Développeur FullStack',
+        period: "Octobre 2021 - A aujourd'hui",
+    },
+    {
         title: 'Développeur Symfony',
         description: "Réalisation de différentes applications Web en Symfony. Ces projets étaient exclusivement destinés aux différents collaborateurs de l'entreprise.",
         company: 'SDVI',
         role: 'Développeur Symfony',
-        period: "2019 - A aujourd'hui",
+        period: "Aout 2019 - Octobre 2021",
     },
     {
         title: 'Développeur UWP',
