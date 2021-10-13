@@ -2,6 +2,7 @@ const lightDark = {
     light: {
       background1: 'var(--light-bg-color)',
       titleColor: '#333',
+      text: 'var(--black-bg-color)',
       nav: {
         hoverCircle: '#ccc',
         background: '#ddd',
@@ -12,6 +13,7 @@ const lightDark = {
       },
     },
     dark: {
+      text: 'var(--white-bg-color)',
       background1: '#1F2024',
       titleColor: '#fff',
       nav: {

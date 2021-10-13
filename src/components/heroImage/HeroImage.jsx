@@ -11,7 +11,7 @@ const HeroImage = (props) => (
             // justifyContent: 'right',
             marginLeft: '7vh',
             // alignItems: 'right',
-            background: '#1F2024',
+            // background: '#1F2024',
         }}>
         <svg id="ae5f5559-570c-4c14-9324-22f1786600a2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1015.12774" height="526" viewBox="0 0 1015.12774 526">
             <rect x="600.64726" y="143.87206" width="300.3462" height="532.4319" transform="translate(59.46229 833.98563) rotate(-74.20991)" fill="#3f3d56" />

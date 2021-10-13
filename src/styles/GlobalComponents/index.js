@@ -27,7 +27,7 @@ export const SectionTitle = styled.h2`
   line-height: ${(props) => props.main ? '72px' : '72px'};
   width: max-content;
   max-width: 100%;
-  background: white;
+  background: ${({ theme }) => theme.text};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* margin-bottom: 10px; */

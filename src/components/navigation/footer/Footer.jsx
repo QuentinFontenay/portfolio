@@ -1,25 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { AiFillGithub, AiFillMediumSquare, AiFillLinkedin } from 'react-icons/ai';
-
-import { SocialIcons } from '../header/HeaderStyles';
-import { FooterWrapper, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import ThemeContext from '../../../context/ThemeContext';
+import { FooterWrapper, SocialContainer, SocialIconsContainer, SocialIcons } from './FooterStyles';
 
 const Footer = () => {
+    const theme = useContext(ThemeContext);
+
     return (
         <FooterWrapper>
             <SocialIconsContainer>
                 <p style={{ flex:'1 1 50%', textAlign: 'left', marginLeft: '6vh' }}>© 2021 Quentin Fontenay</p>
                 <SocialContainer>
                     <SocialIcons href="https://github.com/QuentinFontenay">
-                        <AiFillGithub size="3.5rem" />
+                        <AiFillGithub size="3.5rem" color={theme.mode == 'dark' ? 'white' : 'black'} />
                     </SocialIcons>
 
                     <SocialIcons href="https://www.linkedin.com/in/quentin-fontenay/">
-                        <AiFillLinkedin size="3.5rem" />
+                        <AiFillLinkedin size="3.5rem" color={theme.mode == 'dark' ? 'white' : 'black'} />
                     </SocialIcons>
 
                     <SocialIcons href="https://medium.com/@quentinfontenay">
-                        <AiFillMediumSquare size="3.5rem" />
+                        <AiFillMediumSquare size="3.5rem" color={theme.mode == 'dark' ? 'white' : 'black'} />
                     </SocialIcons>
                 </SocialContainer>
             </SocialIconsContainer>

@@ -18,6 +18,9 @@ export const Button = styled.button`
   &:focus {
     box-shadow: 3px 4px 5px -2px rgba(0, 0, 0, 0.33), 0 0 0 3px var(--secondary);
   }
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const ButtonContainer = styled.div`

@@ -18,7 +18,6 @@ const TITLE_PART_SERVICE = "Mes services"
 const HomePage = () => {
     return (
         <Layout>
-        <ThemeButton />
             <Section grid hero nopadding>
                 <HeroBanner />
                 <HeroImage />

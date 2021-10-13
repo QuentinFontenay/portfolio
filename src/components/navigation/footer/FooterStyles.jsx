@@ -26,3 +26,15 @@ export const SocialContainer = styled.div`
 	display: flex;
   	align-items: center;
 `
+
+export const SocialIcons = styled.a`
+    transition: 0.3s ease;
+    color: white;
+    border-radius: 50px;
+    padding: 12px;
+    &:hover {
+        background-color: ${({ theme }) => theme.socialIcon};
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+`

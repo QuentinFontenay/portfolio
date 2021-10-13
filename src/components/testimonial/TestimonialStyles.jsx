@@ -84,7 +84,7 @@ export const BlockText = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #17181D;
+  background-color: ${({ theme }) => theme.backgroundCard};
   border-radius: 10px;
   margin-bottom: 3rem;
 `
@@ -94,7 +94,7 @@ export const ArrowDown = styled.div`
   height: 0;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  border-bottom: 20px solid #17181D;
+  border-bottom: 20px solid ${({ theme }) => theme.backgroundCard};
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;

@@ -58,7 +58,6 @@ const Testimonial = ({ testimonials }) => {
           </Name2>
           <ArrowDown></ArrowDown>
           <BlockText>
-            <ArrowDown></ArrowDown>
             <TestimonialText>{text}</TestimonialText>
           </BlockText>
         </div>

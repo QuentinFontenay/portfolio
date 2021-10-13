@@ -17,7 +17,7 @@ export const Text = styled.p`
 `;
 
 export const Card = styled.div`
-  background: #17181d;
+  background: ${({ theme }) => theme.backgroundCard};
   border-radius: 0.5rem;
   margin: 3rem 1rem;
   padding: 2rem;

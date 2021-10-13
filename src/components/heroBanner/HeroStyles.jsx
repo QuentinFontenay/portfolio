@@ -15,7 +15,6 @@ export const SubText = styled.p`
   font-size: 18px;
   font-weight: 400;
   line-height: 1;
-  color: white;
 
 `;
 
@@ -25,7 +24,6 @@ export const HeaderText = styled.h1`
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 12px;
-  color: white;
   
 `;
 
@@ -41,7 +39,6 @@ export const TextContainer = styled.div`
         max-width: 550px;
     }
     h1 {
-        color: white;
         /* margin-top: 2vh;
         margin-left: 0;
         padding-left: 0; */

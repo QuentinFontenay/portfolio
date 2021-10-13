@@ -25,7 +25,7 @@ export const Divider = styled.hr`
 `;
 
 export const Box = styled.div`
-    background: #17181d;
+    background: ${({ theme }) => theme.backgroundCard};
     border-radius: 12px;
     padding: 24px;
     text-align: center;

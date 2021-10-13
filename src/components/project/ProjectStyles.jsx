@@ -110,7 +110,7 @@ width: 100%;
   margin: 0;
   padding: 0;
   border-radius: 10em;
-  border-top: 1px solid #fff5ee;
+  border-top: 1px solid ${({ theme }) => theme.project.line};
   opacity: 0.75;
   @media only screen and (max-width: 500px) {
     display: none;

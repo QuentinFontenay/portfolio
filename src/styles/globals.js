@@ -13,14 +13,14 @@ const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
   }
   body {
-    font-family: ${props => props.theme.fonts.main};
+    font-family: ${({ theme }) => theme.fonts.main};
     font-size: 1.6rem;
-    background: ${props => props.theme.colors.background1};
-    color: ${props => props.theme.colors.primary1};
+    background: ${({ theme }) => theme.background1};
+    color: ${({ theme }) => theme.text};
     cursor: default;
   }
   h1,h2,h3,h4,h5,h6,button {
-    font-family: ${props => props.theme.fonts.title};
+    font-family: ${({ theme }) => theme.fonts.title};
   }
   a {
     text-decoration: none;

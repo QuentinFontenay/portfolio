@@ -13,7 +13,7 @@ const menuItems = [
 const Header = () => (
     <Container>
         <Home>
-            <Link to="/" style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
+            <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
                 <Span>Fontenay Quentin</Span>
             </Link>
         </Home>

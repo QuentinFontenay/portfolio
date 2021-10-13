@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React, { useContext } from 'react';
+import ThemeContext from '../../context/ThemeContext';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { FiExternalLink } from 'react-icons/fi';
 import { AiFillGithub } from 'react-icons/ai';
@@ -19,6 +19,9 @@ import {
 } from "./ProjectStyles";
 
 const Project = (props) => {
+
+    const theme = useContext(ThemeContext);
+
     return (
         <Section id="projects">
             {props.projects.length === 1 &&
@@ -50,7 +53,7 @@ const Project = (props) => {
                                             rel="noopener noreferrer"
                                             aria-label="website link"
                                         >
-                                            <FiExternalLink size="3rem" />
+                                            <FiExternalLink size="3rem" color={theme.mode == 'dark' ? 'white' : 'black'} />
                                         </ProjectLink>
                                     )}
                                     {project.source.length !== 0 && (
@@ -60,7 +63,7 @@ const Project = (props) => {
                                             rel="noopener noreferrer"
                                             aria-label="code repository"
                                         >
-                                            <AiFillGithub size="3rem" />
+                                            <AiFillGithub size="3rem" color={theme.mode == 'dark' ? 'white' : 'black'} />
                                         </ProjectLink>
                                     )}
                                 </ProjectTitleContainer>

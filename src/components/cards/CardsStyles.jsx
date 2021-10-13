@@ -19,7 +19,7 @@ export const Boxes = styled.div`
 `
 
 export const Box = styled.div`
-    background: #17181d;
+    background: ${({ theme }) => theme.backgroundCard};
     border-radius: 12px;
     height: 144px;
     padding: 24px;
