@@ -80,7 +80,7 @@ export const CustomImage = styled.img`
   background-size: cover;
   background-position: center;
   border: transparent;
-  background-color: #121113;
+  /* background-color: #121113; */
 `;
 
 export const ProjectTitle = styled.h2`

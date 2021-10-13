@@ -21,7 +21,14 @@ const themes = {
         },
         contact: {
             background: '#DDDDDD',
-            placeholder: ''
+            placeholder: '',
+            label: 'black',
+            backgroundInput: '#cacacc'
+        },
+        cards: {
+            text: 'rgba(0, 0, 0, 0.75)',
+            divider: 'rgba(0, 0, 0, 0.52)',
+            subText: '#383837'
         },
     },
     dark: {
@@ -41,6 +48,13 @@ const themes = {
         contact: {
             background: '#17181d',
             placeholder: '',
+            label: 'white',
+            backgroundInput: '#1F2024'
+        },
+        cards: {
+            text: 'rgba(255, 255, 255, 0.75)',
+            divider: 'rgba(255, 255, 255, 0.12)',
+            subText: '#C7C7C8'
         },
     },
 };

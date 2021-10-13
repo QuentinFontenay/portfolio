@@ -20,7 +20,7 @@ export const Boxes = styled.div`
     }
 `
 export const Divider = styled.hr`
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid ${({ theme }) => theme.cards.divider};
   margin-bottom: 2rem;
 `;
 
@@ -52,7 +52,6 @@ export const BoxNum = styled.h5`
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.01em;
-    color: #FFFFFF;
     margin-bottom: 8px;
     @media ${props => props.theme.breakpoints.md} {
         font-size: 28px;
@@ -71,7 +70,7 @@ export const BoxText = styled.p`
     margin-top: 1vh;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: rgba(255, 255, 255, 0.75);
+    color: ${({ theme }) => theme.cards.text};
     @media ${props => props.theme.breakpoints.md}{
         font-size: 16px;
         line-height: 20px;
@@ -90,48 +89,5 @@ export const BoxSubText = styled.p`
     margin-bottom: 2rem;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #C7C7C8;
-`
-export const Join = styled.div`
-    display: flex;
-    max-width: 1040px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 80px;
-    @media ${props => props.theme.breakpoints.md}{
-        display: flex;
-        justify-content: center;
-        padding-bottom: 64px;
-    }
-    @media ${props => props.theme.breakpoints.sm}{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 32px;
-    }
-`
-
-export const JoinText = styled.h5`
-    display: flex;
-    font-size: 24px;
-    line-height: 40px;
-    letter-spacing: 0.02em;
-    color: rgba(255, 255, 255, 0.5);
-    @media ${props => props.theme.breakpoints.md}{
-    line-height: 32px;
-    font-size: 20px;
-    };
-    @media ${props => props.theme.breakpoints.sm}{
-        font-size: 16px;
-        line-height: 24px;
-        margin: 0 0 16px;
-    }
-`
-
-export const IconContainer = styled.div`
-    display: flex;
-    @media ${props => props.theme.breakpoints.sm}{
-        width: 160px;
-        justify-content: space-between;
-    }
+    color: ${({ theme }) => theme.cards.subText};
 `

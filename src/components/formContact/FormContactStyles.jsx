@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Box = styled.div`
-    background: #17181d;
+    background: ${({ theme }) => theme.contact.background};
     border-radius: 12px;
     height: 344px;
     border-bottom: solid 0.5em;
@@ -22,7 +22,6 @@ export const Box = styled.div`
     }
 `
 export const BoxTitle = styled.h2`
-    color: white;
     text-align: center;
     font-weight: 400;
     font-size: 2.125rem;
@@ -144,7 +143,7 @@ export const ContactForm = styled.form`
   top: -50px;
   right: -40px;
   padding: 50px 30px;
-  background: #17181d;
+  background: ${({ theme }) => theme.contact.background};
   border-radius: 10px;
   min-height: 400px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
@@ -157,11 +156,11 @@ export const ContactForm = styled.form`
     ". button";
   label span {
     font-size: 0.85em;
-    color: white;
+    color: ${({ theme }) => theme.contact.label};
   }
   textarea,
   input {
-    color: white;
+    color: ${({ theme }) => theme.contact.label};
   }
   .label__email {
     grid-area: email;
@@ -188,7 +187,7 @@ export const ContactForm = styled.form`
   textarea {
     padding: 15px 15px;
     border-radius: 5px;
-    background-color: #1F2024;
+    background-color: ${({ theme }) => theme.contact.backgroundInput};
     border: none;
     margin: 10px 0;
     width: 100%;
