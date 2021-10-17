@@ -6,9 +6,14 @@ export const Section = styled.section`
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0"} ;
   margin: 0 auto;
   max-width: ${(props) => props.hero ? "1400px" : "1040px"};
+  height: ${(props) => props.hero ? "80vh" : "auto"};;
+  min-height: ${(props) => props.hero ? "80vh" : "auto"};
+  align-items: ${(props) => props.hero ? "center" : "default"};
+  justify-content: ${(props) => props.hero ? "center" : "default"};
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
+  /* border: 1px solid #2d2d2d; */
   grid-template-columns: 2fr 1fr;
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
