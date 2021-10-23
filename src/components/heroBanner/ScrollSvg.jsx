@@ -6,9 +6,10 @@ const Scroll = () => {
 
     return (
         <div style={{
-            position: 'relative',
-            top: '100%',
-            transform: 'translateY(-100%)'
+           position: "absolute",
+           bottom: "0",
+           left: "50%",
+           transform: "translate(-50%, -50%)"
         }}>
             <svg
                 width="35px" viewBox="0 0 14.334 24.75" >

@@ -4,6 +4,8 @@ export const Box = styled.div`
     /* justify-content: space-around; */
     /* height: 70vh; */
     text-align: center;
+    display: flex;
+    flex-direction: column;
     /* padding: 40px; */
     /* padding-left: 40px; */
     /* padding-right: 40px; */
@@ -25,6 +27,12 @@ export const HeaderText = styled.h1`
   
 `;
 
+export const HeaderSubText = styled.h2`
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+`;
+
 export const TextContainer = styled.div`
     /* display: flex; */
     /* flex-direction: column; */
@@ -41,8 +49,21 @@ export const TextContainer = styled.div`
     }
 `;
 
-export const SocialBlock = styled.li`
-  display: inline-block;
+export const SocialBlock = styled.div`
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  justify-content: center;
+  margin-top: 3vh;
+  column-gap: 30px;
+  a {
+    transition: transform 0.2s;
+  }
+  a:hover {
+    /* opacity: 0.75; */
+    transform: translateY(-0.2em) scale(1.2);
+  }
+
 `
 
 export const Image = styled.img`
@@ -50,5 +71,5 @@ export const Image = styled.img`
   margin: ${props => props.margin || 0};
   padding: ${props => props.padding || 0};
   border-radius: ${props => props.borderRadius || 0};
-  text-align: center;
+  align-self: center;
 `;

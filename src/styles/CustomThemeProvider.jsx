@@ -33,7 +33,7 @@ const themes = {
     },
     dark: {
         text: '#fff',
-        background1: '#1F2024',
+        background1: '#1F2937',
         backgroundCard: '#17181d',
         titleColor: '#fff',
         socialIcon: '#17181d',
