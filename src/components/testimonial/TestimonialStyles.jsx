@@ -115,7 +115,7 @@ export const CarouselDot = styled.div`
         width: 2rem;
 
         &.active {
-            background: #8579f9;
+            background: ${({ theme }) => theme.dotTestimonial};
         }
     }
 `

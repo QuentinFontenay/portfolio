@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { Box, TextContainer, HeaderText, SubText, SocialBlock, Image, HeaderSubText } from "./HeroStyles"
+import { Box, TextContainer, HeaderText, SubText, SocialBlock, HeaderSubText, BoxBackground } from "./HeroStyles"
 import { Section } from '../../styles/GlobalComponents';
 import { AiFillGithub, AiFillMediumSquare, AiFillLinkedin } from 'react-icons/ai';
 import { FiMail } from 'react-icons/fi';
@@ -10,6 +10,7 @@ const Hero = ({ props }) => {
     const theme = useContext(ThemeContext);
     return (
         <Section hero nopadding>
+        <BoxBackground></BoxBackground>
             <Box>
                 <TextContainer>
                     <HeaderSubText>

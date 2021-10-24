@@ -10,10 +10,13 @@ const themes = {
         titleColor: '#333',
         backgroundCard: '#DDDDDD',
         text: '#1F2024',
+        dividerSection: '#317AC1',
         socialIcon: '#DDDDDD',
+        dotTestimonial: '#317AC1',
         project: {
             line: 'black',
-            icon: 'black'
+            icon: 'black',
+            colorTag: '#317AC1'
         },
         nav: {
             span: 'rgba(0, 0, 0, 0.75)',
@@ -34,12 +37,15 @@ const themes = {
     dark: {
         text: '#fff',
         background1: '#1F2937',
-        backgroundCard: '#17181d',
+        backgroundCard: '#317AC1',
         titleColor: '#fff',
         socialIcon: '#17181d',
+        dividerSection: '#317AC1',
+        dotTestimonial: '#317AC1',
         project: {
             line: 'white',
-            icon: 'white'
+            icon: 'white',
+            colorTag: '#317AC1'
         },
         nav: {
             span: 'rgba(255, 255, 255, 0.75)',
@@ -65,7 +71,7 @@ const themes = {
 const shared = {
     // Temp fonts
     fonts: {
-        title: "Space Grotesk, sans-serif",
+        title: "Source Sans Pro, sans-serif",
         main: "Space Grotesk, sans-serif"
     },
     // Colors for layout

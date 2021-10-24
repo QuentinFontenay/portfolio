@@ -9,7 +9,6 @@ import { services } from '../../constants/services';
 import CardsWithImage from '../../components/cards/CardsWithImage';
 import '../../components/heroBanner/ScrollAnimation.css';
 import Scroll from '../../components/heroBanner/ScrollSvg';
-import Header from '../../components/navigation/header/Header';
 
 const TITLE_PART_PROJET_EN_COURS = "Projet en cours";
 const TITLE_PART_SERVICE = "Mes services"

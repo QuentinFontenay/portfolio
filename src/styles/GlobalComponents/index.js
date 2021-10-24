@@ -78,7 +78,7 @@ export const SectionDivider = styled.div`
   height: 8px;
   border-radius: 10px;
   background-color: #fff;
-  background: #4949cf;
+  background: ${({ theme }) => theme.dividerSection};
   margin-bottom: 16px;
     margin: ${(props) => props.divider ? "4rem 0" : ""};
   @media ${(props) => props.theme.breakpoints.md} {

@@ -6,11 +6,22 @@ export const Box = styled.div`
     text-align: center;
     display: flex;
     flex-direction: column;
+    z-index: 2;
     /* padding: 40px; */
     /* padding-left: 40px; */
     /* padding-right: 40px; */
 `;
 
+export const BoxBackground = styled.div`
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  border: 2px solid;
+  transform: translate(-50%, -50%);
+  width: 60vh;
+  height: 30vh;
+`
 export const SubText = styled.p`
   margin-bottom: 0px;
   font-size: 18px;
@@ -24,7 +35,7 @@ export const HeaderText = styled.h1`
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 12px;
-  
+  color: 'black';
 `;
 
 export const HeaderSubText = styled.h2`
