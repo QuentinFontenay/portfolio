@@ -158,7 +158,7 @@ export const ButtonFront = styled.button`
     margin: 0;
     width: ${({ alt }) => alt ? '26%' : '50%'};
     text-align: center;
-    background-color: #8578F9;
+    background-color: ${({ theme }) => theme.backgroundButton};
     border-radius: 5px;
     border: 0;
     font-size: 16px;

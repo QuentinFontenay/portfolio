@@ -9,6 +9,7 @@ export const Wrapper = styled.section`
 `;
 
 export const Text = styled.p`
+  color: ${({ theme }) => theme.backgroundText};
   text-align: ${props => props.align || 'initial'};
   font-size: ${props => props.size || '100%'};
   font-weight: ${props => props.weight || 'normal'};
@@ -51,6 +52,6 @@ export const Container = styled.div`
 `;
 
 export const CardDescription = styled.div`
-  border-left: 0.1rem dashed;
+  border-left: 0.1rem dashed ${({ theme }) => theme.backgroundText};
   padding-left: 1rem;
 `;

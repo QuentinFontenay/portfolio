@@ -1,12 +1,12 @@
 import styled from "styled-components"
 
 export const Box = styled.div`
-    background: ${({ theme }) => theme.contact.background};
+    background: ${({ theme }) => theme.contact.backgroundDispo};
     border-radius: 12px;
     height: 344px;
     border-bottom: solid 0.5em;
     width: 100%;
-    border-bottom-color: green;
+    border-bottom-color: #2fdd2f;
     padding: 24px;
     text-align: center;
     @media ${props => props.theme.breakpoints.lg} {
@@ -111,7 +111,7 @@ export const ContactBox = styled.div`
   height: 400px;
   margin-bottom: 10vh;
   margin-top: 150px;
-  background: #8579f9;
+  background: ${({ theme }) => theme.contact.backgroundLeft};
   padding: 20px;
   border-radius: 10px;
   @media (max-width: 1000px) {
@@ -143,7 +143,7 @@ export const ContactForm = styled.form`
   top: -50px;
   right: -40px;
   padding: 50px 30px;
-  background: ${({ theme }) => theme.contact.background};
+  background: ${({ theme }) => theme.contact.backgroundForm};
   border-radius: 10px;
   min-height: 400px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);

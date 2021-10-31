@@ -44,7 +44,7 @@ export const HeaderSubText = styled.h2`
   line-height: 1.25;
 `;
 
-export const TextContainer = styled.div`
+export const TextContainer = styled.article`
     /* display: flex; */
     /* flex-direction: column; */
     /* height: 70vh; */

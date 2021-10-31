@@ -8,6 +8,7 @@ export const Image = styled.img`
 `;
 
 export const Text = styled.p`
+  color: ${({ theme }) => theme.backgroundText};
   text-align: ${props => props.align || 'initial'};
   font-size: ${props => props.size || '100%'};
   font-weight: ${props => props.weight || 'normal'};

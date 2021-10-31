@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const CardWrapper = styled.div`
+export const CardWrapper = styled.article`
     background: ${({ theme }) => theme.backgroundCard};
     display: flex;
     flex-direction: column;     
@@ -24,12 +24,14 @@ export const CardIcon = styled.img`
 
 export const CardTitle = styled.h2`
     font-size: 2rem;
+    color: ${({ theme }) => theme.backgroundText};
     margin-bottom: 10px;
 `
 
 export const CardDesc = styled.p`
     font-size: 1.5rem;
     text-align: center;
+    color: ${({ theme }) => theme.backgroundText};
 `
 
 export const Boxes = styled.div`
@@ -81,6 +83,7 @@ export const BoxNum = styled.h5`
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.01em;
+    color: ${({ theme }) => theme.backgroundText};
     margin-bottom: 8px;
     @media ${props => props.theme.breakpoints.md} {
         font-size: 28px;
@@ -98,7 +101,7 @@ export const BoxText = styled.p`
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: ${({ theme }) => theme.cards.text};
+    color: ${({ theme }) => theme.backgroundText};
     @media ${props => props.theme.breakpoints.md}{
         font-size: 16px;
         line-height: 20px;

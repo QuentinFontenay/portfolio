@@ -17,6 +17,7 @@ export const Avatar = styled.span`
 export const TestimonialText = styled.p`
   font-size: 1.3em;
   margin-bottom: 2em;
+  color: ${({ theme }) => theme.backgroundText};
   padding-left: 4%;
   padding-right: 4%;
   margin-top: 1.2em;

@@ -20,7 +20,7 @@ export const Boxes = styled.div`
     }
 `
 export const Divider = styled.hr`
-  border-top: 1px solid ${({ theme }) => theme.cards.divider};
+  border-top: 1px solid ${({ theme }) => theme.backgroundText};
   margin-bottom: 2rem;
 `;
 
@@ -70,7 +70,7 @@ export const BoxText = styled.p`
     margin-top: 1vh;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: ${({ theme }) => theme.cards.text};
+    color: ${({ theme }) => theme.backgroundText};
     @media ${props => props.theme.breakpoints.md}{
         font-size: 16px;
         line-height: 20px;

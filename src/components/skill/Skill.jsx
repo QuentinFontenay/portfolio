@@ -21,7 +21,7 @@ const Skill = () => (
     <SectionDivider />
     <Boxes>
       <Box>
-        <GiPencilBrush fontSize="3rem"></GiPencilBrush>
+        <GiPencilBrush style={{ color: 'white' }} fontSize="3rem"></GiPencilBrush>
         <BoxText>Designer</BoxText>
         <BoxSubText>
           J'ai pu développer ses compétences grâce à mes différents projets personnels ce qui me
@@ -38,7 +38,7 @@ const Skill = () => (
         ))}
       </Box>
       <Box>
-        <GoBrowser fontSize="3rem"></GoBrowser>
+        <GoBrowser style={{ color: 'white' }} fontSize="3rem"></GoBrowser>
         <BoxText>Développeur Front-end</BoxText>
         <BoxSubText>
           Ses compétences me permettent de créer des interfaces responsive et au goût du jour.
@@ -54,7 +54,7 @@ const Skill = () => (
         ))}
       </Box>
       <Box>
-        <BiCodeAlt fontSize="3rem"></BiCodeAlt>
+        <BiCodeAlt style={{ color: 'white' }} fontSize="3rem"></BiCodeAlt>
         <BoxText>Développeur Back-end</BoxText>
         <BoxSubText>
           Ses compétences me permettent de récupérer des données à partir d'une bdd afin de
