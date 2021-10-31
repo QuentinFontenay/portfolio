@@ -3,7 +3,7 @@ import { BsMoon, BsSun } from 'react-icons/bs';
 import ThemeContext from '../../context/ThemeContext';
 import { ButtonContainer, Button } from './ThemeButtonStyles';
 
-function ThemeButton() {
+const ThemeButton = () => {
     const theme = useContext(ThemeContext);
     const isDarkTheme = theme.mode === 'dark';
 
