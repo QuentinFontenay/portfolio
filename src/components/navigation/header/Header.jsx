@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import { Container, Home, Navbar, NavLink, Span } from './HeaderStyles';
+import { Container, Home, Navbar, NavLink, Span, NavBarItems } from './HeaderStyles';
 
 const menuItems = [
     { title: "Accueil", link: "/" },
@@ -19,13 +19,15 @@ const Header = () => (
         </Home>
 
         <Navbar>
-            {menuItems.map(item => (
-                <li key={item.title}>
-                    <Link to={item.link}>
-                        <NavLink>{item.title}</NavLink>
-                    </Link>
-                </li>
-            ))}
+            <NavBarItems>
+                {menuItems.map(item => (
+                    <li key={item.title}>
+                        <Link to={item.link}>
+                            <NavLink>{item.title}</NavLink>
+                        </Link>
+                    </li>
+                ))}
+            </NavBarItems>
         </Navbar>
     </Container>
 );

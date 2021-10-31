@@ -10,7 +10,7 @@ const Hero = ({ props }) => {
     const theme = useContext(ThemeContext);
     return (
         <Section hero nopadding>
-        <BoxBackground></BoxBackground>
+            <BoxBackground></BoxBackground>
             <Box>
                 <TextContainer>
                     <HeaderSubText>
@@ -19,15 +19,17 @@ const Hero = ({ props }) => {
                     <HeaderText>
                         Quentin Fontenay
                     </HeaderText>
-                    <SubText>
-                        Je suis {" "}
-                        <ReactTypingEffect
-                            typingDelay={400}
-                            eraseSpeed={200}
-                            eraseDelay={500}
-                            text={["Développeur FullStack", "Développeur Mobile", "Data Scientist"]}
-                        />
-                    </SubText>
+                    <ReactTypingEffect
+                        typingDelay={400}
+                        eraseSpeed={200}
+                        eraseDelay={500}
+                        text={["Développeur FullStack", "Développeur Mobile", "Data Scientist"]}
+                        displayTextRenderer={(text) => {
+                            return (
+                                <SubText>Je suis {text}</SubText>
+                            );
+                        }}
+                    />
                 </TextContainer>
                 <SocialBlock>
                     <a href="https://github.com/QuentinFontenay">

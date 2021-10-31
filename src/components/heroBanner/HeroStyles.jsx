@@ -5,6 +5,10 @@ export const Box = styled.div`
     /* height: 70vh; */
     text-align: center;
     display: flex;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     flex-direction: column;
     z-index: 2;
     /* padding: 40px; */
@@ -16,7 +20,7 @@ export const BoxBackground = styled.div`
   position: absolute;
   z-index: 1;
   left: 50%;
-  top: 50%;
+  top: 40%;
   border: 2px solid;
   transform: translate(-50%, -50%);
   width: 60vh;

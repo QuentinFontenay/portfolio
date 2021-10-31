@@ -67,6 +67,7 @@ const Testimonial = ({ testimonials }) => {
           {testimonials.slice(0, testimonials.length).map((pos, i) => (
             <button
               key={i}
+              aria-label="Changer de témoignage"
               onClick={() => handleDotClick(i)}
               className={i === slideIndex ? 'dot active' : 'dot'}
             />

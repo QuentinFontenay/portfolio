@@ -1,13 +1,12 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.nav`
     display: grid;
     grid-template-columns: repeat(4, -1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 2rem;
-    padding: 1rem;
-    padding-top: 6rem;
+    padding-top: 4rem;
     @media ${(props) => props.theme.breakpoints.sm} {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -18,7 +17,7 @@ export const Container = styled.div`
 `;
 
 export const Span = styled.span`
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: ${({ theme }) => theme.nav.icon};
 `;
 
@@ -42,7 +41,7 @@ export const Navbar = styled.div`
 `;
 
 export const NavLink = styled.span`
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 32px;
     color: ${({ theme }) => theme.nav.span};
     transition: 0.4s ease;
@@ -54,3 +53,12 @@ export const NavLink = styled.span`
         padding: 0.5rem;
     }
 `;
+
+export const NavBarItems = styled.ul`
+    /* display: flex; */
+    /* flex-direction: row; */
+    li {
+        float: left;
+        padding: 30px;
+    }
+`
