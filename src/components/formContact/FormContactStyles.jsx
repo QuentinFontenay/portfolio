@@ -23,6 +23,7 @@ export const Box = styled.div`
 `
 export const BoxTitle = styled.h2`
     text-align: center;
+    color: ${({ theme }) => theme.backgroundText};
     font-weight: 400;
     font-size: 2.125rem;
 
@@ -30,6 +31,7 @@ export const BoxTitle = styled.h2`
 
 export const BoxTitle2 = styled.h1`
     font-size: 85px;
+    color: ${({ theme }) => theme.backgroundText};
     font-weight: 700;
     line-height: 1.25;
     margin-top: 5vh;

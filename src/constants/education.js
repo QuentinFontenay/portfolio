@@ -4,7 +4,7 @@ export const education = [
         description: "",
         company: 'DataScientest',
         role: "Data Scientist",
-        period: '2021 - 2022',
+        period: "2021 - À aujourd'hui",
     },
     {
         title: '',

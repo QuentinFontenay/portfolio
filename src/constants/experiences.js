@@ -4,7 +4,7 @@ export const experiences = [
         description: "",
         company: 'Fit Lab',
         role: 'Développeur FullStack',
-        period: "Octobre 2021 - A aujourd'hui",
+        period: "Octobre 2021 - À aujourd'hui",
     },
     {
         title: 'Développeur Symfony',
