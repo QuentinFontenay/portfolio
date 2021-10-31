@@ -4,7 +4,7 @@ import Theme from './styles/theme';
 import React, { useEffect, useState } from 'react';
 import Loading from '../src/components/loading/Loading';
 import '../src/components/loading/LoadingAnimation.css';
-import ThemeButton from './components/themeButton/themeButton';
+import ThemeButton from '../src/components/themeButton/themeButton';
 
 function App() {
   const [loading, setLoading] = useState(true);
