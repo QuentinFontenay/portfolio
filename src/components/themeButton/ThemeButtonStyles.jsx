@@ -31,4 +31,10 @@ export const ButtonContainer = styled.div`
   right: 0;
   top: 0;
   width: 4rem;
+  @media ${({ theme }) => theme.breakpoints.md} {
+      display: none;
+    }
+  @media ${({ theme }) => theme.breakpoints.sm} {
+      display: none;
+    }
 `;

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import React from 'react';
-import { Container, Home, Navbar, NavLink, Span, NavBarItems } from './HeaderStyles';
+import React, { useState } from 'react';
+import { Container, Home, Navbar, NavLink, Span, NavBarItems, BurgWrap } from './HeaderStyles';
+import { Squash as Hamburger } from 'hamburger-react';
 
 const menuItems = [
     { title: "Accueil", link: "/" },
@@ -10,26 +11,39 @@ const menuItems = [
     { title: "Contact", link: "contact" }
 ]
 
-const Header = () => (
-    <Container>
-        <Home>
-            <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
-                <Span>Fontenay Quentin</Span>
-            </Link>
-        </Home>
+const Header = () => {
+    const [open, setOpen] = useState(false);
 
-        <Navbar>
-            <NavBarItems>
-                {menuItems.map(item => (
-                    <li key={item.title}>
-                        <Link to={item.link}>
-                            <NavLink>{item.title}</NavLink>
-                        </Link>
-                    </li>
-                ))}
-            </NavBarItems>
-        </Navbar>
-    </Container>
-);
+    return (
+        <Container>
+            <BurgWrap>
+                <Hamburger
+                    color='#faf7ff'
+                    open={open}
+                    toggle={setOpen}
+                    toggled={open}
+                    duration={0.8}
+                />
+            </BurgWrap>
+            <Home>
+                <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
+                    <Span>Fontenay Quentin</Span>
+                </Link>
+            </Home>
+
+            <Navbar>
+                <NavBarItems open={open}>
+                    {menuItems.map(item => (
+                        <li key={item.title}>
+                            <Link to={item.link}>
+                                <NavLink>{item.title}</NavLink>
+                            </Link>
+                        </li>
+                    ))}
+                </NavBarItems>
+            </Navbar>
+        </Container>
+    )
+};
 
 export default Header;
