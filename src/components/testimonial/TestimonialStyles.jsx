@@ -21,6 +21,9 @@ export const TestimonialText = styled.p`
   padding-left: 4%;
   padding-right: 4%;
   margin-top: 1.2em;
+  @media ${({ theme }) => theme.breakpoints.sm} {
+        font-size: 1em;
+    }
 `;
 
 export const Name = styled.h3`

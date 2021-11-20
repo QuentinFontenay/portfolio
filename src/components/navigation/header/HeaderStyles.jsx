@@ -13,12 +13,16 @@ export const Container = styled.nav`
         grid-template-rows: repeat(2, 60px);
         grid-column-gap: 0.5rem;
         grid-row-gap: 0.5rem;
+        padding-top: 2rem;
     }
 `;
 
 export const Span = styled.span`
     font-size: 2.2rem;
     color: ${({ theme }) => theme.nav.icon};
+    @media ${({ theme }) => theme.breakpoints.sm} {
+        font-size: 1.8rem;
+    }
 `;
 
 export const Home = styled.div`
@@ -47,10 +51,11 @@ export const Navbar = styled.div`
 `;
 
 export const BurgWrap = styled.div`
-  padding: 0 15px 13px 0;
+  /* padding: 0 15px 13px 0; */
   display: none;
   @media ${({ theme }) => theme.breakpoints.sm} {
         display: block;
+        grid-column-start: 5;
     }
   @media ${({ theme }) => theme.breakpoints.md} {
         display: block;

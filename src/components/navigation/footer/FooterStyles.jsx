@@ -25,6 +25,9 @@ export const SocialContainer = styled.div`
 	text-align: right;
 	display: flex;
   	align-items: center;
+	@media ${({ theme }) => theme.breakpoints.sm} {
+        display: none;
+    }
 `
 
 export const SocialIcons = styled.a`
