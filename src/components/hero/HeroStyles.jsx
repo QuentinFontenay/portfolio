@@ -25,12 +25,18 @@ export const BoxBackground = styled.div`
   transform: translate(-50%, -50%);
   width: 60vh;
   height: 30vh;
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    width: 40vh;
+    }
 `
 export const SubText = styled.p`
   margin-bottom: 0px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1;
+  @media ${({ theme }) => theme.breakpoints.sm} {
+      font-size: 12px;
+    }
 
 `;
 
@@ -40,12 +46,18 @@ export const HeaderText = styled.h1`
   line-height: 1.25;
   margin-bottom: 12px;
   color: 'black';
+  @media ${({ theme }) => theme.breakpoints.sm} {
+      font-size: 28px;
+    }
 `;
 
 export const HeaderSubText = styled.h2`
   font-size: 18px;
   font-weight: 700;
   line-height: 1.25;
+  @media ${({ theme }) => theme.breakpoints.sm} {
+      font-size: 14px;
+    }
 `;
 
 export const TextContainer = styled.article`

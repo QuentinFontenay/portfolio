@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { Container, Home, Navbar, NavLink, Span, NavBarItems, BurgWrap } from './HeaderStyles';
-import { Squash as Hamburger } from 'hamburger-react';
+import { slide as Menu } from 'react-burger-menu'
+import { CgMenu } from 'react-icons/cg';
 
 const menuItems = [
     { title: "Accueil", link: "/" },
@@ -13,17 +14,13 @@ const menuItems = [
 
 const Header = () => {
     const [open, setOpen] = useState(false);
-
+    const handleToggle = () => {
+        setOpen(prev => !prev)
+    }
     return (
         <Container>
-            <BurgWrap>
-                <Hamburger
-                    color='#faf7ff'
-                    open={open}
-                    toggle={setOpen}
-                    toggled={open}
-                    duration={0.8}
-                />
+            <BurgWrap onClick={handleToggle}>
+                <CgMenu size="2.5rem" />
             </BurgWrap>
             <Home>
                 <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>

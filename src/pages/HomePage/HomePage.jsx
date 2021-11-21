@@ -7,8 +7,8 @@ import { TESTIMONIALS } from '../../constants/testimonials';
 import { projects } from '../../constants/projects';
 import { services } from '../../constants/services';
 import CardsWithImage from '../../components/cards/CardsWithImage';
-import '../../components/heroBanner/ScrollAnimation.css';
-import Scroll from '../../components/heroBanner/ScrollSvg';
+import '../../components/hero/ScrollAnimation.css';
+import Scroll from '../../components/hero/ScrollSvg';
 
 const TITLE_PART_PROJET_EN_COURS = "Projet en cours";
 const TITLE_PART_SERVICE = "Mes services"

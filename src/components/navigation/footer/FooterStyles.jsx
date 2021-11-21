@@ -18,6 +18,10 @@ export const SocialIconsContainer = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: row;
+	@media ${({ theme }) => theme.breakpoints.sm} {
+        flex-direction: column;
+    }
+
 `
 
 export const SocialContainer = styled.div`
@@ -25,9 +29,6 @@ export const SocialContainer = styled.div`
 	text-align: right;
 	display: flex;
   	align-items: center;
-	@media ${({ theme }) => theme.breakpoints.sm} {
-        display: none;
-    }
 `
 
 export const SocialIcons = styled.a`
