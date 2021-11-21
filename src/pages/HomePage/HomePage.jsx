@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroBanner from '../../components/heroBanner/Hero';
+import Hero from '../../components/hero/Hero';
 import { Layout } from '../../components/layout/LayoutContainer';
 import Project from '../../components/project/Project';
 import Testimonial from '../../components/testimonial/Testimonial';
@@ -17,7 +17,7 @@ const HomePage = () => {
     return (
         <>
             <Layout>
-                <HeroBanner />
+                <Hero />
                 <CardsWithImage titlePart={TITLE_PART_SERVICE} nb data={services} />
                 <Project titlePart={TITLE_PART_PROJET_EN_COURS} projects={projects.slice(0, 1)} />
                 <Testimonial testimonials={TESTIMONIALS} />
