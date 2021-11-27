@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { Container, Home, Navbar, NavLink, Span, NavBarItems, BurgWrap } from './HeaderStyles';
-import { slide as Menu } from 'react-burger-menu'
-import { CgMenu } from 'react-icons/cg';
+import { CgMenu, CgClose } from 'react-icons/cg';
 
 const menuItems = [
     { title: "Accueil", link: "/" },
@@ -20,7 +19,10 @@ const Header = () => {
     return (
         <Container>
             <BurgWrap onClick={handleToggle}>
-                <CgMenu size="2.5rem" />
+                {open
+                    ? <CgClose size="3rem" />
+                    : <CgMenu size="4rem" />
+                }
             </BurgWrap>
             <Home>
                 <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
