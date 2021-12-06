@@ -48,9 +48,9 @@ export const SocialIcons = styled.a`
 `
 
 export const Copyright = styled.p`
-	flex:'1 1 50%';
-	text-align: 'left';
-	margin-left: '6vh';
+	flex: 1 1 50%;
+	text-align: left;
+	margin-left: 6vh;
 	@media ${({ theme }) => theme.breakpoints.sm} {
         display: none;
     }
