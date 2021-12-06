@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { AiFillGithub, AiFillMediumSquare, AiFillLinkedin } from 'react-icons/ai';
 import ThemeContext from '../../../context/ThemeContext';
-import { FooterWrapper, SocialContainer, SocialIconsContainer, SocialIcons } from './FooterStyles';
+import { FooterWrapper, SocialContainer, SocialIconsContainer, SocialIcons, Copyright } from './FooterStyles';
 
 const Footer = () => {
     const theme = useContext(ThemeContext);
@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <FooterWrapper>
             <SocialIconsContainer>
-                <p style={{ flex:'1 1 50%', textAlign: 'left', marginLeft: '6vh' }}>© 2021 Quentin Fontenay</p>
+                <Copyright>© 2021 Quentin Fontenay</Copyright>
                 <SocialContainer>
                     <SocialIcons href="https://github.com/QuentinFontenay">
                         <AiFillGithub size="3.5rem" color={theme.mode == 'dark' ? 'white' : 'black'} />

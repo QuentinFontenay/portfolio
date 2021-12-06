@@ -18,11 +18,13 @@ const Header = () => {
     }
     return (
         <Container>
-            <BurgWrap onClick={handleToggle}>
-                {open
-                    ? <CgClose size="3rem" />
-                    : <CgMenu size="4rem" />
-                }
+            <BurgWrap>
+                <button style={{ border: 'none', background: 'none', width: '4rem', height: '4rem' }} onClick={handleToggle}>
+                    {open
+                        ? <CgClose color='white' size="3rem" />
+                        : <CgMenu color='white' size="4rem" />
+                    }
+                </button>
             </BurgWrap>
             <Home>
                 <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>

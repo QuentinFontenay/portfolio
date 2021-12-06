@@ -81,6 +81,10 @@ export const CustomImage = styled.img`
   background-position: center;
   border: transparent;
   /* background-color: #121113; */
+  @media ${props => props.theme.breakpoints.sm}{
+    height: 200px;
+    width: 20em;
+    }
 `;
 
 export const ProjectTitle = styled.h2`
@@ -173,10 +177,8 @@ export const Boxes = styled.div`
     }
     @media ${props => props.theme.breakpoints.sm}{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 10px;
-        max-width: 500px;
-        margin: 24px auto;
     }
 `
 
@@ -195,12 +197,11 @@ export const Box = styled.div`
         height: 210px;
     }
     @media ${props => props.theme.breakpoints.sm} {
-        height: 110px;
+        height: 20px;
+    }
+    @media ${props => props.theme.breakpoints.md} {
+        height: 60px;
         padding: 12px;
-        
-        &:nth-child(2n){
-        grid-row:2;
-        }
     }
 `
 

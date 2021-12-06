@@ -13,7 +13,7 @@ export const Container = styled.nav`
         grid-template-rows: repeat(1, 60px);
         grid-column-gap: 0.5rem;
         grid-row-gap: 0.5rem;
-        padding-top: 2rem;
+        padding-top: 0;
     }
   @media ${({ theme }) => theme.breakpoints.md} {
     display: grid;
@@ -21,7 +21,7 @@ export const Container = styled.nav`
     grid-template-rows: repeat(1, 100px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
-    padding-top: 2rem;
+    padding-top: 0;
   }
 `;
 

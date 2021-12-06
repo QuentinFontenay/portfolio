@@ -45,6 +45,10 @@ export const Image = styled.img`
   object-fit: ${props => props.objectFit || 'contain'};
   padding: ${props => props.padding || 0};
   border-radius: ${props => props.borderRadius || 0};
+  @media ${({ theme }) => theme.breakpoints.sm} {
+        width: 50%;
+        height: 50%;
+    }
 `;
 
 export const Name2 = styled.p`
@@ -91,6 +95,10 @@ export const BlockText = styled.div`
   background-color: ${({ theme }) => theme.backgroundCard};
   border-radius: 10px;
   margin-bottom: 3rem;
+  @media ${({ theme }) => theme.breakpoints.sm} {
+        height: 17vh;
+    }
+  
 `
 
 export const ArrowDown = styled.div`

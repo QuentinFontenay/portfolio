@@ -29,6 +29,10 @@ export const SocialContainer = styled.div`
 	text-align: right;
 	display: flex;
   	align-items: center;
+	@media ${({ theme }) => theme.breakpoints.sm} {
+        text-align: center;
+		margin: 0
+    }
 `
 
 export const SocialIcons = styled.a`
@@ -40,5 +44,14 @@ export const SocialIcons = styled.a`
         background-color: ${({ theme }) => theme.socialIcon};
         transform: scale(1.2);
         cursor: pointer;
+    }
+`
+
+export const Copyright = styled.p`
+	flex:'1 1 50%';
+	text-align: 'left';
+	margin-left: '6vh';
+	@media ${({ theme }) => theme.breakpoints.sm} {
+        display: none;
     }
 `

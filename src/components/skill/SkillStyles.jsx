@@ -9,7 +9,6 @@ export const Boxes = styled.div`
     @media ${props => props.theme.breakpoints.md}{
         gap: 16px;
         margin: 20px 0 32px;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     }
     @media ${props => props.theme.breakpoints.sm}{
         display: grid;
@@ -22,6 +21,9 @@ export const Boxes = styled.div`
 export const Divider = styled.hr`
   border-top: 1px solid ${({ theme }) => theme.backgroundText};
   margin-bottom: 2rem;
+  @media ${props => props.theme.breakpoints.sm} {
+       display: none;
+    }
 `;
 
 export const Box = styled.div`
@@ -33,7 +35,7 @@ export const Box = styled.div`
         height: 210px;
     }
     @media ${props => props.theme.breakpoints.md} {
-        height: 135px;
+        height: 210px;
         padding: 16px;
     }
     @media ${props => props.theme.breakpoints.sm} {
@@ -78,6 +80,25 @@ export const BoxText = styled.p`
     @media ${props => props.theme.breakpoints.sm} {
         font-size: 10px;
         line-height: 14px;
+        display: none;
+    }
+`
+
+export const BoxTitleText = styled.p`
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 1vh;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: ${({ theme }) => theme.backgroundText};
+    @media ${props => props.theme.breakpoints.md}{
+        font-size: 16px;
+        line-height: 20px;
+    };
+    @media ${props => props.theme.breakpoints.sm} {
+        font-size: 13px;
+        line-height: 14px;
     }
 `
 
@@ -90,4 +111,7 @@ export const BoxSubText = styled.p`
     line-height: 24px;
     letter-spacing: 0.02em;
     color: ${({ theme }) => theme.cards.subText};
+    @media ${props => props.theme.breakpoints.sm} {
+       display: none;
+    }
 `

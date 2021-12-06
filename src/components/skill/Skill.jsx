@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxSubText, BoxText, Divider } from './SkillStyles';
+import { Box, Boxes, BoxSubText, BoxText, Divider, BoxTitleText } from './SkillStyles';
 import { GoBrowser } from 'react-icons/go';
 import { BiCodeAlt } from 'react-icons/bi';
 import { GiPencilBrush } from 'react-icons/gi';
@@ -22,7 +22,7 @@ const Skill = () => (
     <Boxes>
       <Box>
         <GiPencilBrush style={{ color: 'white' }} fontSize="3rem"></GiPencilBrush>
-        <BoxText>Designer</BoxText>
+        <BoxTitleText>Designer</BoxTitleText>
         <BoxSubText>
           J'ai pu développer ses compétences grâce à mes différents projets personnels ce qui me
           de désigner des application mobiles ou web.
@@ -39,7 +39,7 @@ const Skill = () => (
       </Box>
       <Box>
         <GoBrowser style={{ color: 'white' }} fontSize="3rem"></GoBrowser>
-        <BoxText>Développeur Front-end</BoxText>
+        <BoxTitleText>Développeur Front-end</BoxTitleText>
         <BoxSubText>
           Ses compétences me permettent de créer des interfaces responsive et au goût du jour.
         </BoxSubText>
@@ -55,7 +55,7 @@ const Skill = () => (
       </Box>
       <Box>
         <BiCodeAlt style={{ color: 'white' }} fontSize="3rem"></BiCodeAlt>
-        <BoxText>Développeur Back-end</BoxText>
+        <BoxTitleText>Développeur Back-end</BoxTitleText>
         <BoxSubText>
           Ses compétences me permettent de récupérer des données à partir d'une bdd afin de
           pouvoir les manipuler.

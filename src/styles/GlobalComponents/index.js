@@ -174,9 +174,12 @@ export const ButtonFront = styled.button`
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${({ alt }) => alt ? '20px' : '16px'};
+    width: ${({ alt }) => alt ? '60%' : '50%'};
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 14px;
+    width: 100%;
+    grid-column: ${({ alt }) => alt ? '0' : 'span 2'};
   }
 `
 

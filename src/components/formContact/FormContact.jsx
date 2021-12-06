@@ -89,8 +89,7 @@ function FormContact() {
                             />
                         </label>
 
-                        <Button
-                            disabled={!isFormValid}
+                        <Button disabled={!isFormValid}
                             onClick={e => {
                                 e.preventDefault()
                                 sendEmail()

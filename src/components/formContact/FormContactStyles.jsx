@@ -17,7 +17,7 @@ export const Box = styled.div`
         padding: 16px;
     }
     @media ${props => props.theme.breakpoints.sm} {
-        height: 110px;
+        height: 140px;
         padding: 12px;
     }
 `
@@ -35,6 +35,10 @@ export const BoxTitle2 = styled.h1`
     font-weight: 700;
     line-height: 1.25;
     margin-top: 5vh;
+    @media ${props => props.theme.breakpoints.sm}{
+      font-size: 35px;
+      margin-top: 2vh;
+    }
 `
 
 export const BoxText = styled.p`
@@ -174,8 +178,6 @@ export const ContactForm = styled.form`
     grid-area: textarea;
   }
   .submit__btn {
-    justify-self: end;
-    width: fit-content;
     grid-area: button;
   }
   @media (max-width: 768px) {
@@ -193,12 +195,18 @@ export const ContactForm = styled.form`
     border: none;
     margin: 10px 0;
     width: 100%;
+    @media ${props => props.theme.breakpoints.sm}{
+      height: 50%;
+    }
   }
   textarea {
     margin: 10px 0;
     width: 100%;
     height: 200px;
     resize: none;
+    @media ${props => props.theme.breakpoints.sm}{
+      height: 100px;
+    }
   }
   @media (max-width: 1000px) {
     input,
