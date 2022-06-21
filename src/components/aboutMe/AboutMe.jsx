@@ -33,7 +33,7 @@ const AboutMe = () => (
                 </Text>
                 <BlocButton>
                     <Button alt="telecharger cv">
-                        <a href="https://quentinfontenay.notion.site/Fontenay-Quentin-fdf3f6d12836439eaa6442706dfaaaa8" target="_blank" style={{ color: 'white' }}>
+                        <a href="https://quentinfontenay.notion.site/Fontenay-Quentin-fdf3f6d12836439eaa6442706dfaaaa8" rel="noreferrer" target="_blank" style={{ color: 'white' }}>
                             Télécharger mon CV
                         </a>
                     </Button>

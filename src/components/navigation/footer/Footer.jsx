@@ -9,18 +9,18 @@ const Footer = () => {
     return (
         <FooterWrapper>
             <SocialIconsContainer>
-                <Copyright>© 2021 Quentin Fontenay</Copyright>
+                <Copyright>© 2022 Quentin Fontenay</Copyright>
                 <SocialContainer>
                     <SocialIcons href="https://github.com/QuentinFontenay">
-                        <AiFillGithub size="3.5rem" color={theme.mode == 'dark' ? 'white' : 'black'} />
+                        <AiFillGithub size="3.5rem" color={theme.mode === 'dark' ? 'white' : 'black'} />
                     </SocialIcons>
 
                     <SocialIcons href="https://www.linkedin.com/in/quentin-fontenay/">
-                        <AiFillLinkedin size="3.5rem" color={theme.mode == 'dark' ? 'white' : 'black'} />
+                        <AiFillLinkedin size="3.5rem" color={theme.mode === 'dark' ? 'white' : 'black'} />
                     </SocialIcons>
 
                     <SocialIcons href="https://medium.com/@quentinfontenay">
-                        <AiFillMediumSquare size="3.5rem" color={theme.mode == 'dark' ? 'white' : 'black'} />
+                        <AiFillMediumSquare size="3.5rem" color={theme.mode === 'dark' ? 'white' : 'black'} />
                     </SocialIcons>
                 </SocialContainer>
             </SocialIconsContainer>
