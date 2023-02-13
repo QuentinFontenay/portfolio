@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <FooterWrapper>
             <SocialIconsContainer>
-                <Copyright>© 2022 Quentin Fontenay</Copyright>
+                <Copyright>© 2023 Quentin Fontenay</Copyright>
                 <SocialContainer>
                     <SocialIcons href="https://github.com/QuentinFontenay">
                         <AiFillGithub size="3.5rem" color={theme.mode === 'dark' ? 'white' : 'black'} />
