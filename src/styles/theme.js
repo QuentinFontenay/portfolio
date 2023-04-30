@@ -1,15 +1,19 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import GlobalStyles from './globals';
-import React, { useState } from 'react';
 import CustomThemeProvider from './CustomThemeProvider';
 
-const Theme = ({ children }) => {
-
+function Theme({ children }) {
   return (
     <CustomThemeProvider>
       <GlobalStyles />
       {children}
     </CustomThemeProvider>
-  )
+  );
+}
+
+Theme.propTypes = {
+  children: PropTypes.string.isRequired,
 };
 
 export default Theme;

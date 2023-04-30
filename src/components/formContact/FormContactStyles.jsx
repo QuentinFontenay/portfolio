@@ -1,106 +1,105 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const Box = styled.div`
-    background: ${({ theme }) => theme.contact.backgroundDispo};
-    border-radius: 12px;
-    height: 344px;
-    border-bottom: solid 0.5em;
-    width: 100%;
-    border-bottom-color: #2fdd2f;
-    padding: 24px;
-    text-align: center;
-    @media ${props => props.theme.breakpoints.lg} {
-        height: 210px;
-    }
-    @media ${props => props.theme.breakpoints.md} {
-        height: 135px;
-        padding: 16px;
-    }
-    @media ${props => props.theme.breakpoints.sm} {
-        height: 140px;
-        padding: 12px;
-    }
-`
+  background: ${({ theme }) => theme.contact.backgroundDispo};
+  border-radius: 12px;
+  height: 344px;
+  border-bottom: solid 0.5em;
+  width: 100%;
+  border-bottom-color: #2fdd2f;
+  padding: 24px;
+  text-align: center;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    height: 210px;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 135px;
+    padding: 16px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 140px;
+    padding: 12px;
+  }
+`;
 export const BoxTitle = styled.h2`
-    text-align: center;
-    color: ${({ theme }) => theme.backgroundText};
-    font-weight: 400;
-    font-size: 2.125rem;
-
-`
+  text-align: center;
+  color: ${({ theme }) => theme.backgroundText};
+  font-weight: 400;
+  font-size: 2.125rem;
+`;
 
 export const BoxTitle2 = styled.h1`
-    font-size: 85px;
-    color: ${({ theme }) => theme.backgroundText};
-    font-weight: 700;
-    line-height: 1.25;
-    margin-top: 5vh;
-    @media ${props => props.theme.breakpoints.sm}{
-      font-size: 35px;
-      margin-top: 2vh;
-    }
-`
+  font-size: 85px;
+  color: ${({ theme }) => theme.backgroundText};
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 5vh;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 35px;
+    margin-top: 2vh;
+  }
+`;
 
 export const BoxText = styled.p`
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: rgba(255, 255, 255, 0.75);
-    @media ${props => props.theme.breakpoints.md}{
-        font-size: 16px;
-        line-height: 20px;
-    };
-    @media ${props => props.theme.breakpoints.sm} {
-        font-size: 10px;
-        line-height: 14px;
-    }
-`
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.75);
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 10px;
+    line-height: 14px;
+  }
+`;
 
 export const Join = styled.div`
+  display: flex;
+  max-width: 1040px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+  @media ${(props) => props.theme.breakpoints.md} {
     display: flex;
-    max-width: 1040px;
     justify-content: center;
+    padding-bottom: 64px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-bottom: 80px;
-    @media ${props => props.theme.breakpoints.md}{
-        display: flex;
-        justify-content: center;
-        padding-bottom: 64px;
-    }
-    @media ${props => props.theme.breakpoints.sm}{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 32px;
-    }
-`
+    padding-bottom: 32px;
+  }
+`;
 
 export const JoinText = styled.h5`
-    display: flex;
-    font-size: 24px;
-    line-height: 40px;
-    letter-spacing: 0.02em;
-    color: rgba(255, 255, 255, 0.5);
-    @media ${props => props.theme.breakpoints.md}{
+  display: flex;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  @media ${(props) => props.theme.breakpoints.md} {
     line-height: 32px;
     font-size: 20px;
-    };
-    @media ${props => props.theme.breakpoints.sm}{
-        font-size: 16px;
-        line-height: 24px;
-        margin: 0 0 16px;
-    }
-`
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px;
+  }
+`;
 
 export const IconContainer = styled.div`
-    display: flex;
-    @media ${props => props.theme.breakpoints.sm}{
-        width: 160px;
-        justify-content: space-between;
-    }
-`
+  display: flex;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 160px;
+    justify-content: space-between;
+  }
+`;
 
 export const ContactWrapper = styled.section`
   margin-bottom: 200px;
@@ -109,7 +108,7 @@ export const ContactWrapper = styled.section`
   @media (max-width: 478px) {
     width: 100%;
   }
-`
+`;
 
 export const ContactBox = styled.div`
   width: calc(100% - 30px);
@@ -125,7 +124,7 @@ export const ContactBox = styled.div`
     padding: 10px;
     margin-top: 50px;
   }
-`
+`;
 export const LeftContent = styled.div`
   position: absolute;
   top: 50%;
@@ -141,7 +140,7 @@ export const LeftContent = styled.div`
   @media (max-width: 1000px) {
     display: none;
   }
-`
+`;
 
 export const ContactForm = styled.form`
   position: absolute;
@@ -157,9 +156,9 @@ export const ContactForm = styled.form`
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "email name"
-    "textarea textarea"
-    ". button";
+    'email name'
+    'textarea textarea'
+    '. button';
   label span {
     font-size: 0.85em;
     color: ${({ theme }) => theme.contact.label};
@@ -182,10 +181,10 @@ export const ContactForm = styled.form`
   }
   @media (max-width: 768px) {
     grid-template-areas:
-      "email email"
-      "name name"
-      "textarea textarea"
-      ". button";
+      'email email'
+      'name name'
+      'textarea textarea'
+      '. button';
   }
   input,
   textarea {
@@ -195,7 +194,7 @@ export const ContactForm = styled.form`
     border: none;
     margin: 10px 0;
     width: 100%;
-    @media ${props => props.theme.breakpoints.sm}{
+    @media ${(props) => props.theme.breakpoints.sm} {
       height: 50%;
     }
   }
@@ -204,7 +203,7 @@ export const ContactForm = styled.form`
     width: 100%;
     height: 200px;
     resize: none;
-    @media ${props => props.theme.breakpoints.sm}{
+    @media ${(props) => props.theme.breakpoints.sm} {
       height: 100px;
     }
   }
@@ -219,7 +218,7 @@ export const ContactForm = styled.form`
     top: 0px;
     right: 0px;
   }
-`
+`;
 export const Recieved = styled.div`
   width: calc(100% - 30px);
   position: relative;
@@ -233,4 +232,4 @@ export const Recieved = styled.div`
   h3 {
     color: #f8f8f8;
   }
-`
+`;

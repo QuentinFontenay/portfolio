@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const TestimonialsContainer = styled.div`
   position: relative;
@@ -22,8 +22,8 @@ export const TestimonialText = styled.p`
   padding-right: 4%;
   margin-top: 1.2em;
   @media ${({ theme }) => theme.breakpoints.sm} {
-        font-size: 1em;
-    }
+    font-size: 1em;
+  }
 `;
 
 export const Name = styled.h3`
@@ -42,13 +42,13 @@ export const QuoteIconContainer = styled.div`
 
 export const Image = styled.img`
   margin-top: 1.5em;
-  object-fit: ${props => props.objectFit || 'contain'};
-  padding: ${props => props.padding || 0};
-  border-radius: ${props => props.borderRadius || 0};
+  object-fit: ${(props) => props.objectFit || 'contain'};
+  padding: ${(props) => props.padding || 0};
+  border-radius: ${(props) => props.borderRadius || 0};
   @media ${({ theme }) => theme.breakpoints.sm} {
-        width: 50%;
-        height: 50%;
-    }
+    width: 50%;
+    height: 50%;
+  }
 `;
 
 export const Name2 = styled.p`
@@ -56,28 +56,28 @@ export const Name2 = styled.p`
   font-size: '1.55rem';
   line-height: '2.375rem';
   margin-top: 3rem;
-  @media(max-width: 1050px) {
+  @media (max-width: 1050px) {
     font-size: 0.9375rem;
     line-height: 1.25rem;
   }
-`
+`;
 
 export const Title = styled.span`
   font-weight: 500;
-  color: #B9B9CE;
+  color: #b9b9ce;
   margin-left: 0.625rem;
-`
+`;
 
 export const Previous = styled.button`
   font-weight: 500;
-  color: #B9B9CE;
-`
+  color: #b9b9ce;
+`;
 
 export const Next = styled.button`
   font-weight: 500;
   color: #4949cf;
   margin-left: 2rem;
-`
+`;
 
 export const GroupButton = styled.div`
   display: flex;
@@ -85,7 +85,7 @@ export const GroupButton = styled.div`
   padding-bottom: 5vh;
   justify-content: center;
   align-items: center;
-`
+`;
 
 export const BlockText = styled.div`
   display: flex;
@@ -96,10 +96,9 @@ export const BlockText = styled.div`
   border-radius: 10px;
   margin-bottom: 3rem;
   @media ${({ theme }) => theme.breakpoints.sm} {
-        height: 17vh;
-    }
-  
-`
+    height: 17vh;
+  }
+`;
 
 export const ArrowDown = styled.div`
   width: 0;
@@ -110,24 +109,24 @@ export const ArrowDown = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
-`
+`;
 
 export const CarouselDot = styled.div`
   /* top: 50%; */
   /* transform: translateX(-50%); */
   .dot {
-        background: #ccc;
-        border: 0;
-        border-radius: 50%;
-        cursor: pointer;
-        height: 2rem;
-        margin: 0 0.3rem 0;
-        outline: none;
-        transform: scale(0.5);
-        width: 2rem;
+    background: #ccc;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2rem;
+    margin: 0 0.3rem 0;
+    outline: none;
+    transform: scale(0.5);
+    width: 2rem;
 
-        &.active {
-            background: ${({ theme }) => theme.dotTestimonial};
-        }
+    &.active {
+      background: ${({ theme }) => theme.dotTestimonial};
     }
-`
+  }
+`;

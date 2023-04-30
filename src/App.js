@@ -1,10 +1,10 @@
 import './App.css';
+import React, { useEffect, useState } from 'react';
 import Router from './router/Router';
 import Theme from './styles/theme';
-import React, { useEffect, useState } from 'react';
-import Loading from '../src/components/loading/Loading';
-import '../src/components/loading/LoadingAnimation.css';
-import ThemeButton from '../src/components/themeButton/ThemeButton';
+import Loading from './components/loading/Loading';
+import './components/loading/LoadingAnimation.css';
+import ThemeButton from './components/themeButton/ThemeButton';
 
 function App() {
   const [loading, setLoading] = useState(true);

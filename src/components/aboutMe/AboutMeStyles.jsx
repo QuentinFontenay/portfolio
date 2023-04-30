@@ -1,20 +1,20 @@
 import styled from 'styled-components';
 
 export const Image = styled.img`
-  object-fit: ${props => props.objectFit || 'contain'};
-  margin: ${props => props.margin || 0};
-  padding: ${props => props.padding || 0};
-  border-radius: ${props => props.borderRadius || 0};
+  object-fit: ${(props) => props.objectFit || 'contain'};
+  margin: ${(props) => props.margin || 0};
+  padding: ${(props) => props.padding || 0};
+  border-radius: ${(props) => props.borderRadius || 0};
 `;
 
 export const Text = styled.p`
   color: ${({ theme }) => theme.backgroundText};
-  text-align: ${props => props.align || 'initial'};
-  font-size: ${props => props.size || '100%'};
-  font-weight: ${props => props.weight || 'normal'};
-  letter-spacing: ${props => props.spacing || 'normal'};
-  margin: ${props => props.margin || 0};
-  padding: ${props => props.padding || 0};
+  text-align: ${(props) => props.align || 'initial'};
+  font-size: ${(props) => props.size || '100%'};
+  font-weight: ${(props) => props.weight || 'normal'};
+  letter-spacing: ${(props) => props.spacing || 'normal'};
+  margin: ${(props) => props.margin || 0};
+  padding: ${(props) => props.padding || 0};
 `;
 
 export const Card = styled.div`
@@ -54,6 +54,19 @@ export const Card = styled.div`
   }
 `;
 
+export const LinkCV = styled.a`
+  color: white;
+  background: ${({ theme }) => theme.backgroundButton};
+  border-radius: 0.5rem;
+  font-size: 16px;
+  padding: 12px 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+
 export const CardInfo = styled.div`
   display: flex;
   flex-direction: row;
@@ -66,7 +79,7 @@ export const CardInfo = styled.div`
   }
 `;
 
-export const BlocButton = styled.div`
+export const BlocCv = styled.div`
   display: flex;
   justify-content: flex-end;
-`
+`;

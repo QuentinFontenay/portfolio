@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { ButtonFront } from './index';
 
-import { ButtonFront } from './index'
+function Button({ alt, onClick, disabled, children }) {
+  return (
+    <ButtonFront alt={alt} onClick={onClick} disabled={disabled}>
+      {children}
+    </ButtonFront>
+  );
+}
 
-const Button = (props) => (
-  <ButtonFront alt={props.alt} onClick={props.onClick} disabled={props.disabled}>{props.children}</ButtonFront>
-);
+Button.propTypes = {
+  alt: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  disabled: PropTypes.bool.isRequired,
+  children: PropTypes.string.isRequired,
+};
 
-export default Button
+export default Button;

@@ -1,4 +1,4 @@
-export const themes = {
+const themes = {
   light: {
     background1: 'var(--light-bg-color)',
     titleColor: '#333',
@@ -12,7 +12,7 @@ export const themes = {
     project: {
       line: 'black',
       icon: 'black',
-      colorTag: '#317AC1'
+      colorTag: '#317AC1',
     },
     nav: {
       span: 'rgba(0, 0, 0, 0.75)',
@@ -24,12 +24,12 @@ export const themes = {
       backgroundDispo: '#317AC1',
       placeholder: '',
       label: 'white',
-      backgroundInput: '#2f5b87'
+      backgroundInput: '#2f5b87',
     },
     cards: {
       text: 'rgba(0, 0, 0, 0.75)',
       divider: 'rgba(0, 0, 0, 0.52)',
-      subText: '#C7C7C8'
+      subText: '#C7C7C8',
     },
   },
   dark: {
@@ -45,7 +45,7 @@ export const themes = {
     project: {
       line: 'white',
       icon: 'white',
-      colorTag: '#317AC1'
+      colorTag: '#317AC1',
     },
     nav: {
       span: 'rgba(255, 255, 255, 0.75)',
@@ -57,12 +57,14 @@ export const themes = {
       backgroundDispo: '#317AC1',
       placeholder: '',
       label: 'white',
-      backgroundInput: '#2f5b87'
+      backgroundInput: '#2f5b87',
     },
     cards: {
       text: 'rgba(255, 255, 255, 0.75)',
       divider: 'rgba(255, 255, 255, 0.12)',
-      subText: '#C7C7C8'
+      subText: '#C7C7C8',
     },
   },
 };
+
+export default themes;

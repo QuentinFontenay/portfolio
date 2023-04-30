@@ -81,23 +81,25 @@ export const CustomImage = styled.img`
   background-position: center;
   border: transparent;
   /* background-color: #121113; */
-  @media ${props => props.theme.breakpoints.sm}{
+  @media ${(props) => props.theme.breakpoints.sm} {
     height: 200px;
     width: 20em;
-    }
+  }
 `;
 
 export const ProjectTitle = styled.h2`
   margin: 0.25em 1em 0.25em 0;
   color: ${({ theme: { palette } }) => palette?.font.primary};
   font-family: ${({ theme: { typography } }) => typography?.heading.fontFamily};
-  font-size: ${({ theme: { typography } }) => typography?.heading.fontSize.primary};
+  font-size: ${({ theme: { typography } }) =>
+    typography?.heading.fontSize.primary};
   font-weight: ${({ theme: { typography } }) => typography?.heading.fontWeight};
   letter-spacing: ${({ theme: { typography } }) =>
     typography?.heading.letterSpacing};
   white-space: nowrap;
   @media only screen and (max-width: 768px) {
-    font-size: ${({ theme: { typography } }) => typography?.heading.fontSize.secondary};
+    font-size: ${({ theme: { typography } }) =>
+      typography?.heading.fontSize.secondary};
     white-space: normal;
   }
   @media only screen and (max-width: 768px) {
@@ -110,7 +112,7 @@ export const ProjectTitle = styled.h2`
 `;
 
 export const ProjectHorizontalLine = styled.div`
-width: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   border-radius: 10em;
@@ -165,59 +167,59 @@ export const PortfolioContent = styled.div`
 `;
 
 export const Boxes = styled.div`
-    display: grid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 6vh;
+  gap: 14px;
+  margin-top: 15px;
+  @media ${(props) => props.theme.breakpoints.md} {
+    gap: 16px;
+    margin: 20px 0 32px;
     grid-template-columns: repeat(5, 1fr);
-    width: 6vh;
-    gap: 14px;
-    margin-top: 15px;
-    @media ${props => props.theme.breakpoints.md}{
-      gap: 16px;
-      margin: 20px 0 32px;
-      grid-template-columns: repeat(5, 1fr);
-    }
-    @media ${props => props.theme.breakpoints.sm}{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-    }
-`
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+`;
 
 export const Box = styled.div`
-    background: ${({ theme }) => theme.project.colorTag};
-    border-radius: 12px;
-    height: 55px;
-    width: 8vh;
-    padding: 10px;
-    text-align: center;
-    transition: transform 300ms ease-in-out 0s, box-shadow 300ms ease-in-out 0s;
-    &:hover {
-      transform: scale(1.1);
-    }
-    @media ${props => props.theme.breakpoints.lg} {
-        height: 210px;
-    }
-    @media ${props => props.theme.breakpoints.sm} {
-        height: 20px;
-    }
-    @media ${props => props.theme.breakpoints.md} {
-        height: 60px;
-        padding: 12px;
-    }
-`
+  background: ${({ theme }) => theme.project.colorTag};
+  border-radius: 12px;
+  height: 55px;
+  width: 8vh;
+  padding: 10px;
+  text-align: center;
+  transition: transform 300ms ease-in-out 0s, box-shadow 300ms ease-in-out 0s;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+    height: 210px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 20px;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 60px;
+    padding: 12px;
+  }
+`;
 
 export const BoxText = styled.p`
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: rgba(255, 255, 255, 0.75);
-    @media ${props => props.theme.breakpoints.md}{
-        font-size: 16px;
-        line-height: 20px;
-    };
-    @media ${props => props.theme.breakpoints.sm} {
-        font-size: 10px;
-        line-height: 14px;
-    }
-`
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.75);
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 10px;
+    line-height: 14px;
+  }
+`;

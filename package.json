@@ -6,12 +6,13 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "react-typing-effect": "^2.0.5",
+    "react-type-animation": "^3.0.1",
     "styled-components": "^5.3.0",
     "styled-normalize": "^8.0.7",
     "web-vitals": "^1.1.2"
@@ -21,7 +22,10 @@
     "build": "npm run clean && parcel build public/index.html --public-url ./",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "clean": "rm -rf ./dist ./.parcel-cache"
+    "clean": "rm -rf ./dist ./.parcel-cache",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +52,15 @@
     "@parcel/transformer-image": "^2.0.0-rc.0",
     "@parcel/transformer-svg-react": "^2.0.0-nightly.1739",
     "@parcel/transformer-webmanifest": "^2.0.0-rc.0",
-    "parcel": "^2.0.0-rc.0"
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "parcel": "^2.0.0-rc.0",
+    "prettier": "^2.8.8"
   }
 }

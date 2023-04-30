@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
   align-items: center;
-  background: ${props => props.background};
+  background: ${(props) => props.background};
   border: none;
   outline: none;
   border-radius: 4px 20% 4px 20%;
@@ -32,9 +32,9 @@ export const ButtonContainer = styled.div`
   top: 0;
   width: 4rem;
   @media ${({ theme }) => theme.breakpoints.md} {
-      display: none;
-    }
+    display: none;
+  }
   @media ${({ theme }) => theme.breakpoints.sm} {
-      display: none;
-    }
+    display: none;
+  }
 `;

@@ -1,16 +1,16 @@
 import React from 'react';
-import { Layout } from '../../components/layout/LayoutContainer';
+import Layout from '../../components/layout/LayoutContainer';
 import Project from '../../components/project/Project';
-import { projects } from '../../constants/projects';
+import projects from '../../constants/projects';
 
-const TITLE_PART = "Mes projets";
+const TITLE_PART = 'Mes projets';
 
-const ProjectPage = () => {
-    return (
-        <Layout>
-            <Project titlePart={TITLE_PART} projects={projects} />
-        </Layout>
-    );
-};
+function ProjectPage() {
+  return (
+    <Layout>
+      <Project titlePart={TITLE_PART} projects={projects} />
+    </Layout>
+  );
+}
 
 export default ProjectPage;
