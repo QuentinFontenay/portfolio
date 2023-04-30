@@ -95,8 +95,7 @@ Project.propTypes = {
   titlePart: PropTypes.string.isRequired,
   projects: PropTypes.arrayOf(
     PropTypes.shape({
-      icon: PropTypes.func.isRequired,
-      image: PropTypes.string,
+      image: PropTypes.objectOf(PropTypes.string),
       visit: PropTypes.string,
       source: PropTypes.string,
       description: PropTypes.string,

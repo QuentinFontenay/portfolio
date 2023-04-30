@@ -27,7 +27,7 @@ function CustomThemeProvider({ children }) {
 }
 
 CustomThemeProvider.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.arrayOf(PropTypes.element).isRequired,
 };
 
 export default CustomThemeProvider;
