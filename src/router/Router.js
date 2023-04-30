@@ -13,12 +13,12 @@ function Router() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="*" element={<NotFoundPage />} />
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/contact" element={<ContactPage />} />
         <Route exact path="/about_me" element={<AboutMePage />} />
         <Route exact path="/projects" element={<ProjectPage />} />
         <Route exact path="/process" element={<ProcessPage />} />
-        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );

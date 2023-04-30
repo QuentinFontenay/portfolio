@@ -13,10 +13,10 @@ import {
 
 const menuItems = [
   { title: 'Accueil', link: '/' },
-  { title: 'Travaux', link: 'projects' },
-  { title: 'Qui suis je ?', link: 'about_me' },
-  { title: 'Processus', link: 'process' },
-  { title: 'Contact', link: 'contact' },
+  { title: 'Travaux', link: '/projects' },
+  { title: 'Qui suis je ?', link: '/about_me' },
+  { title: 'Processus', link: '/process' },
+  { title: 'Contact', link: '/contact' },
 ];
 
 function Header() {
