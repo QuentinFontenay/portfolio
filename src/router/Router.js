@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {
   HomePage,
   ContactPage,
@@ -12,14 +12,14 @@ import {
 function Router() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/contact" component={ContactPage} />
-        <Route exact path="/about_me" component={AboutMePage} />
-        <Route exact path="/projects" component={ProjectPage} />
-        <Route exact path="/process" component={ProcessPage} />
-        <Route path="*" component={NotFoundPage} />
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/contact" element={<ContactPage />} />
+        <Route exact path="/about_me" element={<AboutMePage />} />
+        <Route exact path="/projects" element={<ProjectPage />} />
+        <Route exact path="/process" element={<ProcessPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }
