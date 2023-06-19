@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "parcel public/index.html",
-    "build": "react-scripts build",
+    "build": "npm run clean && parcel build public/index.html --public-url ./",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean": "rm -rf ./dist ./.parcel-cache",
