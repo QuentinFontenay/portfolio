@@ -11,7 +11,6 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.0",
-    "react-scripts": "^5.0.1",
     "react-type-animation": "^3.0.1",
     "styled-components": "^5.3.10",
     "styled-normalize": "^8.0.7",
@@ -19,7 +18,7 @@
   },
   "scripts": {
     "start": "parcel public/index.html",
-    "build": "npm run clean && parcel build public/index.html --public-url ./",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean": "rm -rf ./dist ./.parcel-cache",
@@ -62,6 +61,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "parcel": "^2.8.3",
     "prettier": "^2.8.8",
-    "process": "^0.11.10"
+    "process": "^0.11.10",
+    "react-scripts": "^5.0.1"
   }
 }
